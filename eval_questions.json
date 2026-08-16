@@ -1,0 +1,84 @@
+[
+  {
+    "id": 1,
+    "question": "Who is Professor Moriarty?",
+    "category": "character",
+    "expected_groups": [
+      ["Moriarty"],
+      ["schemer", "criminal", "underworld"],
+      ["Dynamics of an Asteroid", "Asteroid"]
+    ],
+    "unanswerable": false
+  },
+  {
+    "id": 2,
+    "question": "What is the relationship between Holmes and Watson?",
+    "category": "relationship",
+    "expected_groups": [
+      ["Holmes"],
+      ["Watson"],
+      ["companion", "partner", "works with", "work together", "friend"]
+    ],
+    "unanswerable": false
+  },
+  {
+    "id": 3,
+    "question": "Who is Porlock and why is he important?",
+    "category": "character_reasoning",
+    "expected_groups": [
+      ["Porlock"],
+      ["Moriarty"],
+      ["information", "warning", "help", "advance information"]
+    ],
+    "unanswerable": false
+  },
+  {
+    "id": 4,
+    "question": "Why is Holmes interested in Porlock?",
+    "category": "reasoning",
+    "expected_groups": [
+      ["Porlock"],
+      ["Moriarty"],
+      ["information", "warning", "help", "crime"]
+    ],
+    "unanswerable": false
+  },
+  {
+    "id": 5,
+    "question": "Is Porlock his real name?",
+    "category": "fact",
+    "expected_groups": [
+      ["Porlock"],
+      ["pseudonym", "nom-de-plume", "not his own", "not his real"]
+    ],
+    "unanswerable": false
+  },
+  {
+    "id": 6,
+    "question": "What is Professor Moriarty's public reputation?",
+    "category": "fact",
+    "expected_groups": [
+      ["Moriarty"],
+      ["respectable", "learned", "talented"]
+    ],
+    "unanswerable": false
+  },
+  {
+    "id": 7,
+    "question": "Who is Alec MacDonald?",
+    "category": "character",
+    "expected_groups": [
+      ["MacDonald"],
+      ["inspector", "detective"],
+      ["Aberdonian", "Scotland", "Scottish"]
+    ],
+    "unanswerable": false
+  },
+  {
+    "id": 8,
+    "question": "What smartphone does Sherlock Holmes use?",
+    "category": "unanswerable",
+    "expected_groups": [],
+    "unanswerable": true
+  }
+]
