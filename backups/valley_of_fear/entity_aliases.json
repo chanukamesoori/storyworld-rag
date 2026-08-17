@@ -1,0 +1,147 @@
+{
+  "characters": [
+    {
+      "canonical": "Sherlock Holmes",
+      "aliases": [
+        "Sherlock Holmes",
+        "Holmes",
+        "Mr. Holmes"
+      ]
+    },
+    {
+      "canonical": "Professor Moriarty",
+      "aliases": [
+        "Moriarty",
+        "Professor Moriarty"
+      ]
+    },
+    {
+      "canonical": "Watson's companion",
+      "aliases": [
+        "Watson's companion"
+      ]
+    },
+    {
+      "canonical": "Narrator",
+      "aliases": [
+        "Narrator"
+      ]
+    },
+    {
+      "canonical": "Mr. Douglas",
+      "aliases": [
+        "Douglas",
+        "Mr. Douglas"
+      ]
+    },
+    {
+      "canonical": "The Speaker",
+      "aliases": [
+        "The Speaker"
+      ]
+    },
+    {
+      "canonical": "Billy",
+      "aliases": [
+        "Billy"
+      ]
+    },
+    {
+      "canonical": "Fred Porlock",
+      "aliases": [
+        "Fred Porlock",
+        "Porlock"
+      ]
+    },
+    {
+      "canonical": "John Watson",
+      "aliases": [
+        "John Watson",
+        "Watson",
+        "Dr. Watson"
+      ]
+    },
+    {
+      "canonical": "Alec MacDonald",
+      "aliases": [
+        "Alec MacDonald",
+        "MacDonald",
+        "Inspector MacDonald"
+      ]
+    },
+    {
+      "canonical": "The Professor",
+      "aliases": [
+        "The Professor"
+      ]
+    }
+  ],
+  "locations": [
+    {
+      "canonical": "this great city",
+      "aliases": [
+        "this great city"
+      ]
+    },
+    {
+      "canonical": "Birlstone",
+      "aliases": [
+        "Birlstone"
+      ]
+    },
+    {
+      "canonical": "Europe",
+      "aliases": [
+        "Europe"
+      ]
+    },
+    {
+      "canonical": "British India",
+      "aliases": [
+        "British India"
+      ]
+    },
+    {
+      "canonical": "Room with the fire and cupboard",
+      "aliases": [
+        "Room with the fire and cupboard"
+      ]
+    },
+    {
+      "canonical": "Birlstone House",
+      "aliases": [
+        "Birlstone House"
+      ]
+    },
+    {
+      "canonical": "Scotland Yard",
+      "aliases": [
+        "Scotland Yard"
+      ]
+    },
+    {
+      "canonical": "The room",
+      "aliases": [
+        "The room"
+      ]
+    },
+    {
+      "canonical": "Birlstone Manor House",
+      "aliases": [
+        "Birlstone Manor House"
+      ]
+    },
+    {
+      "canonical": "Camberwell post-office",
+      "aliases": [
+        "Camberwell post-office"
+      ]
+    },
+    {
+      "canonical": "London",
+      "aliases": [
+        "London"
+      ]
+    }
+  ]
+}

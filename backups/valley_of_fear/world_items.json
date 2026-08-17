@@ -1,0 +1,2954 @@
+[
+  {
+    "type": "character",
+    "text": "Character: Sherlock Holmes. A man who impatiently interrupts Watson, studies a slip of paper and envelope at breakfast, and discusses Moriarty's reputation.",
+    "name": "Sherlock Holmes",
+    "description": "A man who impatiently interrupts Watson, studies a slip of paper and envelope at breakfast, and discusses Moriarty's reputation.",
+    "sources": [
+      {
+        "chunk_id": 0,
+        "chapter": "CHAPTER I.",
+        "page_start": 7,
+        "page_end": 7
+      },
+      {
+        "chunk_id": 7,
+        "chapter": "CHAPTER I.",
+        "page_start": 8,
+        "page_end": 8
+      },
+      {
+        "chunk_id": 11,
+        "chapter": "CHAPTER I.",
+        "page_start": 9,
+        "page_end": 9
+      },
+      {
+        "chunk_id": 18,
+        "chapter": "CHAPTER II. Sherlock Holmes Discourses",
+        "page_start": 11,
+        "page_end": 11
+      },
+      {
+        "chunk_id": 19,
+        "chapter": "CHAPTER II. Sherlock Holmes Discourses",
+        "page_start": 11,
+        "page_end": 11
+      },
+      {
+        "chunk_id": 3,
+        "chapter": "CHAPTER I.",
+        "page_start": 7,
+        "page_end": 7
+      },
+      {
+        "chunk_id": 4,
+        "chapter": "CHAPTER I.",
+        "page_start": 7,
+        "page_end": 8
+      },
+      {
+        "chunk_id": 6,
+        "chapter": "CHAPTER I.",
+        "page_start": 8,
+        "page_end": 8
+      },
+      {
+        "chunk_id": 12,
+        "chapter": "CHAPTER I.",
+        "page_start": 9,
+        "page_end": 9
+      },
+      {
+        "chunk_id": 13,
+        "chapter": "CHAPTER I.",
+        "page_start": 9,
+        "page_end": 10
+      },
+      {
+        "chunk_id": 14,
+        "chapter": "CHAPTER I.",
+        "page_start": 10,
+        "page_end": 10
+      },
+      {
+        "chunk_id": 15,
+        "chapter": "CHAPTER I.",
+        "page_start": 10,
+        "page_end": 10
+      },
+      {
+        "chunk_id": 17,
+        "chapter": "CHAPTER I.",
+        "page_start": 10,
+        "page_end": 10
+      },
+      {
+        "chunk_id": 16,
+        "chapter": "CHAPTER I.",
+        "page_start": 10,
+        "page_end": 10
+      },
+      {
+        "chunk_id": 2,
+        "chapter": "CHAPTER I.",
+        "page_start": 7,
+        "page_end": 7
+      },
+      {
+        "chunk_id": 5,
+        "chapter": "CHAPTER I.",
+        "page_start": 8,
+        "page_end": 8
+      }
+    ],
+    "world_item_id": 0
+  },
+  {
+    "type": "character",
+    "text": "Character: John Watson. The narrator of the passage who scrawled an enigmatic message on a paper and solved a cipher alongside Mr. Holmes.",
+    "name": "John Watson",
+    "description": "The narrator of the passage who scrawled an enigmatic message on a paper and solved a cipher alongside Mr. Holmes.",
+    "sources": [
+      {
+        "chunk_id": 0,
+        "chapter": "CHAPTER I.",
+        "page_start": 7,
+        "page_end": 7
+      },
+      {
+        "chunk_id": 1,
+        "chapter": "CHAPTER I.",
+        "page_start": 7,
+        "page_end": 7
+      },
+      {
+        "chunk_id": 2,
+        "chapter": "CHAPTER I.",
+        "page_start": 7,
+        "page_end": 7
+      },
+      {
+        "chunk_id": 3,
+        "chapter": "CHAPTER I.",
+        "page_start": 7,
+        "page_end": 7
+      },
+      {
+        "chunk_id": 5,
+        "chapter": "CHAPTER I.",
+        "page_start": 8,
+        "page_end": 8
+      },
+      {
+        "chunk_id": 6,
+        "chapter": "CHAPTER I.",
+        "page_start": 8,
+        "page_end": 8
+      },
+      {
+        "chunk_id": 7,
+        "chapter": "CHAPTER I.",
+        "page_start": 8,
+        "page_end": 8
+      },
+      {
+        "chunk_id": 8,
+        "chapter": "CHAPTER I.",
+        "page_start": 8,
+        "page_end": 9
+      },
+      {
+        "chunk_id": 9,
+        "chapter": "CHAPTER I.",
+        "page_start": 9,
+        "page_end": 9
+      },
+      {
+        "chunk_id": 10,
+        "chapter": "CHAPTER I.",
+        "page_start": 9,
+        "page_end": 9
+      },
+      {
+        "chunk_id": 12,
+        "chapter": "CHAPTER I.",
+        "page_start": 9,
+        "page_end": 9
+      },
+      {
+        "chunk_id": 13,
+        "chapter": "CHAPTER I.",
+        "page_start": 9,
+        "page_end": 10
+      },
+      {
+        "chunk_id": 11,
+        "chapter": "CHAPTER I.",
+        "page_start": 9,
+        "page_end": 9
+      },
+      {
+        "chunk_id": 16,
+        "chapter": "CHAPTER I.",
+        "page_start": 10,
+        "page_end": 10
+      },
+      {
+        "chunk_id": 4,
+        "chapter": "CHAPTER I.",
+        "page_start": 7,
+        "page_end": 8
+      },
+      {
+        "chunk_id": 18,
+        "chapter": "CHAPTER II. Sherlock Holmes Discourses",
+        "page_start": 11,
+        "page_end": 11
+      },
+      {
+        "chunk_id": 19,
+        "chapter": "CHAPTER II. Sherlock Holmes Discourses",
+        "page_start": 11,
+        "page_end": 11
+      }
+    ],
+    "world_item_id": 1
+  },
+  {
+    "type": "character",
+    "text": "Character: Professor Moriarty. A professor and celebrated author of The Dynamics of an Asteroid, described by Holmes as a brilliant schemer and leader of the underworld.",
+    "name": "Professor Moriarty",
+    "description": "A professor and celebrated author of The Dynamics of an Asteroid, described by Holmes as a brilliant schemer and leader of the underworld.",
+    "sources": [
+      {
+        "chunk_id": 0,
+        "chapter": "CHAPTER I.",
+        "page_start": 7,
+        "page_end": 7
+      },
+      {
+        "chunk_id": 1,
+        "chapter": "CHAPTER I.",
+        "page_start": 7,
+        "page_end": 7
+      },
+      {
+        "chunk_id": 11,
+        "chapter": "CHAPTER I.",
+        "page_start": 9,
+        "page_end": 9
+      },
+      {
+        "chunk_id": 12,
+        "chapter": "CHAPTER I.",
+        "page_start": 9,
+        "page_end": 9
+      },
+      {
+        "chunk_id": 2,
+        "chapter": "CHAPTER I.",
+        "page_start": 7,
+        "page_end": 7
+      },
+      {
+        "chunk_id": 3,
+        "chapter": "CHAPTER I.",
+        "page_start": 7,
+        "page_end": 7
+      },
+      {
+        "chunk_id": 4,
+        "chapter": "CHAPTER I.",
+        "page_start": 7,
+        "page_end": 8
+      },
+      {
+        "chunk_id": 9,
+        "chapter": "CHAPTER I.",
+        "page_start": 9,
+        "page_end": 9
+      },
+      {
+        "chunk_id": 10,
+        "chapter": "CHAPTER I.",
+        "page_start": 9,
+        "page_end": 9
+      },
+      {
+        "chunk_id": 18,
+        "chapter": "CHAPTER II. Sherlock Holmes Discourses",
+        "page_start": 11,
+        "page_end": 11
+      },
+      {
+        "chunk_id": 19,
+        "chapter": "CHAPTER II. Sherlock Holmes Discourses",
+        "page_start": 11,
+        "page_end": 11
+      }
+    ],
+    "world_item_id": 2
+  },
+  {
+    "type": "character",
+    "text": "Character: Fred Porlock. The author of a note warning that he is being watched and suspected, who asks the recipient to burn a cipher message.",
+    "name": "Fred Porlock",
+    "description": "The author of a note warning that he is being watched and suspected, who asks the recipient to burn a cipher message.",
+    "sources": [
+      {
+        "chunk_id": 1,
+        "chapter": "CHAPTER I.",
+        "page_start": 7,
+        "page_end": 7
+      },
+      {
+        "chunk_id": 2,
+        "chapter": "CHAPTER I.",
+        "page_start": 7,
+        "page_end": 7
+      },
+      {
+        "chunk_id": 3,
+        "chapter": "CHAPTER I.",
+        "page_start": 7,
+        "page_end": 7
+      },
+      {
+        "chunk_id": 5,
+        "chapter": "CHAPTER I.",
+        "page_start": 8,
+        "page_end": 8
+      },
+      {
+        "chunk_id": 6,
+        "chapter": "CHAPTER I.",
+        "page_start": 8,
+        "page_end": 8
+      },
+      {
+        "chunk_id": 7,
+        "chapter": "CHAPTER I.",
+        "page_start": 8,
+        "page_end": 8
+      },
+      {
+        "chunk_id": 12,
+        "chapter": "CHAPTER I.",
+        "page_start": 9,
+        "page_end": 9
+      },
+      {
+        "chunk_id": 13,
+        "chapter": "CHAPTER I.",
+        "page_start": 9,
+        "page_end": 10
+      },
+      {
+        "chunk_id": 8,
+        "chapter": "CHAPTER I.",
+        "page_start": 8,
+        "page_end": 9
+      }
+    ],
+    "world_item_id": 3
+  },
+  {
+    "type": "character",
+    "text": "Character: Mr. Douglas. A man associated with Birlstone Manor House who was horribly murdered.",
+    "name": "Mr. Douglas",
+    "description": "A man associated with Birlstone Manor House who was horribly murdered.",
+    "sources": [
+      {
+        "chunk_id": 4,
+        "chapter": "CHAPTER I.",
+        "page_start": 7,
+        "page_end": 8
+      },
+      {
+        "chunk_id": 12,
+        "chapter": "CHAPTER I.",
+        "page_start": 9,
+        "page_end": 9
+      },
+      {
+        "chunk_id": 13,
+        "chapter": "CHAPTER I.",
+        "page_start": 9,
+        "page_end": 10
+      },
+      {
+        "chunk_id": 14,
+        "chapter": "CHAPTER I.",
+        "page_start": 10,
+        "page_end": 10
+      },
+      {
+        "chunk_id": 15,
+        "chapter": "CHAPTER I.",
+        "page_start": 10,
+        "page_end": 10
+      },
+      {
+        "chunk_id": 17,
+        "chapter": "CHAPTER I.",
+        "page_start": 10,
+        "page_end": 10
+      }
+    ],
+    "world_item_id": 4
+  },
+  {
+    "type": "character",
+    "text": "Character: Billy. A page who brings the expected letter to Holmes and Watson.",
+    "name": "Billy",
+    "description": "A page who brings the expected letter to Holmes and Watson.",
+    "sources": [
+      {
+        "chunk_id": 6,
+        "chapter": "CHAPTER I.",
+        "page_start": 8,
+        "page_end": 8
+      },
+      {
+        "chunk_id": 12,
+        "chapter": "CHAPTER I.",
+        "page_start": 9,
+        "page_end": 9
+      },
+      {
+        "chunk_id": 13,
+        "chapter": "CHAPTER I.",
+        "page_start": 9,
+        "page_end": 10
+      },
+      {
+        "chunk_id": 15,
+        "chapter": "CHAPTER I.",
+        "page_start": 10,
+        "page_end": 10
+      }
+    ],
+    "world_item_id": 5
+  },
+  {
+    "type": "character",
+    "text": "Character: Alec MacDonald. A young, trusted inspector and member of the detective force, characterized by a tall, bony frame, keen intelligence, dour nature, and a hard Aberdonian accent.",
+    "name": "Alec MacDonald",
+    "description": "A young, trusted inspector and member of the detective force, characterized by a tall, bony frame, keen intelligence, dour nature, and a hard Aberdonian accent.",
+    "sources": [
+      {
+        "chunk_id": 13,
+        "chapter": "CHAPTER I.",
+        "page_start": 9,
+        "page_end": 10
+      },
+      {
+        "chunk_id": 14,
+        "chapter": "CHAPTER I.",
+        "page_start": 10,
+        "page_end": 10
+      },
+      {
+        "chunk_id": 15,
+        "chapter": "CHAPTER I.",
+        "page_start": 10,
+        "page_end": 10
+      },
+      {
+        "chunk_id": 18,
+        "chapter": "CHAPTER II. Sherlock Holmes Discourses",
+        "page_start": 11,
+        "page_end": 11
+      },
+      {
+        "chunk_id": 19,
+        "chapter": "CHAPTER II. Sherlock Holmes Discourses",
+        "page_start": 11,
+        "page_end": 11
+      },
+      {
+        "chunk_id": 16,
+        "chapter": "CHAPTER I.",
+        "page_start": 10,
+        "page_end": 10
+      },
+      {
+        "chunk_id": 17,
+        "chapter": "CHAPTER I.",
+        "page_start": 10,
+        "page_end": 10
+      }
+    ],
+    "world_item_id": 6
+  },
+  {
+    "type": "location",
+    "text": "Location: this great city. A large city with teeming millions in which Porlock claimed he could not be traced.",
+    "name": "this great city",
+    "description": "A large city with teeming millions in which Porlock claimed he could not be traced.",
+    "sources": [
+      {
+        "chunk_id": 2,
+        "chapter": "CHAPTER I.",
+        "page_start": 7,
+        "page_end": 7
+      },
+      {
+        "chunk_id": 3,
+        "chapter": "CHAPTER I.",
+        "page_start": 7,
+        "page_end": 7
+      }
+    ],
+    "world_item_id": 7
+  },
+  {
+    "type": "location",
+    "text": "Location: Birlstone. A place name included in the text of the cipher inscription.",
+    "name": "Birlstone",
+    "description": "A place name included in the text of the cipher inscription.",
+    "sources": [
+      {
+        "chunk_id": 4,
+        "chapter": "CHAPTER I.",
+        "page_start": 7,
+        "page_end": 8
+      },
+      {
+        "chunk_id": 19,
+        "chapter": "CHAPTER II. Sherlock Holmes Discourses",
+        "page_start": 11,
+        "page_end": 11
+      }
+    ],
+    "world_item_id": 8
+  },
+  {
+    "type": "location",
+    "text": "Location: Europe. A continent mentioned in connection with a mastermind described as having 'one of the first brains of Europe'.",
+    "name": "Europe",
+    "description": "A continent mentioned in connection with a mastermind described as having 'one of the first brains of Europe'.",
+    "sources": [
+      {
+        "chunk_id": 5,
+        "chapter": "CHAPTER I.",
+        "page_start": 8,
+        "page_end": 8
+      },
+      {
+        "chunk_id": 13,
+        "chapter": "CHAPTER I.",
+        "page_start": 9,
+        "page_end": 10
+      },
+      {
+        "chunk_id": 14,
+        "chapter": "CHAPTER I.",
+        "page_start": 10,
+        "page_end": 10
+      }
+    ],
+    "world_item_id": 9
+  },
+  {
+    "type": "location",
+    "text": "Location: British India. A region whose trade and resources are the subject of the text on page 534, column two of Whitaker's Almanac.",
+    "name": "British India",
+    "description": "A region whose trade and resources are the subject of the text on page 534, column two of Whitaker's Almanac.",
+    "sources": [
+      {
+        "chunk_id": 9,
+        "chapter": "CHAPTER I.",
+        "page_start": 9,
+        "page_end": 9
+      },
+      {
+        "chunk_id": 10,
+        "chapter": "CHAPTER I.",
+        "page_start": 9,
+        "page_end": 9
+      }
+    ],
+    "world_item_id": 10
+  },
+  {
+    "type": "location",
+    "text": "Location: Room with the fire and cupboard. The room containing a fireplace and a cupboard holding a yellow-covered volume, where Holmes and Watson discuss the clue.",
+    "name": "Room with the fire and cupboard",
+    "description": "The room containing a fireplace and a cupboard holding a yellow-covered volume, where Holmes and Watson discuss the clue.",
+    "sources": [
+      {
+        "chunk_id": 11,
+        "chapter": "CHAPTER I.",
+        "page_start": 9,
+        "page_end": 9
+      }
+    ],
+    "world_item_id": 11
+  },
+  {
+    "type": "location",
+    "text": "Location: Birlstone House. A place mentioned in the deciphered message in connection with Douglas.",
+    "name": "Birlstone House",
+    "description": "A place mentioned in the deciphered message in connection with Douglas.",
+    "sources": [
+      {
+        "chunk_id": 12,
+        "chapter": "CHAPTER I.",
+        "page_start": 9,
+        "page_end": 9
+      },
+      {
+        "chunk_id": 13,
+        "chapter": "CHAPTER I.",
+        "page_start": 9,
+        "page_end": 10
+      }
+    ],
+    "world_item_id": 12
+  },
+  {
+    "type": "location",
+    "text": "Location: Scotland Yard. The police organization with which Inspector MacDonald is associated.",
+    "name": "Scotland Yard",
+    "description": "The police organization with which Inspector MacDonald is associated.",
+    "sources": [
+      {
+        "chunk_id": 15,
+        "chapter": "CHAPTER I.",
+        "page_start": 10,
+        "page_end": 10
+      }
+    ],
+    "world_item_id": 13
+  },
+  {
+    "type": "location",
+    "text": "Location: The room. The room where Holmes is chuckling over his success and into which Inspector MacDonald is ushered.",
+    "name": "The room",
+    "description": "The room where Holmes is chuckling over his success and into which Inspector MacDonald is ushered.",
+    "sources": [
+      {
+        "chunk_id": 15,
+        "chapter": "CHAPTER I.",
+        "page_start": 10,
+        "page_end": 10
+      }
+    ],
+    "world_item_id": 14
+  },
+  {
+    "type": "location",
+    "text": "Location: Birlstone Manor House. The manor house associated with Mr. Douglas.",
+    "name": "Birlstone Manor House",
+    "description": "The manor house associated with Mr. Douglas.",
+    "sources": [
+      {
+        "chunk_id": 17,
+        "chapter": "CHAPTER I.",
+        "page_start": 10,
+        "page_end": 10
+      }
+    ],
+    "world_item_id": 15
+  },
+  {
+    "type": "location",
+    "text": "Location: Camberwell post-office. A post office where notes were directed.",
+    "name": "Camberwell post-office",
+    "description": "A post office where notes were directed.",
+    "sources": [
+      {
+        "chunk_id": 18,
+        "chapter": "CHAPTER II. Sherlock Holmes Discourses",
+        "page_start": 11,
+        "page_end": 11
+      }
+    ],
+    "world_item_id": 16
+  },
+  {
+    "type": "location",
+    "text": "Location: London. The city where Inspector MacDonald suggests they might remain to do better work.",
+    "name": "London",
+    "description": "The city where Inspector MacDonald suggests they might remain to do better work.",
+    "sources": [
+      {
+        "chunk_id": 19,
+        "chapter": "CHAPTER II. Sherlock Holmes Discourses",
+        "page_start": 11,
+        "page_end": 11
+      }
+    ],
+    "world_item_id": 17
+  },
+  {
+    "type": "relationship",
+    "text": "Sherlock Holmes speaks to John Watson. Holmes converses with Watson about his humor and about Moriarty.",
+    "subject": "Sherlock Holmes",
+    "relation": "speaks_to",
+    "object": "John Watson",
+    "explanation": "Holmes converses with Watson about his humor and about Moriarty.",
+    "sources": [
+      {
+        "chunk_id": 0,
+        "chapter": "CHAPTER I.",
+        "page_start": 7,
+        "page_end": 7
+      },
+      {
+        "chunk_id": 7,
+        "chapter": "CHAPTER I.",
+        "page_start": 8,
+        "page_end": 8
+      },
+      {
+        "chunk_id": 3,
+        "chapter": "CHAPTER I.",
+        "page_start": 7,
+        "page_end": 7
+      },
+      {
+        "chunk_id": 12,
+        "chapter": "CHAPTER I.",
+        "page_start": 9,
+        "page_end": 9
+      },
+      {
+        "chunk_id": 11,
+        "chapter": "CHAPTER I.",
+        "page_start": 9,
+        "page_end": 9
+      },
+      {
+        "chunk_id": 2,
+        "chapter": "CHAPTER I.",
+        "page_start": 7,
+        "page_end": 7
+      },
+      {
+        "chunk_id": 4,
+        "chapter": "CHAPTER I.",
+        "page_start": 7,
+        "page_end": 8
+      }
+    ],
+    "world_item_id": 18
+  },
+  {
+    "type": "relationship",
+    "text": "John Watson speaks to Sherlock Holmes. Watson severely addresses Holmes, telling him he is trying at times.",
+    "subject": "John Watson",
+    "relation": "speaks_to",
+    "object": "Sherlock Holmes",
+    "explanation": "Watson severely addresses Holmes, telling him he is trying at times.",
+    "sources": [
+      {
+        "chunk_id": 0,
+        "chapter": "CHAPTER I.",
+        "page_start": 7,
+        "page_end": 7
+      },
+      {
+        "chunk_id": 4,
+        "chapter": "CHAPTER I.",
+        "page_start": 7,
+        "page_end": 8
+      }
+    ],
+    "world_item_id": 19
+  },
+  {
+    "type": "relationship",
+    "text": "John Watson accuses Professor Moriarty. Holmes notes that Watson called Moriarty a criminal.",
+    "subject": "John Watson",
+    "relation": "accuses",
+    "object": "Professor Moriarty",
+    "explanation": "Holmes notes that Watson called Moriarty a criminal.",
+    "sources": [
+      {
+        "chunk_id": 0,
+        "chapter": "CHAPTER I.",
+        "page_start": 7,
+        "page_end": 7
+      }
+    ],
+    "world_item_id": 20
+  },
+  {
+    "type": "relationship",
+    "text": "John Watson accused Professor Moriarty. Watson called Moriarty a criminal in the eyes of the law.",
+    "subject": "John Watson",
+    "relation": "accused",
+    "object": "Professor Moriarty",
+    "explanation": "Watson called Moriarty a criminal in the eyes of the law.",
+    "sources": [
+      {
+        "chunk_id": 1,
+        "chapter": "CHAPTER I.",
+        "page_start": 7,
+        "page_end": 7
+      }
+    ],
+    "world_item_id": 21
+  },
+  {
+    "type": "relationship",
+    "text": "Professor Moriarty author of The Dynamics of an Asteroid. Moriarty is stated to be the celebrated author of The Dynamics of an Asteroid.",
+    "subject": "Professor Moriarty",
+    "relation": "author_of",
+    "object": "The Dynamics of an Asteroid",
+    "explanation": "Moriarty is stated to be the celebrated author of The Dynamics of an Asteroid.",
+    "sources": [
+      {
+        "chunk_id": 1,
+        "chapter": "CHAPTER I.",
+        "page_start": 7,
+        "page_end": 7
+      }
+    ],
+    "world_item_id": 22
+  },
+  {
+    "type": "relationship",
+    "text": "Fred Porlock in touch with Professor Moriarty. The text states that Porlock is important because of his connection with the great man, Professor Moriarty.",
+    "subject": "Fred Porlock",
+    "relation": "in_touch_with",
+    "object": "Professor Moriarty",
+    "explanation": "The text states that Porlock is important because of his connection with the great man, Professor Moriarty.",
+    "sources": [
+      {
+        "chunk_id": 2,
+        "chapter": "CHAPTER I.",
+        "page_start": 7,
+        "page_end": 7
+      },
+      {
+        "chunk_id": 3,
+        "chapter": "CHAPTER I.",
+        "page_start": 7,
+        "page_end": 7
+      }
+    ],
+    "world_item_id": 23
+  },
+  {
+    "type": "relationship",
+    "text": "Fred Porlock wrote to Sherlock Holmes. Watson's companion notes receiving former letters from Porlock and recognizing his writing.",
+    "subject": "Fred Porlock",
+    "relation": "wrote_to",
+    "object": "Sherlock Holmes",
+    "explanation": "Watson's companion notes receiving former letters from Porlock and recognizing his writing.",
+    "sources": [
+      {
+        "chunk_id": 2,
+        "chapter": "CHAPTER I.",
+        "page_start": 7,
+        "page_end": 7
+      },
+      {
+        "chunk_id": 7,
+        "chapter": "CHAPTER I.",
+        "page_start": 8,
+        "page_end": 8
+      }
+    ],
+    "world_item_id": 24
+  },
+  {
+    "type": "relationship",
+    "text": "Fred Porlock helped Sherlock Holmes. Porlock has given Holmes advance information that helped anticipate and prevent crimes.",
+    "subject": "Fred Porlock",
+    "relation": "helped",
+    "object": "Sherlock Holmes",
+    "explanation": "Porlock has given Holmes advance information that helped anticipate and prevent crimes.",
+    "sources": [
+      {
+        "chunk_id": 3,
+        "chapter": "CHAPTER I.",
+        "page_start": 7,
+        "page_end": 7
+      }
+    ],
+    "world_item_id": 25
+  },
+  {
+    "type": "relationship",
+    "text": "Professor Moriarty associated with that party. Holmes notes that when anyone of 'that party' says 'He', they mean Professor Moriarty.",
+    "subject": "Professor Moriarty",
+    "relation": "associated_with",
+    "object": "that party",
+    "explanation": "Holmes notes that when anyone of 'that party' says 'He', they mean Professor Moriarty.",
+    "sources": [
+      {
+        "chunk_id": 4,
+        "chapter": "CHAPTER I.",
+        "page_start": 7,
+        "page_end": 8
+      }
+    ],
+    "world_item_id": 26
+  },
+  {
+    "type": "relationship",
+    "text": "Sherlock Holmes friend of John Watson. The speaker addresses Watson as 'my dear Watson' and mentions the delight of his friends.",
+    "subject": "Sherlock Holmes",
+    "relation": "friend_of",
+    "object": "John Watson",
+    "explanation": "The speaker addresses Watson as 'my dear Watson' and mentions the delight of his friends.",
+    "sources": [
+      {
+        "chunk_id": 5,
+        "chapter": "CHAPTER I.",
+        "page_start": 8,
+        "page_end": 8
+      }
+    ],
+    "world_item_id": 27
+  },
+  {
+    "type": "relationship",
+    "text": "Fred Porlock feared Sherlock Holmes. The text states Porlock wrote the letter because 'he feared I would make some inquiry after him in that case, and possibly bring trouble on him.'",
+    "subject": "Fred Porlock",
+    "relation": "feared",
+    "object": "Sherlock Holmes",
+    "explanation": "The text states Porlock wrote the letter because 'he feared I would make some inquiry after him in that case, and possibly bring trouble on him.'",
+    "sources": [
+      {
+        "chunk_id": 5,
+        "chapter": "CHAPTER I.",
+        "page_start": 8,
+        "page_end": 8
+      }
+    ],
+    "world_item_id": 28
+  },
+  {
+    "type": "relationship",
+    "text": "Sherlock Holmes companion of John Watson. Holmes addresses Watson directly ('my dear Watson') and collaborates with him on deciphering the message.",
+    "subject": "Sherlock Holmes",
+    "relation": "companion_of",
+    "object": "John Watson",
+    "explanation": "Holmes addresses Watson directly ('my dear Watson') and collaborates with him on deciphering the message.",
+    "sources": [
+      {
+        "chunk_id": 6,
+        "chapter": "CHAPTER I.",
+        "page_start": 8,
+        "page_end": 8
+      }
+    ],
+    "world_item_id": 29
+  },
+  {
+    "type": "relationship",
+    "text": "John Watson companion of Sherlock Holmes. Watson is present with Holmes, examining the cipher message.",
+    "subject": "John Watson",
+    "relation": "companion_of",
+    "object": "Sherlock Holmes",
+    "explanation": "Watson is present with Holmes, examining the cipher message.",
+    "sources": [
+      {
+        "chunk_id": 6,
+        "chapter": "CHAPTER I.",
+        "page_start": 8,
+        "page_end": 8
+      },
+      {
+        "chunk_id": 13,
+        "chapter": "CHAPTER I.",
+        "page_start": 9,
+        "page_end": 10
+      },
+      {
+        "chunk_id": 11,
+        "chapter": "CHAPTER I.",
+        "page_start": 9,
+        "page_end": 9
+      }
+    ],
+    "world_item_id": 30
+  },
+  {
+    "type": "relationship",
+    "text": "Sherlock Holmes knows Fred Porlock. Holmes mentions Porlock by name and expresses concern for his well-being.",
+    "subject": "Sherlock Holmes",
+    "relation": "knows",
+    "object": "Fred Porlock",
+    "explanation": "Holmes mentions Porlock by name and expresses concern for his well-being.",
+    "sources": [
+      {
+        "chunk_id": 6,
+        "chapter": "CHAPTER I.",
+        "page_start": 8,
+        "page_end": 8
+      }
+    ],
+    "world_item_id": 31
+  },
+  {
+    "type": "relationship",
+    "text": "Fred Porlock corresponds with John Watson. Fred Porlock writes a note addressed to the recipient ('you') that Watson and his companion are discussing.",
+    "subject": "Fred Porlock",
+    "relation": "corresponds_with",
+    "object": "John Watson",
+    "explanation": "Fred Porlock writes a note addressed to the recipient ('you') that Watson and his companion are discussing.",
+    "sources": [
+      {
+        "chunk_id": 8,
+        "chapter": "CHAPTER I.",
+        "page_start": 8,
+        "page_end": 9
+      }
+    ],
+    "world_item_id": 32
+  },
+  {
+    "type": "relationship",
+    "text": "Fred Porlock suspected by unnamed man. Porlock writes 'he suspects me' regarding a man who unexpectedly visited him.",
+    "subject": "Fred Porlock",
+    "relation": "suspected_by",
+    "object": "unnamed man",
+    "explanation": "Porlock writes 'he suspects me' regarding a man who unexpectedly visited him.",
+    "sources": [
+      {
+        "chunk_id": 8,
+        "chapter": "CHAPTER I.",
+        "page_start": 8,
+        "page_end": 9
+      }
+    ],
+    "world_item_id": 33
+  },
+  {
+    "type": "relationship",
+    "text": "John Watson investigates Professor Moriarty. The text mentions that decoded words are 'somewhat irrelevant to ourselves and Professor Moriarty,' indicating an ongoing concern or case involving Professor Moriarty.",
+    "subject": "John Watson",
+    "relation": "investigates",
+    "object": "Professor Moriarty",
+    "explanation": "The text mentions that decoded words are 'somewhat irrelevant to ourselves and Professor Moriarty,' indicating an ongoing concern or case involving Professor Moriarty.",
+    "sources": [
+      {
+        "chunk_id": 9,
+        "chapter": "CHAPTER I.",
+        "page_start": 9,
+        "page_end": 9
+      }
+    ],
+    "world_item_id": 34
+  },
+  {
+    "type": "relationship",
+    "text": "Sherlock Holmes works with John Watson. Holmes decodes the message while instructing Watson to write down the deciphered words.",
+    "subject": "Sherlock Holmes",
+    "relation": "works_with",
+    "object": "John Watson",
+    "explanation": "Holmes decodes the message while instructing Watson to write down the deciphered words.",
+    "sources": [
+      {
+        "chunk_id": 12,
+        "chapter": "CHAPTER I.",
+        "page_start": 9,
+        "page_end": 9
+      }
+    ],
+    "world_item_id": 35
+  },
+  {
+    "type": "relationship",
+    "text": "Alec MacDonald consults Sherlock Holmes. MacDonald consults Holmes in every difficulty and respects his genius.",
+    "subject": "Alec MacDonald",
+    "relation": "consults",
+    "object": "Sherlock Holmes",
+    "explanation": "MacDonald consults Holmes in every difficulty and respects his genius.",
+    "sources": [
+      {
+        "chunk_id": 13,
+        "chapter": "CHAPTER I.",
+        "page_start": 9,
+        "page_end": 10
+      },
+      {
+        "chunk_id": 14,
+        "chapter": "CHAPTER I.",
+        "page_start": 10,
+        "page_end": 10
+      }
+    ],
+    "world_item_id": 36
+  },
+  {
+    "type": "relationship",
+    "text": "Sherlock Holmes tolerant of Alec MacDonald. The text notes that Holmes was not prone to friendship, but was tolerant of the big Scotchman.",
+    "subject": "Sherlock Holmes",
+    "relation": "tolerant_of",
+    "object": "Alec MacDonald",
+    "explanation": "The text notes that Holmes was not prone to friendship, but was tolerant of the big Scotchman.",
+    "sources": [
+      {
+        "chunk_id": 13,
+        "chapter": "CHAPTER I.",
+        "page_start": 9,
+        "page_end": 10
+      },
+      {
+        "chunk_id": 14,
+        "chapter": "CHAPTER I.",
+        "page_start": 10,
+        "page_end": 10
+      }
+    ],
+    "world_item_id": 37
+  },
+  {
+    "type": "relationship",
+    "text": "Fred Porlock sent message to Sherlock Holmes. Holmes analyzes a coded message sent by Porlock using an almanac.",
+    "subject": "Fred Porlock",
+    "relation": "sent_message_to",
+    "object": "Sherlock Holmes",
+    "explanation": "Holmes analyzes a coded message sent by Porlock using an almanac.",
+    "sources": [
+      {
+        "chunk_id": 13,
+        "chapter": "CHAPTER I.",
+        "page_start": 9,
+        "page_end": 10
+      }
+    ],
+    "world_item_id": 38
+  },
+  {
+    "type": "relationship",
+    "text": "Alec MacDonald respects Sherlock Holmes. The text states that the affection and respect of the Scotchman for his amateur colleague were profound.",
+    "subject": "Alec MacDonald",
+    "relation": "respects",
+    "object": "Sherlock Holmes",
+    "explanation": "The text states that the affection and respect of the Scotchman for his amateur colleague were profound.",
+    "sources": [
+      {
+        "chunk_id": 14,
+        "chapter": "CHAPTER I.",
+        "page_start": 10,
+        "page_end": 10
+      }
+    ],
+    "world_item_id": 39
+  },
+  {
+    "type": "relationship",
+    "text": "Alec MacDonald works for Scotland Yard. Text explicitly refers to him as 'Inspector MacDonald of Scotland Yard'.",
+    "subject": "Alec MacDonald",
+    "relation": "works_for",
+    "object": "Scotland Yard",
+    "explanation": "Text explicitly refers to him as 'Inspector MacDonald of Scotland Yard'.",
+    "sources": [
+      {
+        "chunk_id": 15,
+        "chapter": "CHAPTER I.",
+        "page_start": 10,
+        "page_end": 10
+      }
+    ],
+    "world_item_id": 40
+  },
+  {
+    "type": "relationship",
+    "text": "Alec MacDonald speaks to Sherlock Holmes. Inspector MacDonald addresses Holmes directly, answering 'If you said ‘hope’ instead of ‘fear,’ it would be nearer the truth, I’m thinking, Mr. Holmes'.",
+    "subject": "Alec MacDonald",
+    "relation": "speaks_to",
+    "object": "Sherlock Holmes",
+    "explanation": "Inspector MacDonald addresses Holmes directly, answering 'If you said ‘hope’ instead of ‘fear,’ it would be nearer the truth, I’m thinking, Mr. Holmes'.",
+    "sources": [
+      {
+        "chunk_id": 15,
+        "chapter": "CHAPTER I.",
+        "page_start": 10,
+        "page_end": 10
+      },
+      {
+        "chunk_id": 16,
+        "chapter": "CHAPTER I.",
+        "page_start": 10,
+        "page_end": 10
+      },
+      {
+        "chunk_id": 18,
+        "chapter": "CHAPTER II. Sherlock Holmes Discourses",
+        "page_start": 11,
+        "page_end": 11
+      },
+      {
+        "chunk_id": 19,
+        "chapter": "CHAPTER II. Sherlock Holmes Discourses",
+        "page_start": 11,
+        "page_end": 11
+      }
+    ],
+    "world_item_id": 41
+  },
+  {
+    "type": "relationship",
+    "text": "Billy helped Alec MacDonald. Billy swung open the door and ushered Inspector MacDonald into the room.",
+    "subject": "Billy",
+    "relation": "helped",
+    "object": "Alec MacDonald",
+    "explanation": "Billy swung open the door and ushered Inspector MacDonald into the room.",
+    "sources": [
+      {
+        "chunk_id": 15,
+        "chapter": "CHAPTER I.",
+        "page_start": 10,
+        "page_end": 10
+      }
+    ],
+    "world_item_id": 42
+  },
+  {
+    "type": "relationship",
+    "text": "John Watson works with Sherlock Holmes. Mr. Holmes mentions that he and Dr. Watson had occasion to solve a cipher together.",
+    "subject": "John Watson",
+    "relation": "works_with",
+    "object": "Sherlock Holmes",
+    "explanation": "Mr. Holmes mentions that he and Dr. Watson had occasion to solve a cipher together.",
+    "sources": [
+      {
+        "chunk_id": 16,
+        "chapter": "CHAPTER I.",
+        "page_start": 10,
+        "page_end": 10
+      }
+    ],
+    "world_item_id": 43
+  },
+  {
+    "type": "relationship",
+    "text": "Alec MacDonald works with detective force. The text states Alec MacDonald was a young but trusted member of the detective force.",
+    "subject": "Alec MacDonald",
+    "relation": "works_with",
+    "object": "detective force",
+    "explanation": "The text states Alec MacDonald was a young but trusted member of the detective force.",
+    "sources": [
+      {
+        "chunk_id": 16,
+        "chapter": "CHAPTER I.",
+        "page_start": 10,
+        "page_end": 10
+      }
+    ],
+    "world_item_id": 44
+  },
+  {
+    "type": "relationship",
+    "text": "Sherlock Holmes helped Alec MacDonald. The text states that twice already in his career had Holmes helped MacDonald to attain success.",
+    "subject": "Sherlock Holmes",
+    "relation": "helped",
+    "object": "Alec MacDonald",
+    "explanation": "The text states that twice already in his career had Holmes helped MacDonald to attain success.",
+    "sources": [
+      {
+        "chunk_id": 17,
+        "chapter": "CHAPTER I.",
+        "page_start": 10,
+        "page_end": 10
+      }
+    ],
+    "world_item_id": 45
+  },
+  {
+    "type": "relationship",
+    "text": "Mr. Douglas lives at Birlstone Manor House. The text refers to him as 'Mr. Douglas of Birlstone Manor House'.",
+    "subject": "Mr. Douglas",
+    "relation": "lives_at",
+    "object": "Birlstone Manor House",
+    "explanation": "The text refers to him as 'Mr. Douglas of Birlstone Manor House'.",
+    "sources": [
+      {
+        "chunk_id": 17,
+        "chapter": "CHAPTER I.",
+        "page_start": 10,
+        "page_end": 10
+      }
+    ],
+    "world_item_id": 46
+  },
+  {
+    "type": "relationship",
+    "text": "John Watson friend of Sherlock Holmes. The narrator refers to Holmes as 'my friend'.",
+    "subject": "John Watson",
+    "relation": "friend_of",
+    "object": "Sherlock Holmes",
+    "explanation": "The narrator refers to Holmes as 'my friend'.",
+    "sources": [
+      {
+        "chunk_id": 18,
+        "chapter": "CHAPTER II. Sherlock Holmes Discourses",
+        "page_start": 11,
+        "page_end": 11
+      },
+      {
+        "chunk_id": 19,
+        "chapter": "CHAPTER II. Sherlock Holmes Discourses",
+        "page_start": 11,
+        "page_end": 11
+      }
+    ],
+    "world_item_id": 47
+  },
+  {
+    "type": "relationship",
+    "text": "Sherlock Holmes suspects Professor Moriarty. MacDonald notes that Holmes has a 'bee in [his] bonnet' over the professor and believes someone is behind the matter.",
+    "subject": "Sherlock Holmes",
+    "relation": "suspects",
+    "object": "Professor Moriarty",
+    "explanation": "MacDonald notes that Holmes has a 'bee in [his] bonnet' over the professor and believes someone is behind the matter.",
+    "sources": [
+      {
+        "chunk_id": 18,
+        "chapter": "CHAPTER II. Sherlock Holmes Discourses",
+        "page_start": 11,
+        "page_end": 11
+      },
+      {
+        "chunk_id": 19,
+        "chapter": "CHAPTER II. Sherlock Holmes Discourses",
+        "page_start": 11,
+        "page_end": 11
+      }
+    ],
+    "world_item_id": 48
+  },
+  {
+    "type": "fact",
+    "text": "John Watson occupation doctor. Holmes refers to Watson in their respective roles as 'Foul-mouthed doctor'.",
+    "subject": "John Watson",
+    "predicate": "occupation",
+    "object": "doctor",
+    "explanation": "Holmes refers to Watson in their respective roles as 'Foul-mouthed doctor'.",
+    "sources": [
+      {
+        "chunk_id": 0,
+        "chapter": "CHAPTER I.",
+        "page_start": 7,
+        "page_end": 7
+      },
+      {
+        "chunk_id": 1,
+        "chapter": "CHAPTER I.",
+        "page_start": 7,
+        "page_end": 7
+      }
+    ],
+    "world_item_id": 49
+  },
+  {
+    "type": "fact",
+    "text": "Professor Moriarty occupation professor. Holmes refers to Moriarty in their respective roles as 'slandered professor'.",
+    "subject": "Professor Moriarty",
+    "predicate": "occupation",
+    "object": "professor",
+    "explanation": "Holmes refers to Moriarty in their respective roles as 'slandered professor'.",
+    "sources": [
+      {
+        "chunk_id": 0,
+        "chapter": "CHAPTER I.",
+        "page_start": 7,
+        "page_end": 7
+      },
+      {
+        "chunk_id": 1,
+        "chapter": "CHAPTER I.",
+        "page_start": 7,
+        "page_end": 7
+      }
+    ],
+    "world_item_id": 50
+  },
+  {
+    "type": "fact",
+    "text": "Professor Moriarty author of The Dynamics of an Asteroid. The passage describes Moriarty as the celebrated author of 'The Dynamics of an Asteroid'.",
+    "subject": "Professor Moriarty",
+    "predicate": "author_of",
+    "object": "The Dynamics of an Asteroid",
+    "explanation": "The passage describes Moriarty as the celebrated author of 'The Dynamics of an Asteroid'.",
+    "sources": [
+      {
+        "chunk_id": 0,
+        "chapter": "CHAPTER I.",
+        "page_start": 7,
+        "page_end": 7
+      }
+    ],
+    "world_item_id": 51
+  },
+  {
+    "type": "fact",
+    "text": "Professor Moriarty status controlling brain of the underworld. The text calls Moriarty 'the controlling brain of the underworld'.",
+    "subject": "Professor Moriarty",
+    "predicate": "status",
+    "object": "controlling brain of the underworld",
+    "explanation": "The text calls Moriarty 'the controlling brain of the underworld'.",
+    "sources": [
+      {
+        "chunk_id": 1,
+        "chapter": "CHAPTER I.",
+        "page_start": 7,
+        "page_end": 7
+      }
+    ],
+    "world_item_id": 52
+  },
+  {
+    "type": "fact",
+    "text": "The Dynamics of an Asteroid topic pure mathematics. The book is described as ascending to rarefied heights of pure mathematics.",
+    "subject": "The Dynamics of an Asteroid",
+    "predicate": "topic",
+    "object": "pure mathematics",
+    "explanation": "The book is described as ascending to rarefied heights of pure mathematics.",
+    "sources": [
+      {
+        "chunk_id": 1,
+        "chapter": "CHAPTER I.",
+        "page_start": 7,
+        "page_end": 7
+      }
+    ],
+    "world_item_id": 53
+  },
+  {
+    "type": "fact",
+    "text": "Fred Porlock handwriting distinctive Greek e with a peculiar top flourish. Porlock's writing is identified by the distinctive Greek e with a peculiar top flourish.",
+    "subject": "Fred Porlock",
+    "predicate": "handwriting",
+    "object": "distinctive Greek e with a peculiar top flourish",
+    "explanation": "Porlock's writing is identified by the distinctive Greek e with a peculiar top flourish.",
+    "sources": [
+      {
+        "chunk_id": 1,
+        "chapter": "CHAPTER I.",
+        "page_start": 7,
+        "page_end": 7
+      }
+    ],
+    "world_item_id": 54
+  },
+  {
+    "type": "fact",
+    "text": "Fred Porlock identity nom-de-plume. Watson's companion states that Porlock is a nom-de-plume rather than his real name.",
+    "subject": "Fred Porlock",
+    "predicate": "identity",
+    "object": "nom-de-plume",
+    "explanation": "Watson's companion states that Porlock is a nom-de-plume rather than his real name.",
+    "sources": [
+      {
+        "chunk_id": 2,
+        "chapter": "CHAPTER I.",
+        "page_start": 7,
+        "page_end": 7
+      },
+      {
+        "chunk_id": 3,
+        "chapter": "CHAPTER I.",
+        "page_start": 7,
+        "page_end": 7
+      }
+    ],
+    "world_item_id": 55
+  },
+  {
+    "type": "fact",
+    "text": "Fred Porlock appearance Greek e with a peculiar top flourish in handwriting. The speaker identifies Porlock's writing by a distinctive Greek e with a peculiar top flourish.",
+    "subject": "Fred Porlock",
+    "predicate": "appearance",
+    "object": "Greek e with a peculiar top flourish in handwriting",
+    "explanation": "The speaker identifies Porlock's writing by a distinctive Greek e with a peculiar top flourish.",
+    "sources": [
+      {
+        "chunk_id": 2,
+        "chapter": "CHAPTER I.",
+        "page_start": 7,
+        "page_end": 7
+      }
+    ],
+    "world_item_id": 56
+  },
+  {
+    "type": "fact",
+    "text": "Fred Porlock personality shifty and evasive. The text states that behind Porlock's pseudonym lies a shifty and evasive personality.",
+    "subject": "Fred Porlock",
+    "predicate": "personality",
+    "object": "shifty and evasive",
+    "explanation": "The text states that behind Porlock's pseudonym lies a shifty and evasive personality.",
+    "sources": [
+      {
+        "chunk_id": 2,
+        "chapter": "CHAPTER I.",
+        "page_start": 7,
+        "page_end": 7
+      }
+    ],
+    "world_item_id": 57
+  },
+  {
+    "type": "fact",
+    "text": "Professor Moriarty status formidable and sinister in the highest degree. Watson's companion describes Professor Moriarty as formidable and sinister in the highest degree.",
+    "subject": "Professor Moriarty",
+    "predicate": "status",
+    "object": "formidable and sinister in the highest degree",
+    "explanation": "Watson's companion describes Professor Moriarty as formidable and sinister in the highest degree.",
+    "sources": [
+      {
+        "chunk_id": 2,
+        "chapter": "CHAPTER I.",
+        "page_start": 7,
+        "page_end": 7
+      }
+    ],
+    "world_item_id": 58
+  },
+  {
+    "type": "fact",
+    "text": "Professor Moriarty occupation scientific criminal. The text refers to Professor Moriarty as a famous scientific criminal.",
+    "subject": "Professor Moriarty",
+    "predicate": "occupation",
+    "object": "scientific criminal",
+    "explanation": "The text refers to Professor Moriarty as a famous scientific criminal.",
+    "sources": [
+      {
+        "chunk_id": 3,
+        "chapter": "CHAPTER I.",
+        "page_start": 7,
+        "page_end": 7
+      }
+    ],
+    "world_item_id": 59
+  },
+  {
+    "type": "fact",
+    "text": "Fred Porlock possesses evasive personality. Holmes describes Porlock as having a shifty and evasive personality.",
+    "subject": "Fred Porlock",
+    "predicate": "possesses",
+    "object": "evasive personality",
+    "explanation": "Holmes describes Porlock as having a shifty and evasive personality.",
+    "sources": [
+      {
+        "chunk_id": 3,
+        "chapter": "CHAPTER I.",
+        "page_start": 7,
+        "page_end": 7
+      }
+    ],
+    "world_item_id": 60
+  },
+  {
+    "type": "fact",
+    "text": "Cipher message content 534 C2 13 127 36 31 4 17 21 41 DOUGLAS 109 293 5 37 BIRLSTONE 26 BIRLSTONE 9 47 171. The text explicitly prints the exact cipher inscription.",
+    "subject": "Cipher message",
+    "predicate": "content",
+    "object": "534 C2 13 127 36 31 4 17 21 41 DOUGLAS 109 293 5 37 BIRLSTONE 26 BIRLSTONE 9 47 171",
+    "explanation": "The text explicitly prints the exact cipher inscription.",
+    "sources": [
+      {
+        "chunk_id": 4,
+        "chapter": "CHAPTER I.",
+        "page_start": 7,
+        "page_end": 8
+      }
+    ],
+    "world_item_id": 61
+  },
+  {
+    "type": "fact",
+    "text": "Cipher message nature A reference to words in a page of a book. Holmes states that the cipher is 'clearly a reference to the words in a page of some book.'",
+    "subject": "Cipher message",
+    "predicate": "nature",
+    "object": "A reference to words in a page of a book",
+    "explanation": "Holmes states that the cipher is 'clearly a reference to the words in a page of some book.'",
+    "sources": [
+      {
+        "chunk_id": 4,
+        "chapter": "CHAPTER I.",
+        "page_start": 7,
+        "page_end": 8
+      }
+    ],
+    "world_item_id": 62
+  },
+  {
+    "type": "fact",
+    "text": "Sherlock Holmes status Powerless to solve the cipher without knowing the book and page. Holmes explicitly states, 'Until I am told which page and which book I am powerless.'",
+    "subject": "Sherlock Holmes",
+    "predicate": "status",
+    "object": "Powerless to solve the cipher without knowing the book and page",
+    "explanation": "Holmes explicitly states, 'Until I am told which page and which book I am powerless.'",
+    "sources": [
+      {
+        "chunk_id": 4,
+        "chapter": "CHAPTER I.",
+        "page_start": 7,
+        "page_end": 8
+      }
+    ],
+    "world_item_id": 63
+  },
+  {
+    "type": "fact",
+    "text": "Fred Porlock status Scared out of his senses. The text explicitly states: 'Friend Porlock is evidently scared out of his senses'.",
+    "subject": "Fred Porlock",
+    "predicate": "status",
+    "object": "Scared out of his senses",
+    "explanation": "The text explicitly states: 'Friend Porlock is evidently scared out of his senses'.",
+    "sources": [
+      {
+        "chunk_id": 5,
+        "chapter": "CHAPTER I.",
+        "page_start": 8,
+        "page_end": 8
+      }
+    ],
+    "world_item_id": 64
+  },
+  {
+    "type": "fact",
+    "text": "The cipher identity A reference to words on a page of a book. The speaker states: 'It is clearly a reference to the words in a page of some book.'",
+    "subject": "The cipher",
+    "predicate": "identity",
+    "object": "A reference to words on a page of a book",
+    "explanation": "The speaker states: 'It is clearly a reference to the words in a page of some book.'",
+    "sources": [
+      {
+        "chunk_id": 5,
+        "chapter": "CHAPTER I.",
+        "page_start": 8,
+        "page_end": 8
+      }
+    ],
+    "world_item_id": 65
+  },
+  {
+    "type": "fact",
+    "text": "Douglas and Birlstone identity Words not contained in the book page in question. The speaker explains that Douglas and Birlstone appear in the cipher because 'those are words which were not contained in the page in question.'",
+    "subject": "Douglas and Birlstone",
+    "predicate": "identity",
+    "object": "Words not contained in the book page in question",
+    "explanation": "The speaker explains that Douglas and Birlstone appear in the cipher because 'those are words which were not contained in the page in question.'",
+    "sources": [
+      {
+        "chunk_id": 5,
+        "chapter": "CHAPTER I.",
+        "page_start": 8,
+        "page_end": 8
+      }
+    ],
+    "world_item_id": 66
+  },
+  {
+    "type": "fact",
+    "text": "Porlock's note appearance Hardly legible writing compared to the clear and firm envelope writing. The speaker notes: 'The one is clear and firm. The other hardly legible.'",
+    "subject": "Porlock's note",
+    "predicate": "appearance",
+    "object": "Hardly legible writing compared to the clear and firm envelope writing",
+    "explanation": "The speaker notes: 'The one is clear and firm. The other hardly legible.'",
+    "sources": [
+      {
+        "chunk_id": 5,
+        "chapter": "CHAPTER I.",
+        "page_start": 8,
+        "page_end": 8
+      }
+    ],
+    "world_item_id": 67
+  },
+  {
+    "type": "fact",
+    "text": "Billy occupation page. The text refers to him directly as 'Billy, the page'.",
+    "subject": "Billy",
+    "predicate": "occupation",
+    "object": "page",
+    "explanation": "The text refers to him directly as 'Billy, the page'.",
+    "sources": [
+      {
+        "chunk_id": 6,
+        "chapter": "CHAPTER I.",
+        "page_start": 8,
+        "page_end": 8
+      }
+    ],
+    "world_item_id": 68
+  },
+  {
+    "type": "fact",
+    "text": "Fred Porlock identity man. Holmes refers to him as 'the man Porlock'.",
+    "subject": "Fred Porlock",
+    "predicate": "identity",
+    "object": "man",
+    "explanation": "Holmes refers to him as 'the man Porlock'.",
+    "sources": [
+      {
+        "chunk_id": 6,
+        "chapter": "CHAPTER I.",
+        "page_start": 8,
+        "page_end": 8
+      }
+    ],
+    "world_item_id": 69
+  },
+  {
+    "type": "fact",
+    "text": "letter status signed. Holmes remarks that the letter is 'actually signed' upon opening it.",
+    "subject": "letter",
+    "predicate": "status",
+    "object": "signed",
+    "explanation": "Holmes remarks that the letter is 'actually signed' upon opening it.",
+    "sources": [
+      {
+        "chunk_id": 6,
+        "chapter": "CHAPTER I.",
+        "page_start": 8,
+        "page_end": 8
+      }
+    ],
+    "world_item_id": 70
+  },
+  {
+    "type": "fact",
+    "text": "cipher message appearance written on a slip of paper. Watson mentions picking up the original cipher message and that an important secret may lie on 'this slip of paper'.",
+    "subject": "cipher message",
+    "predicate": "appearance",
+    "object": "written on a slip of paper",
+    "explanation": "Watson mentions picking up the original cipher message and that an important secret may lie on 'this slip of paper'.",
+    "sources": [
+      {
+        "chunk_id": 6,
+        "chapter": "CHAPTER I.",
+        "page_start": 8,
+        "page_end": 8
+      }
+    ],
+    "world_item_id": 71
+  },
+  {
+    "type": "fact",
+    "text": "Sherlock Holmes possesses an unsavoury pipe. The text states Holmes lit 'the unsavoury pipe which was the companion of his deepest meditations.'",
+    "subject": "Sherlock Holmes",
+    "predicate": "possesses",
+    "object": "an unsavoury pipe",
+    "explanation": "The text states Holmes lit 'the unsavoury pipe which was the companion of his deepest meditations.'",
+    "sources": [
+      {
+        "chunk_id": 7,
+        "chapter": "CHAPTER I.",
+        "page_start": 8,
+        "page_end": 8
+      }
+    ],
+    "world_item_id": 72
+  },
+  {
+    "type": "fact",
+    "text": "Fred Porlock believes that he is being suspected. Porlock writes in his message: 'he suspects me. I can see that he suspects me.'",
+    "subject": "Fred Porlock",
+    "predicate": "believes",
+    "object": "that he is being suspected",
+    "explanation": "Porlock writes in his message: 'he suspects me. I can see that he suspects me.'",
+    "sources": [
+      {
+        "chunk_id": 7,
+        "chapter": "CHAPTER I.",
+        "page_start": 8,
+        "page_end": 8
+      }
+    ],
+    "world_item_id": 73
+  },
+  {
+    "type": "fact",
+    "text": "cipher message content begins with a large 534 followed by C2. The speaker notes that the cipher message begins with a large 534 and that the next sign is C2.",
+    "subject": "cipher message",
+    "predicate": "content",
+    "object": "begins with a large 534 followed by C2",
+    "explanation": "The speaker notes that the cipher message begins with a large 534 and that the next sign is C2.",
+    "sources": [
+      {
+        "chunk_id": 8,
+        "chapter": "CHAPTER I.",
+        "page_start": 8,
+        "page_end": 9
+      }
+    ],
+    "world_item_id": 74
+  },
+  {
+    "type": "fact",
+    "text": "Bradshaw vocabulary nervous and terse, but limited. The speaker observes that 'The vocabulary of Bradshaw is nervous and terse, but limited.'",
+    "subject": "Bradshaw",
+    "predicate": "vocabulary",
+    "object": "nervous and terse, but limited",
+    "explanation": "The speaker observes that 'The vocabulary of Bradshaw is nervous and terse, but limited.'",
+    "sources": [
+      {
+        "chunk_id": 8,
+        "chapter": "CHAPTER I.",
+        "page_start": 8,
+        "page_end": 9
+      }
+    ],
+    "world_item_id": 75
+  },
+  {
+    "type": "fact",
+    "text": "Fred Porlock believes the cipher message is of no further use. Porlock requests, 'Please burn the cipher message, which can now be of no use to you.'",
+    "subject": "Fred Porlock",
+    "predicate": "believes",
+    "object": "the cipher message is of no further use",
+    "explanation": "Porlock requests, 'Please burn the cipher message, which can now be of no use to you.'",
+    "sources": [
+      {
+        "chunk_id": 8,
+        "chapter": "CHAPTER I.",
+        "page_start": 8,
+        "page_end": 9
+      }
+    ],
+    "world_item_id": 76
+  },
+  {
+    "type": "fact",
+    "text": "Bradshaw vocabulary nervous, terse, but limited. The text states: 'The vocabulary of Bradshaw is nervous and terse, but limited.'",
+    "subject": "Bradshaw",
+    "predicate": "vocabulary",
+    "object": "nervous, terse, but limited",
+    "explanation": "The text states: 'The vocabulary of Bradshaw is nervous and terse, but limited.'",
+    "sources": [
+      {
+        "chunk_id": 9,
+        "chapter": "CHAPTER I.",
+        "page_start": 9,
+        "page_end": 9
+      }
+    ],
+    "world_item_id": 77
+  },
+  {
+    "type": "fact",
+    "text": "Whitaker's Almanac content trade and resources of British India on page 534, column two. The text notes that page 534, column two contains print dealing with 'the trade and resources of British India.'",
+    "subject": "Whitaker's Almanac",
+    "predicate": "content",
+    "object": "trade and resources of British India on page 534, column two",
+    "explanation": "The text notes that page 534, column two contains print dealing with 'the trade and resources of British India.'",
+    "sources": [
+      {
+        "chunk_id": 9,
+        "chapter": "CHAPTER I.",
+        "page_start": 9,
+        "page_end": 9
+      }
+    ],
+    "world_item_id": 78
+  },
+  {
+    "type": "fact",
+    "text": "Word number 13 identity Mahratta. The text explicitly states: 'Number thirteen is ‘Mahratta.’'",
+    "subject": "Word number 13",
+    "predicate": "identity",
+    "object": "Mahratta",
+    "explanation": "The text explicitly states: 'Number thirteen is ‘Mahratta.’'",
+    "sources": [
+      {
+        "chunk_id": 9,
+        "chapter": "CHAPTER I.",
+        "page_start": 9,
+        "page_end": 9
+      }
+    ],
+    "world_item_id": 79
+  },
+  {
+    "type": "fact",
+    "text": "Word number 127 identity Government. The text explicitly states: 'Number one hundred and twenty-seven is ‘Government’.'",
+    "subject": "Word number 127",
+    "predicate": "identity",
+    "object": "Government",
+    "explanation": "The text explicitly states: 'Number one hundred and twenty-seven is ‘Government’.'",
+    "sources": [
+      {
+        "chunk_id": 9,
+        "chapter": "CHAPTER I.",
+        "page_start": 9,
+        "page_end": 9
+      }
+    ],
+    "world_item_id": 80
+  },
+  {
+    "type": "fact",
+    "text": "Whitaker's Almanac description A common book printed in double columns, with page 534 covering British India's trade and resources.. The text notes Whitaker's Almanac is in common use, double columned, and contains a block of print on page 534 column two dealing with British India.",
+    "subject": "Whitaker's Almanac",
+    "predicate": "description",
+    "object": "A common book printed in double columns, with page 534 covering British India's trade and resources.",
+    "explanation": "The text notes Whitaker's Almanac is in common use, double columned, and contains a block of print on page 534 column two dealing with British India.",
+    "sources": [
+      {
+        "chunk_id": 10,
+        "chapter": "CHAPTER I.",
+        "page_start": 9,
+        "page_end": 9
+      }
+    ],
+    "world_item_id": 81
+  },
+  {
+    "type": "fact",
+    "text": "Whitaker's Almanac (page 534, column two) identity Contains 'Mahratta' as word 13, 'Government' as word 127, and 'pig's-bristles' as the following word.. The speaker reads out number thirteen as 'Mahratta', number one hundred and twenty-seven as 'Government', and the next word as 'pig's-bristles'.",
+    "subject": "Whitaker's Almanac (page 534, column two)",
+    "predicate": "identity",
+    "object": "Contains 'Mahratta' as word 13, 'Government' as word 127, and 'pig's-bristles' as the following word.",
+    "explanation": "The speaker reads out number thirteen as 'Mahratta', number one hundred and twenty-seven as 'Government', and the next word as 'pig's-bristles'.",
+    "sources": [
+      {
+        "chunk_id": 10,
+        "chapter": "CHAPTER I.",
+        "page_start": 9,
+        "page_end": 9
+      }
+    ],
+    "world_item_id": 82
+  },
+  {
+    "type": "fact",
+    "text": "Sherlock Holmes appearance bushy eyebrows. The passage describes 'the twitching of his bushy eyebrows bespoke his disappointment and irritation'.",
+    "subject": "Sherlock Holmes",
+    "predicate": "appearance",
+    "object": "bushy eyebrows",
+    "explanation": "The passage describes 'the twitching of his bushy eyebrows bespoke his disappointment and irritation'.",
+    "sources": [
+      {
+        "chunk_id": 11,
+        "chapter": "CHAPTER I.",
+        "page_start": 9,
+        "page_end": 9
+      }
+    ],
+    "world_item_id": 83
+  },
+  {
+    "type": "fact",
+    "text": "Sought-after book description large book, printed in double columns, standardized, and in common use. Holmes specifies that the book must be standardized (so page 534 matches page 534), printed in double columns, large, and in common use.",
+    "subject": "Sought-after book",
+    "predicate": "description",
+    "object": "large book, printed in double columns, standardized, and in common use",
+    "explanation": "Holmes specifies that the book must be standardized (so page 534 matches page 534), printed in double columns, large, and in common use.",
+    "sources": [
+      {
+        "chunk_id": 11,
+        "chapter": "CHAPTER I.",
+        "page_start": 9,
+        "page_end": 9
+      }
+    ],
+    "world_item_id": 84
+  },
+  {
+    "type": "fact",
+    "text": "The Bible status unlikely to be present at the elbow of Moriarty's associates. Holmes remarks that he could hardly name a volume less likely to lie at the elbow of one of Moriarty's associates.",
+    "subject": "The Bible",
+    "predicate": "status",
+    "object": "unlikely to be present at the elbow of Moriarty's associates",
+    "explanation": "Holmes remarks that he could hardly name a volume less likely to lie at the elbow of one of Moriarty's associates.",
+    "sources": [
+      {
+        "chunk_id": 11,
+        "chapter": "CHAPTER I.",
+        "page_start": 9,
+        "page_end": 9
+      }
+    ],
+    "world_item_id": 85
+  },
+  {
+    "type": "fact",
+    "text": "Current Date identity seventh of January. Holmes explicitly states, 'Being the seventh of January, we have very properly laid in the new almanac.'",
+    "subject": "Current Date",
+    "predicate": "identity",
+    "object": "seventh of January",
+    "explanation": "Holmes explicitly states, 'Being the seventh of January, we have very properly laid in the new almanac.'",
+    "sources": [
+      {
+        "chunk_id": 12,
+        "chapter": "CHAPTER I.",
+        "page_start": 9,
+        "page_end": 9
+      },
+      {
+        "chunk_id": 13,
+        "chapter": "CHAPTER I.",
+        "page_start": 9,
+        "page_end": 10
+      }
+    ],
+    "world_item_id": 86
+  },
+  {
+    "type": "fact",
+    "text": "Sherlock Holmes appearance gleaming eyes and thin, nervous fingers. The text describes Holmes’s eyes gleaming with excitement and his thin, nervous fingers twitching as he counted words.",
+    "subject": "Sherlock Holmes",
+    "predicate": "appearance",
+    "object": "gleaming eyes and thin, nervous fingers",
+    "explanation": "The text describes Holmes’s eyes gleaming with excitement and his thin, nervous fingers twitching as he counted words.",
+    "sources": [
+      {
+        "chunk_id": 12,
+        "chapter": "CHAPTER I.",
+        "page_start": 9,
+        "page_end": 9
+      }
+    ],
+    "world_item_id": 87
+  },
+  {
+    "type": "fact",
+    "text": "Decoded Message identity There is danger may come very soon one Douglas rich country now at Birlstone House Birlstone confidence is pressing. Holmes reads out the decoded words word for word from the cipher.",
+    "subject": "Decoded Message",
+    "predicate": "identity",
+    "object": "There is danger may come very soon one Douglas rich country now at Birlstone House Birlstone confidence is pressing",
+    "explanation": "Holmes reads out the decoded words word for word from the cipher.",
+    "sources": [
+      {
+        "chunk_id": 12,
+        "chapter": "CHAPTER I.",
+        "page_start": 9,
+        "page_end": 9
+      }
+    ],
+    "world_item_id": 88
+  },
+  {
+    "type": "fact",
+    "text": "Sherlock Holmes status Stands alone in Europe in gifts and experience. The text states that Holmes 'already stood alone in Europe, both in his gifts and in his experience.'",
+    "subject": "Sherlock Holmes",
+    "predicate": "status",
+    "object": "Stands alone in Europe in gifts and experience",
+    "explanation": "The text states that Holmes 'already stood alone in Europe, both in his gifts and in his experience.'",
+    "sources": [
+      {
+        "chunk_id": 13,
+        "chapter": "CHAPTER I.",
+        "page_start": 9,
+        "page_end": 10
+      }
+    ],
+    "world_item_id": 89
+  },
+  {
+    "type": "fact",
+    "text": "Mr. Douglas residence Birlstone House. The decoded message states 'Douglas—rich—country—now—at—Birlstone—House'.",
+    "subject": "Mr. Douglas",
+    "predicate": "residence",
+    "object": "Birlstone House",
+    "explanation": "The decoded message states 'Douglas—rich—country—now—at—Birlstone—House'.",
+    "sources": [
+      {
+        "chunk_id": 13,
+        "chapter": "CHAPTER I.",
+        "page_start": 9,
+        "page_end": 10
+      }
+    ],
+    "world_item_id": 90
+  },
+  {
+    "type": "fact",
+    "text": "Alec MacDonald identity A talented Scotchman. The text identifies MacDonald as a 'big Scotchman' who had 'talent enough for his profession'.",
+    "subject": "Alec MacDonald",
+    "predicate": "identity",
+    "object": "A talented Scotchman",
+    "explanation": "The text identifies MacDonald as a 'big Scotchman' who had 'talent enough for his profession'.",
+    "sources": [
+      {
+        "chunk_id": 13,
+        "chapter": "CHAPTER I.",
+        "page_start": 9,
+        "page_end": 10
+      }
+    ],
+    "world_item_id": 91
+  },
+  {
+    "type": "fact",
+    "text": "Alec MacDonald identity Scotchman. The text refers to MacDonald as 'the Scotchman' and 'the big Scotchman'.",
+    "subject": "Alec MacDonald",
+    "predicate": "identity",
+    "object": "Scotchman",
+    "explanation": "The text refers to MacDonald as 'the Scotchman' and 'the big Scotchman'.",
+    "sources": [
+      {
+        "chunk_id": 14,
+        "chapter": "CHAPTER I.",
+        "page_start": 10,
+        "page_end": 10
+      }
+    ],
+    "world_item_id": 92
+  },
+  {
+    "type": "fact",
+    "text": "Mr. Douglas status rich country gentleman. The text describes Douglas as 'a rich country gentleman'.",
+    "subject": "Mr. Douglas",
+    "predicate": "status",
+    "object": "rich country gentleman",
+    "explanation": "The text describes Douglas as 'a rich country gentleman'.",
+    "sources": [
+      {
+        "chunk_id": 14,
+        "chapter": "CHAPTER I.",
+        "page_start": 10,
+        "page_end": 10
+      }
+    ],
+    "world_item_id": 93
+  },
+  {
+    "type": "fact",
+    "text": "Sherlock Holmes status stood alone in Europe. The text explicitly states Holmes 'already stood alone in Europe, both in his gifts and in his experience.'",
+    "subject": "Sherlock Holmes",
+    "predicate": "status",
+    "object": "stood alone in Europe",
+    "explanation": "The text explicitly states Holmes 'already stood alone in Europe, both in his gifts and in his experience.'",
+    "sources": [
+      {
+        "chunk_id": 14,
+        "chapter": "CHAPTER I.",
+        "page_start": 10,
+        "page_end": 10
+      }
+    ],
+    "world_item_id": 94
+  },
+  {
+    "type": "fact",
+    "text": "Mr. Douglas identity rich country gentleman. Holmes states that Douglas is 'residing as stated, a rich country gentleman.'",
+    "subject": "Mr. Douglas",
+    "predicate": "identity",
+    "object": "rich country gentleman",
+    "explanation": "Holmes states that Douglas is 'residing as stated, a rich country gentleman.'",
+    "sources": [
+      {
+        "chunk_id": 15,
+        "chapter": "CHAPTER I.",
+        "page_start": 10,
+        "page_end": 10
+      }
+    ],
+    "world_item_id": 95
+  },
+  {
+    "type": "fact",
+    "text": "Mr. Douglas status targeted by deviltry. Holmes states that 'Some deviltry is intended against one Douglas'.",
+    "subject": "Mr. Douglas",
+    "predicate": "status",
+    "object": "targeted by deviltry",
+    "explanation": "Holmes states that 'Some deviltry is intended against one Douglas'.",
+    "sources": [
+      {
+        "chunk_id": 15,
+        "chapter": "CHAPTER I.",
+        "page_start": 10,
+        "page_end": 10
+      }
+    ],
+    "world_item_id": 96
+  },
+  {
+    "type": "fact",
+    "text": "Alec MacDonald occupation Inspector at Scotland Yard. The passage identifies him as 'Inspector MacDonald of Scotland Yard'.",
+    "subject": "Alec MacDonald",
+    "predicate": "occupation",
+    "object": "Inspector at Scotland Yard",
+    "explanation": "The passage identifies him as 'Inspector MacDonald of Scotland Yard'.",
+    "sources": [
+      {
+        "chunk_id": 15,
+        "chapter": "CHAPTER I.",
+        "page_start": 10,
+        "page_end": 10
+      }
+    ],
+    "world_item_id": 97
+  },
+  {
+    "type": "fact",
+    "text": "Alec MacDonald appearance Tall, bony figure, great cranium, deep-set lustrous eyes, and bushy eyebrows. The text explicitly describes these physical traits of Alec MacDonald.",
+    "subject": "Alec MacDonald",
+    "predicate": "appearance",
+    "object": "Tall, bony figure, great cranium, deep-set lustrous eyes, and bushy eyebrows",
+    "explanation": "The text explicitly describes these physical traits of Alec MacDonald.",
+    "sources": [
+      {
+        "chunk_id": 16,
+        "chapter": "CHAPTER I.",
+        "page_start": 10,
+        "page_end": 10
+      }
+    ],
+    "world_item_id": 98
+  },
+  {
+    "type": "fact",
+    "text": "Alec MacDonald occupation Inspector / member of the detective force. The text refers to him as 'the inspector' and a 'trusted member of the detective force'.",
+    "subject": "Alec MacDonald",
+    "predicate": "occupation",
+    "object": "Inspector / member of the detective force",
+    "explanation": "The text refers to him as 'the inspector' and a 'trusted member of the detective force'.",
+    "sources": [
+      {
+        "chunk_id": 16,
+        "chapter": "CHAPTER I.",
+        "page_start": 10,
+        "page_end": 10
+      }
+    ],
+    "world_item_id": 99
+  },
+  {
+    "type": "fact",
+    "text": "Alec MacDonald identity A silent, precise man with a dour nature and a hard Aberdonian accent. The passage directly summarizes his character, temperament, and accent.",
+    "subject": "Alec MacDonald",
+    "predicate": "identity",
+    "object": "A silent, precise man with a dour nature and a hard Aberdonian accent",
+    "explanation": "The passage directly summarizes his character, temperament, and accent.",
+    "sources": [
+      {
+        "chunk_id": 16,
+        "chapter": "CHAPTER I.",
+        "page_start": 10,
+        "page_end": 10
+      }
+    ],
+    "world_item_id": 100
+  },
+  {
+    "type": "fact",
+    "text": "John Watson action Scrawled an enigmatic message containing the names Douglas and Birlstone on a paper. The narrator explicitly states 'It was the sheet upon which I had scrawled the enigmatic message.'",
+    "subject": "John Watson",
+    "predicate": "action",
+    "object": "Scrawled an enigmatic message containing the names Douglas and Birlstone on a paper",
+    "explanation": "The narrator explicitly states 'It was the sheet upon which I had scrawled the enigmatic message.'",
+    "sources": [
+      {
+        "chunk_id": 16,
+        "chapter": "CHAPTER I.",
+        "page_start": 10,
+        "page_end": 10
+      }
+    ],
+    "world_item_id": 101
+  },
+  {
+    "type": "fact",
+    "text": "Alec MacDonald occupation Detective / Inspector. The passage states he was a member of the detective force and refers to him as 'The inspector'.",
+    "subject": "Alec MacDonald",
+    "predicate": "occupation",
+    "object": "Detective / Inspector",
+    "explanation": "The passage states he was a member of the detective force and refers to him as 'The inspector'.",
+    "sources": [
+      {
+        "chunk_id": 17,
+        "chapter": "CHAPTER I.",
+        "page_start": 10,
+        "page_end": 10
+      }
+    ],
+    "world_item_id": 102
+  },
+  {
+    "type": "fact",
+    "text": "Alec MacDonald appearance Tall, bony figure, great cranium, deep-set lustrous eyes, bushy eyebrows. The passage explicitly describes these physical characteristics.",
+    "subject": "Alec MacDonald",
+    "predicate": "appearance",
+    "object": "Tall, bony figure, great cranium, deep-set lustrous eyes, bushy eyebrows",
+    "explanation": "The passage explicitly describes these physical characteristics.",
+    "sources": [
+      {
+        "chunk_id": 17,
+        "chapter": "CHAPTER I.",
+        "page_start": 10,
+        "page_end": 10
+      }
+    ],
+    "world_item_id": 103
+  },
+  {
+    "type": "fact",
+    "text": "Alec MacDonald accent Hard Aberdonian accent. The text states he was a man 'with a hard Aberdonian accent'.",
+    "subject": "Alec MacDonald",
+    "predicate": "accent",
+    "object": "Hard Aberdonian accent",
+    "explanation": "The text states he was a man 'with a hard Aberdonian accent'.",
+    "sources": [
+      {
+        "chunk_id": 17,
+        "chapter": "CHAPTER I.",
+        "page_start": 10,
+        "page_end": 10
+      }
+    ],
+    "world_item_id": 104
+  },
+  {
+    "type": "fact",
+    "text": "Mr. Douglas status Murdered. The text states that Mr. Douglas 'was horribly murdered last night'.",
+    "subject": "Mr. Douglas",
+    "predicate": "status",
+    "object": "Murdered",
+    "explanation": "The text states that Mr. Douglas 'was horribly murdered last night'.",
+    "sources": [
+      {
+        "chunk_id": 17,
+        "chapter": "CHAPTER I.",
+        "page_start": 10,
+        "page_end": 10
+      }
+    ],
+    "world_item_id": 105
+  },
+  {
+    "type": "fact",
+    "text": "Alec MacDonald occupation Inspector at the C. I. D.. Text identifies him as 'The inspector' and quotes him referencing 'we think in the C. I. D.'",
+    "subject": "Alec MacDonald",
+    "predicate": "occupation",
+    "object": "Inspector at the C. I. D.",
+    "explanation": "Text identifies him as 'The inspector' and quotes him referencing 'we think in the C. I. D.'",
+    "sources": [
+      {
+        "chunk_id": 18,
+        "chapter": "CHAPTER II. Sherlock Holmes Discourses",
+        "page_start": 11,
+        "page_end": 11
+      }
+    ],
+    "world_item_id": 106
+  },
+  {
+    "type": "fact",
+    "text": "Professor Moriarty reputation Very respectable, learned, and talented. Inspector MacDonald states that his inquiries revealed the professor seems to be a respectable, learned, and talented sort of man.",
+    "subject": "Professor Moriarty",
+    "predicate": "reputation",
+    "object": "Very respectable, learned, and talented",
+    "explanation": "Inspector MacDonald states that his inquiries revealed the professor seems to be a respectable, learned, and talented sort of man.",
+    "sources": [
+      {
+        "chunk_id": 18,
+        "chapter": "CHAPTER II. Sherlock Holmes Discourses",
+        "page_start": 11,
+        "page_end": 11
+      }
+    ],
+    "world_item_id": 107
+  },
+  {
+    "type": "fact",
+    "text": "Sherlock Holmes believes There is someone behind the matter. Holmes affirms 'I know there is' when asked if he thinks someone is behind him.",
+    "subject": "Sherlock Holmes",
+    "predicate": "believes",
+    "object": "There is someone behind the matter",
+    "explanation": "Holmes affirms 'I know there is' when asked if he thinks someone is behind him.",
+    "sources": [
+      {
+        "chunk_id": 18,
+        "chapter": "CHAPTER II. Sherlock Holmes Discourses",
+        "page_start": 11,
+        "page_end": 11
+      }
+    ],
+    "world_item_id": 108
+  },
+  {
+    "type": "fact",
+    "text": "Alec MacDonald occupation Inspector in the C. I. D.. Text explicitly names him 'Inspector MacDonald' and quotes him as saying 'we think in the C. I. D.'",
+    "subject": "Alec MacDonald",
+    "predicate": "occupation",
+    "object": "Inspector in the C. I. D.",
+    "explanation": "Text explicitly names him 'Inspector MacDonald' and quotes him as saying 'we think in the C. I. D.'",
+    "sources": [
+      {
+        "chunk_id": 19,
+        "chapter": "CHAPTER II. Sherlock Holmes Discourses",
+        "page_start": 11,
+        "page_end": 11
+      }
+    ],
+    "world_item_id": 109
+  },
+  {
+    "type": "fact",
+    "text": "Alec MacDonald appearance Great sandy eyebrows bunched into a yellow tangle. Text describes MacDonald as sitting with 'his great sandy eyebrows bunched into a yellow tangle.'",
+    "subject": "Alec MacDonald",
+    "predicate": "appearance",
+    "object": "Great sandy eyebrows bunched into a yellow tangle",
+    "explanation": "Text describes MacDonald as sitting with 'his great sandy eyebrows bunched into a yellow tangle.'",
+    "sources": [
+      {
+        "chunk_id": 19,
+        "chapter": "CHAPTER II. Sherlock Holmes Discourses",
+        "page_start": 11,
+        "page_end": 11
+      }
+    ],
+    "world_item_id": 110
+  },
+  {
+    "type": "fact",
+    "text": "Professor Moriarty status Respectable, learned, and talented. MacDonald's inquiries indicate the professor 'seems to be a very respectable, learned, and talented sort of man.'",
+    "subject": "Professor Moriarty",
+    "predicate": "status",
+    "object": "Respectable, learned, and talented",
+    "explanation": "MacDonald's inquiries indicate the professor 'seems to be a very respectable, learned, and talented sort of man.'",
+    "sources": [
+      {
+        "chunk_id": 19,
+        "chapter": "CHAPTER II. Sherlock Holmes Discourses",
+        "page_start": 11,
+        "page_end": 11
+      }
+    ],
+    "world_item_id": 111
+  },
+  {
+    "type": "event",
+    "text": "Event: Holmes inspects a letter and envelope. Participants: Sherlock Holmes. Location: Unspecified. Holmes stares at a slip of paper, holds the envelope to the light, and carefully studies both the exterior and flap.",
+    "summary": "Holmes inspects a letter and envelope",
+    "participants": [
+      "Sherlock Holmes"
+    ],
+    "location": "Unspecified",
+    "explanation": "Holmes stares at a slip of paper, holds the envelope to the light, and carefully studies both the exterior and flap.",
+    "sources": [
+      {
+        "chunk_id": 0,
+        "chapter": "CHAPTER I.",
+        "page_start": 7,
+        "page_end": 7
+      }
+    ],
+    "world_item_id": 112
+  },
+  {
+    "type": "event",
+    "text": "Event: Holmes and Watson discuss Moriarty. Participants: Sherlock Holmes, John Watson. Location: Unspecified. Holmes discusses Watson calling Moriarty a criminal, explaining Moriarty's legal protection, intellect, and authored book.",
+    "summary": "Holmes and Watson discuss Moriarty",
+    "participants": [
+      "Sherlock Holmes",
+      "John Watson"
+    ],
+    "location": "Unspecified",
+    "explanation": "Holmes discusses Watson calling Moriarty a criminal, explaining Moriarty's legal protection, intellect, and authored book.",
+    "sources": [
+      {
+        "chunk_id": 0,
+        "chapter": "CHAPTER I.",
+        "page_start": 7,
+        "page_end": 7
+      }
+    ],
+    "world_item_id": 113
+  },
+  {
+    "type": "event",
+    "text": "Event: Watson is spoken to regarding Moriarty's criminal genius and an example of Porlock's writing.. Participants: John Watson. Location: Unknown. A conversation takes place addressing Watson about Moriarty and identifying handwriting as Porlock's.",
+    "summary": "Watson is spoken to regarding Moriarty's criminal genius and an example of Porlock's writing.",
+    "participants": [
+      "John Watson"
+    ],
+    "location": "Unknown",
+    "explanation": "A conversation takes place addressing Watson about Moriarty and identifying handwriting as Porlock's.",
+    "sources": [
+      {
+        "chunk_id": 1,
+        "chapter": "CHAPTER I.",
+        "page_start": 7,
+        "page_end": 7
+      }
+    ],
+    "world_item_id": 114
+  },
+  {
+    "type": "event",
+    "text": "Event: Watson and his companion discuss Porlock's letter and connection to Professor Moriarty.. Participants: John Watson, Sherlock Holmes. Location: Unspecified. Watson's companion examines handwriting on a document from Porlock and explains Porlock's identity and link to Moriarty.",
+    "summary": "Watson and his companion discuss Porlock's letter and connection to Professor Moriarty.",
+    "participants": [
+      "John Watson",
+      "Sherlock Holmes"
+    ],
+    "location": "Unspecified",
+    "explanation": "Watson's companion examines handwriting on a document from Porlock and explains Porlock's identity and link to Moriarty.",
+    "sources": [
+      {
+        "chunk_id": 2,
+        "chapter": "CHAPTER I.",
+        "page_start": 7,
+        "page_end": 7
+      }
+    ],
+    "world_item_id": 115
+  },
+  {
+    "type": "event",
+    "text": "Event: Holmes examines a paper with an inscription while Watson looks on.. Participants: Sherlock Holmes, John Watson. Location: this great city. Holmes flattens out the paper on his unused plate, and Watson stands up to lean over and look at the inscription.",
+    "summary": "Holmes examines a paper with an inscription while Watson looks on.",
+    "participants": [
+      "Sherlock Holmes",
+      "John Watson"
+    ],
+    "location": "this great city",
+    "explanation": "Holmes flattens out the paper on his unused plate, and Watson stands up to lean over and look at the inscription.",
+    "sources": [
+      {
+        "chunk_id": 3,
+        "chapter": "CHAPTER I.",
+        "page_start": 7,
+        "page_end": 7
+      }
+    ],
+    "world_item_id": 116
+  },
+  {
+    "type": "event",
+    "text": "Event: Holmes and the narrator inspect and discuss a cipher message.. Participants: Sherlock Holmes, John Watson. Location: Unspecified room with a fire. Holmes flattens paper on his plate and twists it while the narrator leans over to read it and discuss its meaning.",
+    "summary": "Holmes and the narrator inspect and discuss a cipher message.",
+    "participants": [
+      "Sherlock Holmes",
+      "John Watson"
+    ],
+    "location": "Unspecified room with a fire",
+    "explanation": "Holmes flattens paper on his plate and twists it while the narrator leans over to read it and discuss its meaning.",
+    "sources": [
+      {
+        "chunk_id": 4,
+        "chapter": "CHAPTER I.",
+        "page_start": 7,
+        "page_end": 8
+      }
+    ],
+    "world_item_id": 117
+  },
+  {
+    "type": "event",
+    "text": "Event: Discussion of Porlock's cipher and motives. Participants: John Watson, Sherlock Holmes. Location: Unspecified. Watson and the speaker discuss why Porlock sent the cipher without the corresponding book or page information.",
+    "summary": "Discussion of Porlock's cipher and motives",
+    "participants": [
+      "John Watson",
+      "Sherlock Holmes"
+    ],
+    "location": "Unspecified",
+    "explanation": "Watson and the speaker discuss why Porlock sent the cipher without the corresponding book or page information.",
+    "sources": [
+      {
+        "chunk_id": 5,
+        "chapter": "CHAPTER I.",
+        "page_start": 8,
+        "page_end": 8
+      }
+    ],
+    "world_item_id": 118
+  },
+  {
+    "type": "event",
+    "text": "Event: Porlock sends a ciphered note to the speaker. Participants: Fred Porlock, Sherlock Holmes. Location: Unspecified. Porlock wrote a note and addressed an envelope containing a cipher to the speaker before an ill-omened visit.",
+    "summary": "Porlock sends a ciphered note to the speaker",
+    "participants": [
+      "Fred Porlock",
+      "Sherlock Holmes"
+    ],
+    "location": "Unspecified",
+    "explanation": "Porlock wrote a note and addressed an envelope containing a cipher to the speaker before an ill-omened visit.",
+    "sources": [
+      {
+        "chunk_id": 5,
+        "chapter": "CHAPTER I.",
+        "page_start": 8,
+        "page_end": 8
+      }
+    ],
+    "world_item_id": 119
+  },
+  {
+    "type": "event",
+    "text": "Event: Billy delivers the expected letter. Participants: Billy, Sherlock Holmes, John Watson. Location: Unspecified. Billy, the page, arrives with the letter Holmes and Watson were expecting.",
+    "summary": "Billy delivers the expected letter",
+    "participants": [
+      "Billy",
+      "Sherlock Holmes",
+      "John Watson"
+    ],
+    "location": "Unspecified",
+    "explanation": "Billy, the page, arrives with the letter Holmes and Watson were expecting.",
+    "sources": [
+      {
+        "chunk_id": 6,
+        "chapter": "CHAPTER I.",
+        "page_start": 8,
+        "page_end": 8
+      }
+    ],
+    "world_item_id": 120
+  },
+  {
+    "type": "event",
+    "text": "Event: Holmes opens and reads the letter. Participants: Sherlock Holmes, John Watson. Location: Unspecified. Holmes opens the envelope, notices the signature, reads the contents, and expresses disappointment.",
+    "summary": "Holmes opens and reads the letter",
+    "participants": [
+      "Sherlock Holmes",
+      "John Watson"
+    ],
+    "location": "Unspecified",
+    "explanation": "Holmes opens the envelope, notices the signature, reads the contents, and expresses disappointment.",
+    "sources": [
+      {
+        "chunk_id": 6,
+        "chapter": "CHAPTER I.",
+        "page_start": 8,
+        "page_end": 8
+      }
+    ],
+    "world_item_id": 121
+  },
+  {
+    "type": "event",
+    "text": "Event: Sherlock Holmes discusses Porlock's letter and cipher message with Watson.. Participants: Sherlock Holmes, John Watson. Location: Unspecified. Holmes sits over breakfast, lights a pipe, and analyzes the cipher reference and letter from Porlock with Watson.",
+    "summary": "Sherlock Holmes discusses Porlock's letter and cipher message with Watson.",
+    "participants": [
+      "Sherlock Holmes",
+      "John Watson"
+    ],
+    "location": "Unspecified",
+    "explanation": "Holmes sits over breakfast, lights a pipe, and analyzes the cipher reference and letter from Porlock with Watson.",
+    "sources": [
+      {
+        "chunk_id": 7,
+        "chapter": "CHAPTER I.",
+        "page_start": 8,
+        "page_end": 8
+      }
+    ],
+    "world_item_id": 122
+  },
+  {
+    "type": "event",
+    "text": "Event: Fred Porlock receives an unexpected visit while addressing an envelope with the cipher key.. Participants: Fred Porlock. Location: unspecified. Porlock states that an unnamed man came to him unexpectedly after he had addressed an envelope intending to send the key to the cipher.",
+    "summary": "Fred Porlock receives an unexpected visit while addressing an envelope with the cipher key.",
+    "participants": [
+      "Fred Porlock"
+    ],
+    "location": "unspecified",
+    "explanation": "Porlock states that an unnamed man came to him unexpectedly after he had addressed an envelope intending to send the key to the cipher.",
+    "sources": [
+      {
+        "chunk_id": 8,
+        "chapter": "CHAPTER I.",
+        "page_start": 8,
+        "page_end": 9
+      }
+    ],
+    "world_item_id": 123
+  },
+  {
+    "type": "event",
+    "text": "Event: Watson and his companion analyze the cipher message.. Participants: John Watson. Location: unspecified. Watson and the speaker discuss the cipher message starting with '534 C2' and evaluate potential reference sources like Bradshaw and the dictionary.",
+    "summary": "Watson and his companion analyze the cipher message.",
+    "participants": [
+      "John Watson"
+    ],
+    "location": "unspecified",
+    "explanation": "Watson and the speaker discuss the cipher message starting with '534 C2' and evaluate potential reference sources like Bradshaw and the dictionary.",
+    "sources": [
+      {
+        "chunk_id": 8,
+        "chapter": "CHAPTER I.",
+        "page_start": 8,
+        "page_end": 9
+      }
+    ],
+    "world_item_id": 124
+  },
+  {
+    "type": "event",
+    "text": "Event: Decoding a message using Whitaker's Almanac. Participants: John Watson. Location: Unspecified location. Watson and his companion attempt to decipher a numbered document by looking up corresponding words on page 534, column two of Whitaker's Almanac.",
+    "summary": "Decoding a message using Whitaker's Almanac",
+    "participants": [
+      "John Watson"
+    ],
+    "location": "Unspecified location",
+    "explanation": "Watson and his companion attempt to decipher a numbered document by looking up corresponding words on page 534, column two of Whitaker's Almanac.",
+    "sources": [
+      {
+        "chunk_id": 9,
+        "chapter": "CHAPTER I.",
+        "page_start": 9,
+        "page_end": 9
+      }
+    ],
+    "world_item_id": 125
+  },
+  {
+    "type": "event",
+    "text": "Event: Attempting to decipher a clue using Whitaker's Almanac. Participants: John Watson. Location: At a desk. The speaker retrieves Whitaker's Almanac from his desk and counts out specific words (Mahratta, Government, pig's-bristles) from page 534, column two, while Watson listens and jots them down.",
+    "summary": "Attempting to decipher a clue using Whitaker's Almanac",
+    "participants": [
+      "John Watson"
+    ],
+    "location": "At a desk",
+    "explanation": "The speaker retrieves Whitaker's Almanac from his desk and counts out specific words (Mahratta, Government, pig's-bristles) from page 534, column two, while Watson listens and jots them down.",
+    "sources": [
+      {
+        "chunk_id": 10,
+        "chapter": "CHAPTER I.",
+        "page_start": 9,
+        "page_end": 9
+      }
+    ],
+    "world_item_id": 126
+  },
+  {
+    "type": "event",
+    "text": "Event: Holmes retrieves a yellow-covered book from a cupboard.. Participants: Sherlock Holmes, John Watson. Location: Room with the fire and cupboard. Holmes breaks a long silence with an exclamation, dashes to a cupboard, and returns with a second yellow-covered volume.",
+    "summary": "Holmes retrieves a yellow-covered book from a cupboard.",
+    "participants": [
+      "Sherlock Holmes",
+      "John Watson"
+    ],
+    "location": "Room with the fire and cupboard",
+    "explanation": "Holmes breaks a long silence with an exclamation, dashes to a cupboard, and returns with a second yellow-covered volume.",
+    "sources": [
+      {
+        "chunk_id": 11,
+        "chapter": "CHAPTER I.",
+        "page_start": 9,
+        "page_end": 9
+      }
+    ],
+    "world_item_id": 127
+  },
+  {
+    "type": "event",
+    "text": "Event: Watson guesses the book is the Bible, but Holmes dismisses the idea.. Participants: John Watson, Sherlock Holmes. Location: Room with the fire and cupboard. Watson triumphantly suggests the Bible, but Holmes explains that pagination varies too much across editions and Moriarty's associates would not likely keep one.",
+    "summary": "Watson guesses the book is the Bible, but Holmes dismisses the idea.",
+    "participants": [
+      "John Watson",
+      "Sherlock Holmes"
+    ],
+    "location": "Room with the fire and cupboard",
+    "explanation": "Watson triumphantly suggests the Bible, but Holmes explains that pagination varies too much across editions and Moriarty's associates would not likely keep one.",
+    "sources": [
+      {
+        "chunk_id": 11,
+        "chapter": "CHAPTER I.",
+        "page_start": 9,
+        "page_end": 9
+      }
+    ],
+    "world_item_id": 128
+  },
+  {
+    "type": "event",
+    "text": "Event: Holmes decodes Porlock's message. Participants: Sherlock Holmes, John Watson. Location: Unspecified. Holmes uses page 534 of an old almanac to count words and decipher Porlock's coded message while Watson records it.",
+    "summary": "Holmes decodes Porlock's message",
+    "participants": [
+      "Sherlock Holmes",
+      "John Watson"
+    ],
+    "location": "Unspecified",
+    "explanation": "Holmes uses page 534 of an old almanac to count words and decipher Porlock's coded message while Watson records it.",
+    "sources": [
+      {
+        "chunk_id": 12,
+        "chapter": "CHAPTER I.",
+        "page_start": 9,
+        "page_end": 9
+      }
+    ],
+    "world_item_id": 129
+  },
+  {
+    "type": "event",
+    "text": "Event: Holmes deciphers a coded message while Watson writes it down.. Participants: Sherlock Holmes, John Watson. Location: Unspecified. Holmes reads and decodes the words from an almanac out loud while Watson scribbles them onto foolscap paper.",
+    "summary": "Holmes deciphers a coded message while Watson writes it down.",
+    "participants": [
+      "Sherlock Holmes",
+      "John Watson"
+    ],
+    "location": "Unspecified",
+    "explanation": "Holmes reads and decodes the words from an almanac out loud while Watson scribbles them onto foolscap paper.",
+    "sources": [
+      {
+        "chunk_id": 13,
+        "chapter": "CHAPTER I.",
+        "page_start": 9,
+        "page_end": 10
+      }
+    ],
+    "world_item_id": 130
+  },
+  {
+    "type": "event",
+    "text": "Event: Holmes presents the analysis of a coded message to MacDonald regarding intended deviltry against Douglas.. Participants: Sherlock Holmes, Alec MacDonald. Location: Unspecified. Holmes converses with MacDonald ('Mr. Mac') about the analyzed message warning of pressing deviltry against Douglas.",
+    "summary": "Holmes presents the analysis of a coded message to MacDonald regarding intended deviltry against Douglas.",
+    "participants": [
+      "Sherlock Holmes",
+      "Alec MacDonald"
+    ],
+    "location": "Unspecified",
+    "explanation": "Holmes converses with MacDonald ('Mr. Mac') about the analyzed message warning of pressing deviltry against Douglas.",
+    "sources": [
+      {
+        "chunk_id": 14,
+        "chapter": "CHAPTER I.",
+        "page_start": 10,
+        "page_end": 10
+      }
+    ],
+    "world_item_id": 131
+  },
+  {
+    "type": "event",
+    "text": "Event: Inspector MacDonald arrives and enters the room.. Participants: Sherlock Holmes, Billy, Alec MacDonald. Location: The room. Billy swung open the door and ushered Inspector MacDonald of Scotland Yard into the room where Holmes was chuckling over his success.",
+    "summary": "Inspector MacDonald arrives and enters the room.",
+    "participants": [
+      "Sherlock Holmes",
+      "Billy",
+      "Alec MacDonald"
+    ],
+    "location": "The room",
+    "explanation": "Billy swung open the door and ushered Inspector MacDonald of Scotland Yard into the room where Holmes was chuckling over his success.",
+    "sources": [
+      {
+        "chunk_id": 15,
+        "chapter": "CHAPTER I.",
+        "page_start": 10,
+        "page_end": 10
+      }
+    ],
+    "world_item_id": 132
+  },
+  {
+    "type": "event",
+    "text": "Event: Alec MacDonald notices the scrawled cipher names on the table. Participants: Alec MacDonald, Sherlock Holmes, John Watson. Location: Unspecified room. The inspector stops suddenly and stammers with absolute amazement upon seeing 'Douglas!' and 'Birlstone!' written on a paper on the table.",
+    "summary": "Alec MacDonald notices the scrawled cipher names on the table",
+    "participants": [
+      "Alec MacDonald",
+      "Sherlock Holmes",
+      "John Watson"
+    ],
+    "location": "Unspecified room",
+    "explanation": "The inspector stops suddenly and stammers with absolute amazement upon seeing 'Douglas!' and 'Birlstone!' written on a paper on the table.",
+    "sources": [
+      {
+        "chunk_id": 16,
+        "chapter": "CHAPTER I.",
+        "page_start": 10,
+        "page_end": 10
+      }
+    ],
+    "world_item_id": 133
+  },
+  {
+    "type": "event",
+    "text": "Event: Dr. Watson and Mr. Holmes solve a cipher. Participants: John Watson, Sherlock Holmes. Location: Unspecified. Holmes explains that Dr. Watson and he had occasion to solve a cipher containing the enigmatic names.",
+    "summary": "Dr. Watson and Mr. Holmes solve a cipher",
+    "participants": [
+      "John Watson",
+      "Sherlock Holmes"
+    ],
+    "location": "Unspecified",
+    "explanation": "Holmes explains that Dr. Watson and he had occasion to solve a cipher containing the enigmatic names.",
+    "sources": [
+      {
+        "chunk_id": 16,
+        "chapter": "CHAPTER I.",
+        "page_start": 10,
+        "page_end": 10
+      }
+    ],
+    "world_item_id": 134
+  },
+  {
+    "type": "event",
+    "text": "Event: Murder of Mr. Douglas. Participants: Mr. Douglas, Alec MacDonald. Location: Birlstone Manor House. The inspector announces that Mr. Douglas of Birlstone Manor House was horribly murdered last night.",
+    "summary": "Murder of Mr. Douglas",
+    "participants": [
+      "Mr. Douglas",
+      "Alec MacDonald"
+    ],
+    "location": "Birlstone Manor House",
+    "explanation": "The inspector announces that Mr. Douglas of Birlstone Manor House was horribly murdered last night.",
+    "sources": [
+      {
+        "chunk_id": 17,
+        "chapter": "CHAPTER I.",
+        "page_start": 10,
+        "page_end": 10
+      }
+    ],
+    "world_item_id": 135
+  },
+  {
+    "type": "event",
+    "text": "Event: Discussion on the Camberwell post-office notes and the Professor. Participants: Sherlock Holmes, Alec MacDonald, John Watson. Location: Unspecified. Holmes, Inspector MacDonald, and the narrator converse about untraced notes sent to a post office and Holmes's suspicions regarding the professor.",
+    "summary": "Discussion on the Camberwell post-office notes and the Professor",
+    "participants": [
+      "Sherlock Holmes",
+      "Alec MacDonald",
+      "John Watson"
+    ],
+    "location": "Unspecified",
+    "explanation": "Holmes, Inspector MacDonald, and the narrator converse about untraced notes sent to a post office and Holmes's suspicions regarding the professor.",
+    "sources": [
+      {
+        "chunk_id": 18,
+        "chapter": "CHAPTER II. Sherlock Holmes Discourses",
+        "page_start": 11,
+        "page_end": 11
+      }
+    ],
+    "world_item_id": 136
+  },
+  {
+    "type": "event",
+    "text": "Event: Holmes explains the facts about the letter and cipher to Inspector MacDonald. Participants: Sherlock Holmes, Alec MacDonald, John Watson. Location: London. In a few short sentences, Holmes explains the letter and cipher facts to MacDonald, who listens with his chin on his hands.",
+    "summary": "Holmes explains the facts about the letter and cipher to Inspector MacDonald",
+    "participants": [
+      "Sherlock Holmes",
+      "Alec MacDonald",
+      "John Watson"
+    ],
+    "location": "London",
+    "explanation": "In a few short sentences, Holmes explains the letter and cipher facts to MacDonald, who listens with his chin on his hands.",
+    "sources": [
+      {
+        "chunk_id": 19,
+        "chapter": "CHAPTER II. Sherlock Holmes Discourses",
+        "page_start": 11,
+        "page_end": 11
+      }
+    ],
+    "world_item_id": 137
+  },
+  {
+    "type": "event",
+    "text": "Event: Sherlock Holmes receives an anonymous warning letter. Participants: Sherlock Holmes. Location: London. Holmes describes receiving an anonymous communication warning that danger threatens a person who died within an hour.",
+    "summary": "Sherlock Holmes receives an anonymous warning letter",
+    "participants": [
+      "Sherlock Holmes"
+    ],
+    "location": "London",
+    "explanation": "Holmes describes receiving an anonymous communication warning that danger threatens a person who died within an hour.",
+    "sources": [
+      {
+        "chunk_id": 19,
+        "chapter": "CHAPTER II. Sherlock Holmes Discourses",
+        "page_start": 11,
+        "page_end": 11
+      }
+    ],
+    "world_item_id": 138
+  }
+]

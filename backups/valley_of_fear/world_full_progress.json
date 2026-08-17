@@ -1,0 +1,3390 @@
+{
+  "processed_chunk_ids": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89
+  ],
+  "characters": [
+    {
+      "name": "Sherlock Holmes",
+      "description": "A consulting detective residing in London who deciphered Porlock's warning and recognizes Professor Moriarty's master-criminal network.",
+      "sources": [
+        {
+          "chunk_id": 0,
+          "chapter": "CHAPTER I.",
+          "page_start": 7,
+          "page_end": 7
+        },
+        {
+          "chunk_id": 1,
+          "chapter": "CHAPTER I.",
+          "page_start": 7,
+          "page_end": 7
+        },
+        {
+          "chunk_id": 2,
+          "chapter": "CHAPTER I.",
+          "page_start": 7,
+          "page_end": 7
+        },
+        {
+          "chunk_id": 3,
+          "chapter": "CHAPTER I.",
+          "page_start": 7,
+          "page_end": 7
+        },
+        {
+          "chunk_id": 4,
+          "chapter": "CHAPTER I.",
+          "page_start": 7,
+          "page_end": 8
+        },
+        {
+          "chunk_id": 5,
+          "chapter": "CHAPTER I.",
+          "page_start": 8,
+          "page_end": 8
+        },
+        {
+          "chunk_id": 6,
+          "chapter": "CHAPTER I.",
+          "page_start": 8,
+          "page_end": 8
+        },
+        {
+          "chunk_id": 7,
+          "chapter": "CHAPTER I.",
+          "page_start": 8,
+          "page_end": 8
+        },
+        {
+          "chunk_id": 8,
+          "chapter": "CHAPTER I.",
+          "page_start": 8,
+          "page_end": 9
+        },
+        {
+          "chunk_id": 9,
+          "chapter": "CHAPTER I.",
+          "page_start": 9,
+          "page_end": 9
+        },
+        {
+          "chunk_id": 10,
+          "chapter": "CHAPTER I.",
+          "page_start": 9,
+          "page_end": 9
+        },
+        {
+          "chunk_id": 11,
+          "chapter": "CHAPTER I.",
+          "page_start": 9,
+          "page_end": 9
+        },
+        {
+          "chunk_id": 12,
+          "chapter": "CHAPTER I.",
+          "page_start": 9,
+          "page_end": 9
+        },
+        {
+          "chunk_id": 13,
+          "chapter": "CHAPTER I.",
+          "page_start": 9,
+          "page_end": 10
+        },
+        {
+          "chunk_id": 14,
+          "chapter": "CHAPTER I.",
+          "page_start": 10,
+          "page_end": 10
+        },
+        {
+          "chunk_id": 15,
+          "chapter": "CHAPTER I.",
+          "page_start": 10,
+          "page_end": 10
+        },
+        {
+          "chunk_id": 16,
+          "chapter": "CHAPTER I.",
+          "page_start": 10,
+          "page_end": 10
+        },
+        {
+          "chunk_id": 17,
+          "chapter": "CHAPTER I.",
+          "page_start": 10,
+          "page_end": 10
+        },
+        {
+          "chunk_id": 18,
+          "chapter": "CHAPTER II. Sherlock Holmes Discourses",
+          "page_start": 11,
+          "page_end": 11
+        },
+        {
+          "chunk_id": 19,
+          "chapter": "CHAPTER II. Sherlock Holmes Discourses",
+          "page_start": 11,
+          "page_end": 11
+        },
+        {
+          "chunk_id": 20,
+          "chapter": "CHAPTER II. Sherlock Holmes Discourses",
+          "page_start": 11,
+          "page_end": 11
+        },
+        {
+          "chunk_id": 21,
+          "chapter": "CHAPTER II. Sherlock Holmes Discourses",
+          "page_start": 11,
+          "page_end": 12
+        },
+        {
+          "chunk_id": 22,
+          "chapter": "CHAPTER II. Sherlock Holmes Discourses",
+          "page_start": 12,
+          "page_end": 12
+        },
+        {
+          "chunk_id": 23,
+          "chapter": "CHAPTER II. Sherlock Holmes Discourses",
+          "page_start": 12,
+          "page_end": 12
+        },
+        {
+          "chunk_id": 24,
+          "chapter": "CHAPTER II. Sherlock Holmes Discourses",
+          "page_start": 12,
+          "page_end": 12
+        },
+        {
+          "chunk_id": 25,
+          "chapter": "CHAPTER II. Sherlock Holmes Discourses",
+          "page_start": 12,
+          "page_end": 13
+        },
+        {
+          "chunk_id": 26,
+          "chapter": "CHAPTER II. Sherlock Holmes Discourses",
+          "page_start": 13,
+          "page_end": 13
+        },
+        {
+          "chunk_id": 27,
+          "chapter": "CHAPTER II. Sherlock Holmes Discourses",
+          "page_start": 13,
+          "page_end": 13
+        },
+        {
+          "chunk_id": 28,
+          "chapter": "CHAPTER II. Sherlock Holmes Discourses",
+          "page_start": 13,
+          "page_end": 13
+        },
+        {
+          "chunk_id": 29,
+          "chapter": "CHAPTER II. Sherlock Holmes Discourses",
+          "page_start": 13,
+          "page_end": 13
+        },
+        {
+          "chunk_id": 30,
+          "chapter": "CHAPTER II. Sherlock Holmes Discourses",
+          "page_start": 13,
+          "page_end": 14
+        },
+        {
+          "chunk_id": 31,
+          "chapter": "CHAPTER II. Sherlock Holmes Discourses",
+          "page_start": 14,
+          "page_end": 14
+        },
+        {
+          "chunk_id": 52,
+          "chapter": "CHAPTER IV.",
+          "page_start": 18,
+          "page_end": 19
+        },
+        {
+          "chunk_id": 53,
+          "chapter": "CHAPTER IV.",
+          "page_start": 19,
+          "page_end": 19
+        },
+        {
+          "chunk_id": 54,
+          "chapter": "CHAPTER IV.",
+          "page_start": 19,
+          "page_end": 19
+        },
+        {
+          "chunk_id": 55,
+          "chapter": "CHAPTER IV.",
+          "page_start": 19,
+          "page_end": 19
+        },
+        {
+          "chunk_id": 56,
+          "chapter": "CHAPTER IV.",
+          "page_start": 19,
+          "page_end": 20
+        },
+        {
+          "chunk_id": 57,
+          "chapter": "CHAPTER IV.",
+          "page_start": 20,
+          "page_end": 20
+        },
+        {
+          "chunk_id": 58,
+          "chapter": "CHAPTER IV.",
+          "page_start": 20,
+          "page_end": 20
+        },
+        {
+          "chunk_id": 59,
+          "chapter": "CHAPTER IV.",
+          "page_start": 20,
+          "page_end": 20
+        },
+        {
+          "chunk_id": 60,
+          "chapter": "CHAPTER IV.",
+          "page_start": 20,
+          "page_end": 20
+        },
+        {
+          "chunk_id": 61,
+          "chapter": "CHAPTER IV.",
+          "page_start": 20,
+          "page_end": 21
+        },
+        {
+          "chunk_id": 62,
+          "chapter": "CHAPTER IV.",
+          "page_start": 21,
+          "page_end": 21
+        },
+        {
+          "chunk_id": 63,
+          "chapter": "CHAPTER IV.",
+          "page_start": 21,
+          "page_end": 21
+        },
+        {
+          "chunk_id": 65,
+          "chapter": "CHAPTER IV.",
+          "page_start": 21,
+          "page_end": 21
+        },
+        {
+          "chunk_id": 66,
+          "chapter": "CHAPTER IV.",
+          "page_start": 21,
+          "page_end": 22
+        },
+        {
+          "chunk_id": 67,
+          "chapter": "CHAPTER IV.",
+          "page_start": 22,
+          "page_end": 22
+        },
+        {
+          "chunk_id": 68,
+          "chapter": "CHAPTER IV.",
+          "page_start": 22,
+          "page_end": 22
+        },
+        {
+          "chunk_id": 69,
+          "chapter": "CHAPTER IV.",
+          "page_start": 22,
+          "page_end": 22
+        },
+        {
+          "chunk_id": 70,
+          "chapter": "CHAPTER IV.",
+          "page_start": 22,
+          "page_end": 23
+        },
+        {
+          "chunk_id": 71,
+          "chapter": "CHAPTER IV.",
+          "page_start": 23,
+          "page_end": 23
+        },
+        {
+          "chunk_id": 72,
+          "chapter": "CHAPTER IV.",
+          "page_start": 23,
+          "page_end": 23
+        },
+        {
+          "chunk_id": 73,
+          "chapter": "CHAPTER V. The People Of the Drama",
+          "page_start": 23,
+          "page_end": 23
+        },
+        {
+          "chunk_id": 85,
+          "chapter": "CHAPTER V. The People Of the Drama",
+          "page_start": 26,
+          "page_end": 26
+        },
+        {
+          "chunk_id": 87,
+          "chapter": "CHAPTER V. The People Of the Drama",
+          "page_start": 26,
+          "page_end": 26
+        },
+        {
+          "chunk_id": 88,
+          "chapter": "CHAPTER V. The People Of the Drama",
+          "page_start": 26,
+          "page_end": 27
+        }
+      ]
+    },
+    {
+      "name": "Dr. John H. Watson",
+      "description": "Sherlock Holmes's friend, companion, and chronicler, who assists Holmes in examining cases and deciphering messages.",
+      "sources": [
+        {
+          "chunk_id": 0,
+          "chapter": "CHAPTER I.",
+          "page_start": 7,
+          "page_end": 7
+        },
+        {
+          "chunk_id": 1,
+          "chapter": "CHAPTER I.",
+          "page_start": 7,
+          "page_end": 7
+        },
+        {
+          "chunk_id": 2,
+          "chapter": "CHAPTER I.",
+          "page_start": 7,
+          "page_end": 7
+        },
+        {
+          "chunk_id": 3,
+          "chapter": "CHAPTER I.",
+          "page_start": 7,
+          "page_end": 7
+        },
+        {
+          "chunk_id": 4,
+          "chapter": "CHAPTER I.",
+          "page_start": 7,
+          "page_end": 8
+        },
+        {
+          "chunk_id": 5,
+          "chapter": "CHAPTER I.",
+          "page_start": 8,
+          "page_end": 8
+        },
+        {
+          "chunk_id": 6,
+          "chapter": "CHAPTER I.",
+          "page_start": 8,
+          "page_end": 8
+        },
+        {
+          "chunk_id": 8,
+          "chapter": "CHAPTER I.",
+          "page_start": 8,
+          "page_end": 9
+        },
+        {
+          "chunk_id": 9,
+          "chapter": "CHAPTER I.",
+          "page_start": 9,
+          "page_end": 9
+        },
+        {
+          "chunk_id": 10,
+          "chapter": "CHAPTER I.",
+          "page_start": 9,
+          "page_end": 9
+        },
+        {
+          "chunk_id": 11,
+          "chapter": "CHAPTER I.",
+          "page_start": 9,
+          "page_end": 9
+        },
+        {
+          "chunk_id": 12,
+          "chapter": "CHAPTER I.",
+          "page_start": 9,
+          "page_end": 9
+        },
+        {
+          "chunk_id": 13,
+          "chapter": "CHAPTER I.",
+          "page_start": 9,
+          "page_end": 10
+        },
+        {
+          "chunk_id": 15,
+          "chapter": "CHAPTER I.",
+          "page_start": 10,
+          "page_end": 10
+        },
+        {
+          "chunk_id": 16,
+          "chapter": "CHAPTER I.",
+          "page_start": 10,
+          "page_end": 10
+        },
+        {
+          "chunk_id": 57,
+          "chapter": "CHAPTER IV.",
+          "page_start": 20,
+          "page_end": 20
+        },
+        {
+          "chunk_id": 63,
+          "chapter": "CHAPTER IV.",
+          "page_start": 21,
+          "page_end": 21
+        }
+      ]
+    },
+    {
+      "name": "Professor Moriarty",
+      "description": "A highly talented, respectable-seeming professor who secretly operates as a master criminal commanding a vast criminal organization.",
+      "sources": [
+        {
+          "chunk_id": 0,
+          "chapter": "CHAPTER I.",
+          "page_start": 7,
+          "page_end": 7
+        },
+        {
+          "chunk_id": 1,
+          "chapter": "CHAPTER I.",
+          "page_start": 7,
+          "page_end": 7
+        },
+        {
+          "chunk_id": 2,
+          "chapter": "CHAPTER I.",
+          "page_start": 7,
+          "page_end": 7
+        },
+        {
+          "chunk_id": 3,
+          "chapter": "CHAPTER I.",
+          "page_start": 7,
+          "page_end": 7
+        },
+        {
+          "chunk_id": 4,
+          "chapter": "CHAPTER I.",
+          "page_start": 7,
+          "page_end": 8
+        },
+        {
+          "chunk_id": 5,
+          "chapter": "CHAPTER I.",
+          "page_start": 8,
+          "page_end": 8
+        },
+        {
+          "chunk_id": 7,
+          "chapter": "CHAPTER I.",
+          "page_start": 8,
+          "page_end": 8
+        },
+        {
+          "chunk_id": 9,
+          "chapter": "CHAPTER I.",
+          "page_start": 9,
+          "page_end": 9
+        },
+        {
+          "chunk_id": 11,
+          "chapter": "CHAPTER I.",
+          "page_start": 9,
+          "page_end": 9
+        },
+        {
+          "chunk_id": 18,
+          "chapter": "CHAPTER II. Sherlock Holmes Discourses",
+          "page_start": 11,
+          "page_end": 11
+        },
+        {
+          "chunk_id": 19,
+          "chapter": "CHAPTER II. Sherlock Holmes Discourses",
+          "page_start": 11,
+          "page_end": 11
+        },
+        {
+          "chunk_id": 20,
+          "chapter": "CHAPTER II. Sherlock Holmes Discourses",
+          "page_start": 11,
+          "page_end": 11
+        },
+        {
+          "chunk_id": 21,
+          "chapter": "CHAPTER II. Sherlock Holmes Discourses",
+          "page_start": 11,
+          "page_end": 12
+        },
+        {
+          "chunk_id": 22,
+          "chapter": "CHAPTER II. Sherlock Holmes Discourses",
+          "page_start": 12,
+          "page_end": 12
+        },
+        {
+          "chunk_id": 23,
+          "chapter": "CHAPTER II. Sherlock Holmes Discourses",
+          "page_start": 12,
+          "page_end": 12
+        },
+        {
+          "chunk_id": 24,
+          "chapter": "CHAPTER II. Sherlock Holmes Discourses",
+          "page_start": 12,
+          "page_end": 12
+        },
+        {
+          "chunk_id": 25,
+          "chapter": "CHAPTER II. Sherlock Holmes Discourses",
+          "page_start": 12,
+          "page_end": 13
+        },
+        {
+          "chunk_id": 26,
+          "chapter": "CHAPTER II. Sherlock Holmes Discourses",
+          "page_start": 13,
+          "page_end": 13
+        },
+        {
+          "chunk_id": 27,
+          "chapter": "CHAPTER II. Sherlock Holmes Discourses",
+          "page_start": 13,
+          "page_end": 13
+        },
+        {
+          "chunk_id": 28,
+          "chapter": "CHAPTER II. Sherlock Holmes Discourses",
+          "page_start": 13,
+          "page_end": 13
+        },
+        {
+          "chunk_id": 29,
+          "chapter": "CHAPTER II. Sherlock Holmes Discourses",
+          "page_start": 13,
+          "page_end": 13
+        },
+        {
+          "chunk_id": 31,
+          "chapter": "CHAPTER II. Sherlock Holmes Discourses",
+          "page_start": 14,
+          "page_end": 14
+        }
+      ]
+    },
+    {
+      "name": "Fred Porlock",
+      "description": "An informant associated with Moriarty's network who uses a pseudonym and occasionally provides advance warning of criminal plots to Holmes for money.",
+      "sources": [
+        {
+          "chunk_id": 1,
+          "chapter": "CHAPTER I.",
+          "page_start": 7,
+          "page_end": 7
+        },
+        {
+          "chunk_id": 2,
+          "chapter": "CHAPTER I.",
+          "page_start": 7,
+          "page_end": 7
+        },
+        {
+          "chunk_id": 3,
+          "chapter": "CHAPTER I.",
+          "page_start": 7,
+          "page_end": 7
+        },
+        {
+          "chunk_id": 4,
+          "chapter": "CHAPTER I.",
+          "page_start": 7,
+          "page_end": 8
+        },
+        {
+          "chunk_id": 5,
+          "chapter": "CHAPTER I.",
+          "page_start": 8,
+          "page_end": 8
+        },
+        {
+          "chunk_id": 6,
+          "chapter": "CHAPTER I.",
+          "page_start": 8,
+          "page_end": 8
+        },
+        {
+          "chunk_id": 7,
+          "chapter": "CHAPTER I.",
+          "page_start": 8,
+          "page_end": 8
+        },
+        {
+          "chunk_id": 8,
+          "chapter": "CHAPTER I.",
+          "page_start": 8,
+          "page_end": 9
+        },
+        {
+          "chunk_id": 10,
+          "chapter": "CHAPTER I.",
+          "page_start": 9,
+          "page_end": 9
+        },
+        {
+          "chunk_id": 12,
+          "chapter": "CHAPTER I.",
+          "page_start": 9,
+          "page_end": 9
+        }
+      ]
+    },
+    {
+      "name": "Billy",
+      "description": "The page at Sherlock Holmes's residence who delivers mail and ushers visitors into the room.",
+      "sources": [
+        {
+          "chunk_id": 6,
+          "chapter": "CHAPTER I.",
+          "page_start": 8,
+          "page_end": 8
+        },
+        {
+          "chunk_id": 12,
+          "chapter": "CHAPTER I.",
+          "page_start": 9,
+          "page_end": 9
+        },
+        {
+          "chunk_id": 15,
+          "chapter": "CHAPTER I.",
+          "page_start": 10,
+          "page_end": 10
+        }
+      ]
+    },
+    {
+      "name": "Inspector Alec MacDonald",
+      "description": "A tall, bony Scotland Yard detective with a dour nature and hard Aberdonian accent who frequently seeks assistance from Holmes.",
+      "sources": [
+        {
+          "chunk_id": 13,
+          "chapter": "CHAPTER I.",
+          "page_start": 9,
+          "page_end": 10
+        },
+        {
+          "chunk_id": 14,
+          "chapter": "CHAPTER I.",
+          "page_start": 10,
+          "page_end": 10
+        },
+        {
+          "chunk_id": 15,
+          "chapter": "CHAPTER I.",
+          "page_start": 10,
+          "page_end": 10
+        },
+        {
+          "chunk_id": 16,
+          "chapter": "CHAPTER I.",
+          "page_start": 10,
+          "page_end": 10
+        },
+        {
+          "chunk_id": 17,
+          "chapter": "CHAPTER I.",
+          "page_start": 10,
+          "page_end": 10
+        }
+      ]
+    },
+    {
+      "name": "Mr. Douglas",
+      "description": "Also known as Jack Douglas; a rich gentleman who made his fortune in mining in California and was murdered at his residence, Birlstone Manor.",
+      "sources": [
+        {
+          "chunk_id": 4,
+          "chapter": "CHAPTER I.",
+          "page_start": 7,
+          "page_end": 8
+        },
+        {
+          "chunk_id": 12,
+          "chapter": "CHAPTER I.",
+          "page_start": 9,
+          "page_end": 9
+        },
+        {
+          "chunk_id": 14,
+          "chapter": "CHAPTER I.",
+          "page_start": 10,
+          "page_end": 10
+        },
+        {
+          "chunk_id": 16,
+          "chapter": "CHAPTER I.",
+          "page_start": 10,
+          "page_end": 10
+        },
+        {
+          "chunk_id": 17,
+          "chapter": "CHAPTER I.",
+          "page_start": 10,
+          "page_end": 10
+        },
+        {
+          "chunk_id": 73,
+          "chapter": "CHAPTER V. The People Of the Drama",
+          "page_start": 23,
+          "page_end": 23
+        },
+        {
+          "chunk_id": 74,
+          "chapter": "CHAPTER V. The People Of the Drama",
+          "page_start": 23,
+          "page_end": 24
+        },
+        {
+          "chunk_id": 76,
+          "chapter": "CHAPTER V. The People Of the Drama",
+          "page_start": 24,
+          "page_end": 24
+        },
+        {
+          "chunk_id": 77,
+          "chapter": "CHAPTER V. The People Of the Drama",
+          "page_start": 24,
+          "page_end": 24
+        },
+        {
+          "chunk_id": 79,
+          "chapter": "CHAPTER V. The People Of the Drama",
+          "page_start": 24,
+          "page_end": 24
+        },
+        {
+          "chunk_id": 80,
+          "chapter": "CHAPTER V. The People Of the Drama",
+          "page_start": 24,
+          "page_end": 25
+        },
+        {
+          "chunk_id": 81,
+          "chapter": "CHAPTER V. The People Of the Drama",
+          "page_start": 25,
+          "page_end": 25
+        },
+        {
+          "chunk_id": 83,
+          "chapter": "CHAPTER V. The People Of the Drama",
+          "page_start": 25,
+          "page_end": 25
+        },
+        {
+          "chunk_id": 84,
+          "chapter": "CHAPTER V. The People Of the Drama",
+          "page_start": 25,
+          "page_end": 26
+        },
+        {
+          "chunk_id": 88,
+          "chapter": "CHAPTER V. The People Of the Drama",
+          "page_start": 26,
+          "page_end": 27
+        },
+        {
+          "chunk_id": 89,
+          "chapter": "CHAPTER V. The People Of the Drama",
+          "page_start": 27,
+          "page_end": 27
+        }
+      ]
+    },
+    {
+      "name": "Inspector MacDonald",
+      "description": "An Aberdeen-raised C.I.D. detective from Scotland Yard who consults Holmes regarding the murder at Birlstone.",
+      "sources": [
+        {
+          "chunk_id": 18,
+          "chapter": "CHAPTER II. Sherlock Holmes Discourses",
+          "page_start": 11,
+          "page_end": 11
+        },
+        {
+          "chunk_id": 19,
+          "chapter": "CHAPTER II. Sherlock Holmes Discourses",
+          "page_start": 11,
+          "page_end": 11
+        },
+        {
+          "chunk_id": 20,
+          "chapter": "CHAPTER II. Sherlock Holmes Discourses",
+          "page_start": 11,
+          "page_end": 11
+        },
+        {
+          "chunk_id": 21,
+          "chapter": "CHAPTER II. Sherlock Holmes Discourses",
+          "page_start": 11,
+          "page_end": 12
+        },
+        {
+          "chunk_id": 23,
+          "chapter": "CHAPTER II. Sherlock Holmes Discourses",
+          "page_start": 12,
+          "page_end": 12
+        },
+        {
+          "chunk_id": 25,
+          "chapter": "CHAPTER II. Sherlock Holmes Discourses",
+          "page_start": 12,
+          "page_end": 13
+        },
+        {
+          "chunk_id": 27,
+          "chapter": "CHAPTER II. Sherlock Holmes Discourses",
+          "page_start": 13,
+          "page_end": 13
+        },
+        {
+          "chunk_id": 28,
+          "chapter": "CHAPTER II. Sherlock Holmes Discourses",
+          "page_start": 13,
+          "page_end": 13
+        },
+        {
+          "chunk_id": 29,
+          "chapter": "CHAPTER II. Sherlock Holmes Discourses",
+          "page_start": 13,
+          "page_end": 13
+        },
+        {
+          "chunk_id": 30,
+          "chapter": "CHAPTER II. Sherlock Holmes Discourses",
+          "page_start": 13,
+          "page_end": 14
+        },
+        {
+          "chunk_id": 31,
+          "chapter": "CHAPTER II. Sherlock Holmes Discourses",
+          "page_start": 14,
+          "page_end": 14
+        },
+        {
+          "chunk_id": 54,
+          "chapter": "CHAPTER IV.",
+          "page_start": 19,
+          "page_end": 19
+        },
+        {
+          "chunk_id": 55,
+          "chapter": "CHAPTER IV.",
+          "page_start": 19,
+          "page_end": 19
+        },
+        {
+          "chunk_id": 56,
+          "chapter": "CHAPTER IV.",
+          "page_start": 19,
+          "page_end": 20
+        },
+        {
+          "chunk_id": 57,
+          "chapter": "CHAPTER IV.",
+          "page_start": 20,
+          "page_end": 20
+        },
+        {
+          "chunk_id": 61,
+          "chapter": "CHAPTER IV.",
+          "page_start": 20,
+          "page_end": 21
+        },
+        {
+          "chunk_id": 65,
+          "chapter": "CHAPTER IV.",
+          "page_start": 21,
+          "page_end": 21
+        },
+        {
+          "chunk_id": 66,
+          "chapter": "CHAPTER IV.",
+          "page_start": 21,
+          "page_end": 22
+        },
+        {
+          "chunk_id": 67,
+          "chapter": "CHAPTER IV.",
+          "page_start": 22,
+          "page_end": 22
+        },
+        {
+          "chunk_id": 68,
+          "chapter": "CHAPTER IV.",
+          "page_start": 22,
+          "page_end": 22
+        },
+        {
+          "chunk_id": 71,
+          "chapter": "CHAPTER IV.",
+          "page_start": 23,
+          "page_end": 23
+        },
+        {
+          "chunk_id": 79,
+          "chapter": "CHAPTER V. The People Of the Drama",
+          "page_start": 24,
+          "page_end": 24
+        },
+        {
+          "chunk_id": 80,
+          "chapter": "CHAPTER V. The People Of the Drama",
+          "page_start": 24,
+          "page_end": 25
+        },
+        {
+          "chunk_id": 81,
+          "chapter": "CHAPTER V. The People Of the Drama",
+          "page_start": 25,
+          "page_end": 25
+        },
+        {
+          "chunk_id": 85,
+          "chapter": "CHAPTER V. The People Of the Drama",
+          "page_start": 26,
+          "page_end": 26
+        },
+        {
+          "chunk_id": 86,
+          "chapter": "CHAPTER V. The People Of the Drama",
+          "page_start": 26,
+          "page_end": 26
+        },
+        {
+          "chunk_id": 87,
+          "chapter": "CHAPTER V. The People Of the Drama",
+          "page_start": 26,
+          "page_end": 26
+        },
+        {
+          "chunk_id": 89,
+          "chapter": "CHAPTER V. The People Of the Drama",
+          "page_start": 27,
+          "page_end": 27
+        }
+      ]
+    },
+    {
+      "name": "Porlock",
+      "description": "An informant writing under an assumed name who sent Holmes an encrypted warning regarding danger to Douglas.",
+      "sources": [
+        {
+          "chunk_id": 18,
+          "chapter": "CHAPTER II. Sherlock Holmes Discourses",
+          "page_start": 11,
+          "page_end": 11
+        },
+        {
+          "chunk_id": 21,
+          "chapter": "CHAPTER II. Sherlock Holmes Discourses",
+          "page_start": 11,
+          "page_end": 12
+        },
+        {
+          "chunk_id": 29,
+          "chapter": "CHAPTER II. Sherlock Holmes Discourses",
+          "page_start": 13,
+          "page_end": 13
+        }
+      ]
+    },
+    {
+      "name": "Jean Baptiste Greuze",
+      "description": "A French artist who flourished between 1750 and 1800, whose valuable painting hangs in Professor Moriarty's study.",
+      "sources": [
+        {
+          "chunk_id": 21,
+          "chapter": "CHAPTER II. Sherlock Holmes Discourses",
+          "page_start": 11,
+          "page_end": 12
+        },
+        {
+          "chunk_id": 22,
+          "chapter": "CHAPTER II. Sherlock Holmes Discourses",
+          "page_start": 12,
+          "page_end": 12
+        },
+        {
+          "chunk_id": 23,
+          "chapter": "CHAPTER II. Sherlock Holmes Discourses",
+          "page_start": 12,
+          "page_end": 12
+        },
+        {
+          "chunk_id": 24,
+          "chapter": "CHAPTER II. Sherlock Holmes Discourses",
+          "page_start": 12,
+          "page_end": 12
+        }
+      ]
+    },
+    {
+      "name": "Jonathan Wild",
+      "description": "An 18th-century master criminal who organized London's criminals and provided plans in exchange for a fifteen percent commission.",
+      "sources": [
+        {
+          "chunk_id": 24,
+          "chapter": "CHAPTER II. Sherlock Holmes Discourses",
+          "page_start": 12,
+          "page_end": 12
+        },
+        {
+          "chunk_id": 25,
+          "chapter": "CHAPTER II. Sherlock Holmes Discourses",
+          "page_start": 12,
+          "page_end": 13
+        }
+      ]
+    },
+    {
+      "name": "Colonel Sebastian Moran",
+      "description": "Professor Moriarty's chief of staff, paid six thousand pounds a year.",
+      "sources": [
+        {
+          "chunk_id": 26,
+          "chapter": "CHAPTER II. Sherlock Holmes Discourses",
+          "page_start": 13,
+          "page_end": 13
+        },
+        {
+          "chunk_id": 27,
+          "chapter": "CHAPTER II. Sherlock Holmes Discourses",
+          "page_start": 13,
+          "page_end": 13
+        }
+      ]
+    },
+    {
+      "name": "John Douglas",
+      "description": "Owner of Birlstone Manor House, about fifty years old, with a rugged face, grizzled moustache, keen gray eyes, and a wiry figure. He formerly lived in America before settling in England.",
+      "sources": [
+        {
+          "chunk_id": 25,
+          "chapter": "CHAPTER II. Sherlock Holmes Discourses",
+          "page_start": 12,
+          "page_end": 13
+        },
+        {
+          "chunk_id": 30,
+          "chapter": "CHAPTER II. Sherlock Holmes Discourses",
+          "page_start": 13,
+          "page_end": 14
+        },
+        {
+          "chunk_id": 31,
+          "chapter": "CHAPTER II. Sherlock Holmes Discourses",
+          "page_start": 14,
+          "page_end": 14
+        },
+        {
+          "chunk_id": 33,
+          "chapter": "CHAPTER III. The Tragedy of Birlstone",
+          "page_start": 14,
+          "page_end": 15
+        },
+        {
+          "chunk_id": 34,
+          "chapter": "CHAPTER III. The Tragedy of Birlstone",
+          "page_start": 15,
+          "page_end": 15
+        },
+        {
+          "chunk_id": 35,
+          "chapter": "CHAPTER III. The Tragedy of Birlstone",
+          "page_start": 15,
+          "page_end": 15
+        },
+        {
+          "chunk_id": 36,
+          "chapter": "CHAPTER III. The Tragedy of Birlstone",
+          "page_start": 15,
+          "page_end": 15
+        },
+        {
+          "chunk_id": 37,
+          "chapter": "CHAPTER III. The Tragedy of Birlstone",
+          "page_start": 15,
+          "page_end": 15
+        },
+        {
+          "chunk_id": 38,
+          "chapter": "CHAPTER III. The Tragedy of Birlstone",
+          "page_start": 15,
+          "page_end": 15
+        },
+        {
+          "chunk_id": 39,
+          "chapter": "CHAPTER III. The Tragedy of Birlstone",
+          "page_start": 15,
+          "page_end": 16
+        },
+        {
+          "chunk_id": 40,
+          "chapter": "CHAPTER III. The Tragedy of Birlstone",
+          "page_start": 16,
+          "page_end": 16
+        },
+        {
+          "chunk_id": 41,
+          "chapter": "CHAPTER III. The Tragedy of Birlstone",
+          "page_start": 16,
+          "page_end": 16
+        },
+        {
+          "chunk_id": 42,
+          "chapter": "CHAPTER III. The Tragedy of Birlstone",
+          "page_start": 16,
+          "page_end": 16
+        },
+        {
+          "chunk_id": 43,
+          "chapter": "CHAPTER III. The Tragedy of Birlstone",
+          "page_start": 16,
+          "page_end": 16
+        },
+        {
+          "chunk_id": 44,
+          "chapter": "CHAPTER III. The Tragedy of Birlstone",
+          "page_start": 16,
+          "page_end": 17
+        },
+        {
+          "chunk_id": 45,
+          "chapter": "CHAPTER III. The Tragedy of Birlstone",
+          "page_start": 17,
+          "page_end": 17
+        },
+        {
+          "chunk_id": 46,
+          "chapter": "CHAPTER III. The Tragedy of Birlstone",
+          "page_start": 17,
+          "page_end": 17
+        },
+        {
+          "chunk_id": 47,
+          "chapter": "CHAPTER III. The Tragedy of Birlstone",
+          "page_start": 17,
+          "page_end": 17
+        },
+        {
+          "chunk_id": 48,
+          "chapter": "CHAPTER III. The Tragedy of Birlstone",
+          "page_start": 17,
+          "page_end": 18
+        },
+        {
+          "chunk_id": 49,
+          "chapter": "CHAPTER III. The Tragedy of Birlstone",
+          "page_start": 18,
+          "page_end": 18
+        },
+        {
+          "chunk_id": 50,
+          "chapter": "CHAPTER III. The Tragedy of Birlstone",
+          "page_start": 18,
+          "page_end": 18
+        }
+      ]
+    },
+    {
+      "name": "White Mason",
+      "description": "Chief Sussex detective, a quiet, comfortable-looking man in a loose tweed suit with bandy legs and a ruddy face, investigating the Birlstone tragedy.",
+      "sources": [
+        {
+          "chunk_id": 30,
+          "chapter": "CHAPTER II. Sherlock Holmes Discourses",
+          "page_start": 13,
+          "page_end": 14
+        },
+        {
+          "chunk_id": 31,
+          "chapter": "CHAPTER II. Sherlock Holmes Discourses",
+          "page_start": 14,
+          "page_end": 14
+        },
+        {
+          "chunk_id": 50,
+          "chapter": "CHAPTER III. The Tragedy of Birlstone",
+          "page_start": 18,
+          "page_end": 18
+        },
+        {
+          "chunk_id": 51,
+          "chapter": "CHAPTER III. The Tragedy of Birlstone",
+          "page_start": 18,
+          "page_end": 18
+        },
+        {
+          "chunk_id": 52,
+          "chapter": "CHAPTER IV.",
+          "page_start": 18,
+          "page_end": 19
+        },
+        {
+          "chunk_id": 53,
+          "chapter": "CHAPTER IV.",
+          "page_start": 19,
+          "page_end": 19
+        },
+        {
+          "chunk_id": 54,
+          "chapter": "CHAPTER IV.",
+          "page_start": 19,
+          "page_end": 19
+        },
+        {
+          "chunk_id": 55,
+          "chapter": "CHAPTER IV.",
+          "page_start": 19,
+          "page_end": 19
+        },
+        {
+          "chunk_id": 57,
+          "chapter": "CHAPTER IV.",
+          "page_start": 20,
+          "page_end": 20
+        },
+        {
+          "chunk_id": 59,
+          "chapter": "CHAPTER IV.",
+          "page_start": 20,
+          "page_end": 20
+        },
+        {
+          "chunk_id": 60,
+          "chapter": "CHAPTER IV.",
+          "page_start": 20,
+          "page_end": 20
+        },
+        {
+          "chunk_id": 61,
+          "chapter": "CHAPTER IV.",
+          "page_start": 20,
+          "page_end": 21
+        },
+        {
+          "chunk_id": 63,
+          "chapter": "CHAPTER IV.",
+          "page_start": 21,
+          "page_end": 21
+        },
+        {
+          "chunk_id": 68,
+          "chapter": "CHAPTER IV.",
+          "page_start": 22,
+          "page_end": 22
+        },
+        {
+          "chunk_id": 73,
+          "chapter": "CHAPTER V. The People Of the Drama",
+          "page_start": 23,
+          "page_end": 23
+        }
+      ]
+    },
+    {
+      "name": "Hugo de Capus",
+      "description": "A feudal lord who built the original fortalice at Birlstone during the First Crusade on land granted by the Red King.",
+      "sources": [
+        {
+          "chunk_id": 33,
+          "chapter": "CHAPTER III. The Tragedy of Birlstone",
+          "page_start": 14,
+          "page_end": 15
+        }
+      ]
+    },
+    {
+      "name": "Mrs. Douglas",
+      "description": "Wife of John Douglas; a beautiful, tall, dark, and slender English lady about twenty years younger than her husband.",
+      "sources": [
+        {
+          "chunk_id": 33,
+          "chapter": "CHAPTER III. The Tragedy of Birlstone",
+          "page_start": 14,
+          "page_end": 15
+        },
+        {
+          "chunk_id": 35,
+          "chapter": "CHAPTER III. The Tragedy of Birlstone",
+          "page_start": 15,
+          "page_end": 15
+        },
+        {
+          "chunk_id": 36,
+          "chapter": "CHAPTER III. The Tragedy of Birlstone",
+          "page_start": 15,
+          "page_end": 15
+        },
+        {
+          "chunk_id": 37,
+          "chapter": "CHAPTER III. The Tragedy of Birlstone",
+          "page_start": 15,
+          "page_end": 15
+        },
+        {
+          "chunk_id": 40,
+          "chapter": "CHAPTER III. The Tragedy of Birlstone",
+          "page_start": 16,
+          "page_end": 16
+        },
+        {
+          "chunk_id": 41,
+          "chapter": "CHAPTER III. The Tragedy of Birlstone",
+          "page_start": 16,
+          "page_end": 16
+        },
+        {
+          "chunk_id": 43,
+          "chapter": "CHAPTER III. The Tragedy of Birlstone",
+          "page_start": 16,
+          "page_end": 16
+        },
+        {
+          "chunk_id": 47,
+          "chapter": "CHAPTER III. The Tragedy of Birlstone",
+          "page_start": 17,
+          "page_end": 17
+        },
+        {
+          "chunk_id": 63,
+          "chapter": "CHAPTER IV.",
+          "page_start": 21,
+          "page_end": 21
+        },
+        {
+          "chunk_id": 64,
+          "chapter": "CHAPTER IV.",
+          "page_start": 21,
+          "page_end": 21
+        },
+        {
+          "chunk_id": 73,
+          "chapter": "CHAPTER V. The People Of the Drama",
+          "page_start": 23,
+          "page_end": 23
+        },
+        {
+          "chunk_id": 74,
+          "chapter": "CHAPTER V. The People Of the Drama",
+          "page_start": 23,
+          "page_end": 24
+        },
+        {
+          "chunk_id": 75,
+          "chapter": "CHAPTER V. The People Of the Drama",
+          "page_start": 24,
+          "page_end": 24
+        },
+        {
+          "chunk_id": 78,
+          "chapter": "CHAPTER V. The People Of the Drama",
+          "page_start": 24,
+          "page_end": 24
+        },
+        {
+          "chunk_id": 80,
+          "chapter": "CHAPTER V. The People Of the Drama",
+          "page_start": 24,
+          "page_end": 25
+        },
+        {
+          "chunk_id": 81,
+          "chapter": "CHAPTER V. The People Of the Drama",
+          "page_start": 25,
+          "page_end": 25
+        },
+        {
+          "chunk_id": 84,
+          "chapter": "CHAPTER V. The People Of the Drama",
+          "page_start": 25,
+          "page_end": 26
+        },
+        {
+          "chunk_id": 85,
+          "chapter": "CHAPTER V. The People Of the Drama",
+          "page_start": 26,
+          "page_end": 26
+        },
+        {
+          "chunk_id": 86,
+          "chapter": "CHAPTER V. The People Of the Drama",
+          "page_start": 26,
+          "page_end": 26
+        },
+        {
+          "chunk_id": 87,
+          "chapter": "CHAPTER V. The People Of the Drama",
+          "page_start": 26,
+          "page_end": 26
+        },
+        {
+          "chunk_id": 88,
+          "chapter": "CHAPTER V. The People Of the Drama",
+          "page_start": 26,
+          "page_end": 27
+        },
+        {
+          "chunk_id": 89,
+          "chapter": "CHAPTER V. The People Of the Drama",
+          "page_start": 27,
+          "page_end": 27
+        }
+      ]
+    },
+    {
+      "name": "Cecil James Barker",
+      "description": "Wealthy bachelor residing at Hales Lodge, Hampstead, and an intimate friend of John Douglas from America; tall, broad-chested, clean-shaved with thick black eyebrows.",
+      "sources": [
+        {
+          "chunk_id": 38,
+          "chapter": "CHAPTER III. The Tragedy of Birlstone",
+          "page_start": 15,
+          "page_end": 15
+        },
+        {
+          "chunk_id": 39,
+          "chapter": "CHAPTER III. The Tragedy of Birlstone",
+          "page_start": 15,
+          "page_end": 16
+        },
+        {
+          "chunk_id": 40,
+          "chapter": "CHAPTER III. The Tragedy of Birlstone",
+          "page_start": 16,
+          "page_end": 16
+        },
+        {
+          "chunk_id": 41,
+          "chapter": "CHAPTER III. The Tragedy of Birlstone",
+          "page_start": 16,
+          "page_end": 16
+        },
+        {
+          "chunk_id": 42,
+          "chapter": "CHAPTER III. The Tragedy of Birlstone",
+          "page_start": 16,
+          "page_end": 16
+        },
+        {
+          "chunk_id": 43,
+          "chapter": "CHAPTER III. The Tragedy of Birlstone",
+          "page_start": 16,
+          "page_end": 16
+        },
+        {
+          "chunk_id": 44,
+          "chapter": "CHAPTER III. The Tragedy of Birlstone",
+          "page_start": 16,
+          "page_end": 17
+        },
+        {
+          "chunk_id": 45,
+          "chapter": "CHAPTER III. The Tragedy of Birlstone",
+          "page_start": 17,
+          "page_end": 17
+        },
+        {
+          "chunk_id": 46,
+          "chapter": "CHAPTER III. The Tragedy of Birlstone",
+          "page_start": 17,
+          "page_end": 17
+        },
+        {
+          "chunk_id": 47,
+          "chapter": "CHAPTER III. The Tragedy of Birlstone",
+          "page_start": 17,
+          "page_end": 17
+        },
+        {
+          "chunk_id": 48,
+          "chapter": "CHAPTER III. The Tragedy of Birlstone",
+          "page_start": 17,
+          "page_end": 18
+        },
+        {
+          "chunk_id": 50,
+          "chapter": "CHAPTER III. The Tragedy of Birlstone",
+          "page_start": 18,
+          "page_end": 18
+        }
+      ]
+    },
+    {
+      "name": "Sergeant Wilson",
+      "description": "Police officer of the Sussex Constabulary in charge of the local Birlstone police station who first investigates the murder at Manor House.",
+      "sources": [
+        {
+          "chunk_id": 42,
+          "chapter": "CHAPTER III. The Tragedy of Birlstone",
+          "page_start": 16,
+          "page_end": 16
+        },
+        {
+          "chunk_id": 43,
+          "chapter": "CHAPTER III. The Tragedy of Birlstone",
+          "page_start": 16,
+          "page_end": 16
+        },
+        {
+          "chunk_id": 44,
+          "chapter": "CHAPTER III. The Tragedy of Birlstone",
+          "page_start": 16,
+          "page_end": 17
+        },
+        {
+          "chunk_id": 45,
+          "chapter": "CHAPTER III. The Tragedy of Birlstone",
+          "page_start": 17,
+          "page_end": 17
+        },
+        {
+          "chunk_id": 46,
+          "chapter": "CHAPTER III. The Tragedy of Birlstone",
+          "page_start": 17,
+          "page_end": 17
+        },
+        {
+          "chunk_id": 47,
+          "chapter": "CHAPTER III. The Tragedy of Birlstone",
+          "page_start": 17,
+          "page_end": 17
+        },
+        {
+          "chunk_id": 48,
+          "chapter": "CHAPTER III. The Tragedy of Birlstone",
+          "page_start": 17,
+          "page_end": 18
+        },
+        {
+          "chunk_id": 49,
+          "chapter": "CHAPTER III. The Tragedy of Birlstone",
+          "page_start": 18,
+          "page_end": 18
+        },
+        {
+          "chunk_id": 50,
+          "chapter": "CHAPTER III. The Tragedy of Birlstone",
+          "page_start": 18,
+          "page_end": 18
+        },
+        {
+          "chunk_id": 51,
+          "chapter": "CHAPTER III. The Tragedy of Birlstone",
+          "page_start": 18,
+          "page_end": 18
+        },
+        {
+          "chunk_id": 52,
+          "chapter": "CHAPTER IV.",
+          "page_start": 18,
+          "page_end": 19
+        },
+        {
+          "chunk_id": 54,
+          "chapter": "CHAPTER IV.",
+          "page_start": 19,
+          "page_end": 19
+        },
+        {
+          "chunk_id": 56,
+          "chapter": "CHAPTER IV.",
+          "page_start": 19,
+          "page_end": 20
+        },
+        {
+          "chunk_id": 62,
+          "chapter": "CHAPTER IV.",
+          "page_start": 21,
+          "page_end": 21
+        },
+        {
+          "chunk_id": 63,
+          "chapter": "CHAPTER IV.",
+          "page_start": 21,
+          "page_end": 21
+        }
+      ]
+    },
+    {
+      "name": "Dr. Wood",
+      "description": "The medical doctor present at the murder scene who assisted White Mason with examining the body and evidence.",
+      "sources": [
+        {
+          "chunk_id": 39,
+          "chapter": "CHAPTER III. The Tragedy of Birlstone",
+          "page_start": 15,
+          "page_end": 16
+        },
+        {
+          "chunk_id": 40,
+          "chapter": "CHAPTER III. The Tragedy of Birlstone",
+          "page_start": 16,
+          "page_end": 16
+        },
+        {
+          "chunk_id": 45,
+          "chapter": "CHAPTER III. The Tragedy of Birlstone",
+          "page_start": 17,
+          "page_end": 17
+        },
+        {
+          "chunk_id": 46,
+          "chapter": "CHAPTER III. The Tragedy of Birlstone",
+          "page_start": 17,
+          "page_end": 17
+        },
+        {
+          "chunk_id": 49,
+          "chapter": "CHAPTER III. The Tragedy of Birlstone",
+          "page_start": 18,
+          "page_end": 18
+        },
+        {
+          "chunk_id": 50,
+          "chapter": "CHAPTER III. The Tragedy of Birlstone",
+          "page_start": 18,
+          "page_end": 18
+        },
+        {
+          "chunk_id": 55,
+          "chapter": "CHAPTER IV.",
+          "page_start": 19,
+          "page_end": 19
+        },
+        {
+          "chunk_id": 62,
+          "chapter": "CHAPTER IV.",
+          "page_start": 21,
+          "page_end": 21
+        }
+      ]
+    },
+    {
+      "name": "Ames",
+      "description": "The butler at Birlstone Manor House, described as a quaint, gnarled, dried-up old fellow who formerly served Sir Charles Chandos.",
+      "sources": [
+        {
+          "chunk_id": 39,
+          "chapter": "CHAPTER III. The Tragedy of Birlstone",
+          "page_start": 15,
+          "page_end": 16
+        },
+        {
+          "chunk_id": 40,
+          "chapter": "CHAPTER III. The Tragedy of Birlstone",
+          "page_start": 16,
+          "page_end": 16
+        },
+        {
+          "chunk_id": 41,
+          "chapter": "CHAPTER III. The Tragedy of Birlstone",
+          "page_start": 16,
+          "page_end": 16
+        },
+        {
+          "chunk_id": 42,
+          "chapter": "CHAPTER III. The Tragedy of Birlstone",
+          "page_start": 16,
+          "page_end": 16
+        },
+        {
+          "chunk_id": 43,
+          "chapter": "CHAPTER III. The Tragedy of Birlstone",
+          "page_start": 16,
+          "page_end": 16
+        },
+        {
+          "chunk_id": 47,
+          "chapter": "CHAPTER III. The Tragedy of Birlstone",
+          "page_start": 17,
+          "page_end": 17
+        },
+        {
+          "chunk_id": 48,
+          "chapter": "CHAPTER III. The Tragedy of Birlstone",
+          "page_start": 17,
+          "page_end": 18
+        },
+        {
+          "chunk_id": 49,
+          "chapter": "CHAPTER III. The Tragedy of Birlstone",
+          "page_start": 18,
+          "page_end": 18
+        },
+        {
+          "chunk_id": 50,
+          "chapter": "CHAPTER III. The Tragedy of Birlstone",
+          "page_start": 18,
+          "page_end": 18
+        },
+        {
+          "chunk_id": 55,
+          "chapter": "CHAPTER IV.",
+          "page_start": 19,
+          "page_end": 19
+        },
+        {
+          "chunk_id": 62,
+          "chapter": "CHAPTER IV.",
+          "page_start": 21,
+          "page_end": 21
+        },
+        {
+          "chunk_id": 63,
+          "chapter": "CHAPTER IV.",
+          "page_start": 21,
+          "page_end": 21
+        },
+        {
+          "chunk_id": 67,
+          "chapter": "CHAPTER IV.",
+          "page_start": 22,
+          "page_end": 22
+        },
+        {
+          "chunk_id": 68,
+          "chapter": "CHAPTER IV.",
+          "page_start": 22,
+          "page_end": 22
+        },
+        {
+          "chunk_id": 69,
+          "chapter": "CHAPTER IV.",
+          "page_start": 22,
+          "page_end": 22
+        },
+        {
+          "chunk_id": 70,
+          "chapter": "CHAPTER IV.",
+          "page_start": 22,
+          "page_end": 23
+        },
+        {
+          "chunk_id": 73,
+          "chapter": "CHAPTER V. The People Of the Drama",
+          "page_start": 23,
+          "page_end": 23
+        },
+        {
+          "chunk_id": 74,
+          "chapter": "CHAPTER V. The People Of the Drama",
+          "page_start": 23,
+          "page_end": 24
+        },
+        {
+          "chunk_id": 75,
+          "chapter": "CHAPTER V. The People Of the Drama",
+          "page_start": 24,
+          "page_end": 24
+        },
+        {
+          "chunk_id": 76,
+          "chapter": "CHAPTER V. The People Of the Drama",
+          "page_start": 24,
+          "page_end": 24
+        },
+        {
+          "chunk_id": 78,
+          "chapter": "CHAPTER V. The People Of the Drama",
+          "page_start": 24,
+          "page_end": 24
+        }
+      ]
+    },
+    {
+      "name": "Mrs. Allen",
+      "description": "The buxom and cheerful housekeeper at Birlstone Manor House who relieves Mrs. Douglas of household duties.",
+      "sources": [
+        {
+          "chunk_id": 42,
+          "chapter": "CHAPTER III. The Tragedy of Birlstone",
+          "page_start": 16,
+          "page_end": 16
+        },
+        {
+          "chunk_id": 43,
+          "chapter": "CHAPTER III. The Tragedy of Birlstone",
+          "page_start": 16,
+          "page_end": 16
+        },
+        {
+          "chunk_id": 74,
+          "chapter": "CHAPTER V. The People Of the Drama",
+          "page_start": 23,
+          "page_end": 24
+        },
+        {
+          "chunk_id": 75,
+          "chapter": "CHAPTER V. The People Of the Drama",
+          "page_start": 24,
+          "page_end": 24
+        },
+        {
+          "chunk_id": 78,
+          "chapter": "CHAPTER V. The People Of the Drama",
+          "page_start": 24,
+          "page_end": 24
+        },
+        {
+          "chunk_id": 79,
+          "chapter": "CHAPTER V. The People Of the Drama",
+          "page_start": 24,
+          "page_end": 24
+        },
+        {
+          "chunk_id": 80,
+          "chapter": "CHAPTER V. The People Of the Drama",
+          "page_start": 24,
+          "page_end": 25
+        },
+        {
+          "chunk_id": 88,
+          "chapter": "CHAPTER V. The People Of the Drama",
+          "page_start": 26,
+          "page_end": 27
+        }
+      ]
+    },
+    {
+      "name": "Dr. Watson",
+      "description": "Companion and associate of Sherlock Holmes.",
+      "sources": [
+        {
+          "chunk_id": 52,
+          "chapter": "CHAPTER IV.",
+          "page_start": 18,
+          "page_end": 19
+        },
+        {
+          "chunk_id": 53,
+          "chapter": "CHAPTER IV.",
+          "page_start": 19,
+          "page_end": 19
+        }
+      ]
+    },
+    {
+      "name": "MacDonald",
+      "description": "Detective attending the case briefing alongside Sherlock Holmes.",
+      "sources": [
+        {
+          "chunk_id": 52,
+          "chapter": "CHAPTER IV.",
+          "page_start": 18,
+          "page_end": 19
+        },
+        {
+          "chunk_id": 53,
+          "chapter": "CHAPTER IV.",
+          "page_start": 19,
+          "page_end": 19
+        }
+      ]
+    },
+    {
+      "name": "Mr. John Douglas",
+      "description": "The victim of the murder at Birlstone Manor House, an American or long-time resident of America bearing a branded mark on his forearm.",
+      "sources": [
+        {
+          "chunk_id": 55,
+          "chapter": "CHAPTER IV.",
+          "page_start": 19,
+          "page_end": 19
+        },
+        {
+          "chunk_id": 63,
+          "chapter": "CHAPTER IV.",
+          "page_start": 21,
+          "page_end": 21
+        },
+        {
+          "chunk_id": 64,
+          "chapter": "CHAPTER IV.",
+          "page_start": 21,
+          "page_end": 21
+        },
+        {
+          "chunk_id": 66,
+          "chapter": "CHAPTER IV.",
+          "page_start": 21,
+          "page_end": 22
+        },
+        {
+          "chunk_id": 68,
+          "chapter": "CHAPTER IV.",
+          "page_start": 22,
+          "page_end": 22
+        },
+        {
+          "chunk_id": 69,
+          "chapter": "CHAPTER IV.",
+          "page_start": 22,
+          "page_end": 22
+        },
+        {
+          "chunk_id": 70,
+          "chapter": "CHAPTER IV.",
+          "page_start": 22,
+          "page_end": 23
+        }
+      ]
+    },
+    {
+      "name": "Cecil Barker",
+      "description": "A friend or associate residing at Manor House, described as tall, sunburned, capable-looking, clean-shaved, with masterful eyes.",
+      "sources": [
+        {
+          "chunk_id": 55,
+          "chapter": "CHAPTER IV.",
+          "page_start": 19,
+          "page_end": 19
+        },
+        {
+          "chunk_id": 62,
+          "chapter": "CHAPTER IV.",
+          "page_start": 21,
+          "page_end": 21
+        },
+        {
+          "chunk_id": 63,
+          "chapter": "CHAPTER IV.",
+          "page_start": 21,
+          "page_end": 21
+        },
+        {
+          "chunk_id": 65,
+          "chapter": "CHAPTER IV.",
+          "page_start": 21,
+          "page_end": 21
+        },
+        {
+          "chunk_id": 66,
+          "chapter": "CHAPTER IV.",
+          "page_start": 21,
+          "page_end": 22
+        },
+        {
+          "chunk_id": 71,
+          "chapter": "CHAPTER IV.",
+          "page_start": 23,
+          "page_end": 23
+        },
+        {
+          "chunk_id": 73,
+          "chapter": "CHAPTER V. The People Of the Drama",
+          "page_start": 23,
+          "page_end": 23
+        },
+        {
+          "chunk_id": 74,
+          "chapter": "CHAPTER V. The People Of the Drama",
+          "page_start": 23,
+          "page_end": 24
+        },
+        {
+          "chunk_id": 75,
+          "chapter": "CHAPTER V. The People Of the Drama",
+          "page_start": 24,
+          "page_end": 24
+        },
+        {
+          "chunk_id": 76,
+          "chapter": "CHAPTER V. The People Of the Drama",
+          "page_start": 24,
+          "page_end": 24
+        },
+        {
+          "chunk_id": 77,
+          "chapter": "CHAPTER V. The People Of the Drama",
+          "page_start": 24,
+          "page_end": 24
+        },
+        {
+          "chunk_id": 78,
+          "chapter": "CHAPTER V. The People Of the Drama",
+          "page_start": 24,
+          "page_end": 24
+        },
+        {
+          "chunk_id": 79,
+          "chapter": "CHAPTER V. The People Of the Drama",
+          "page_start": 24,
+          "page_end": 24
+        },
+        {
+          "chunk_id": 81,
+          "chapter": "CHAPTER V. The People Of the Drama",
+          "page_start": 25,
+          "page_end": 25
+        },
+        {
+          "chunk_id": 82,
+          "chapter": "CHAPTER V. The People Of the Drama",
+          "page_start": 25,
+          "page_end": 25
+        },
+        {
+          "chunk_id": 83,
+          "chapter": "CHAPTER V. The People Of the Drama",
+          "page_start": 25,
+          "page_end": 25
+        },
+        {
+          "chunk_id": 84,
+          "chapter": "CHAPTER V. The People Of the Drama",
+          "page_start": 25,
+          "page_end": 26
+        },
+        {
+          "chunk_id": 85,
+          "chapter": "CHAPTER V. The People Of the Drama",
+          "page_start": 26,
+          "page_end": 26
+        },
+        {
+          "chunk_id": 86,
+          "chapter": "CHAPTER V. The People Of the Drama",
+          "page_start": 26,
+          "page_end": 26
+        },
+        {
+          "chunk_id": 87,
+          "chapter": "CHAPTER V. The People Of the Drama",
+          "page_start": 26,
+          "page_end": 26
+        },
+        {
+          "chunk_id": 88,
+          "chapter": "CHAPTER V. The People Of the Drama",
+          "page_start": 26,
+          "page_end": 27
+        }
+      ]
+    },
+    {
+      "name": "Sir Charles Chandos",
+      "description": "Ames's former employer for ten years before Ames entered Mr. Douglas's service.",
+      "sources": [
+        {
+          "chunk_id": 55,
+          "chapter": "CHAPTER IV.",
+          "page_start": 19,
+          "page_end": 19
+        }
+      ]
+    },
+    {
+      "name": "Bodymaster McGinty",
+      "description": "An individual associated with the Valley of Fear whose name Mr. Douglas uttered with anger and horror while delirious.",
+      "sources": [
+        {
+          "chunk_id": 89,
+          "chapter": "CHAPTER V. The People Of the Drama",
+          "page_start": 27,
+          "page_end": 27
+        }
+      ]
+    }
+  ],
+  "locations": [
+    {
+      "name": "Birlstone Manor House",
+      "description": "An ancient Jacobean house of dingy liver-coloured brick, surrounded by a broad water moat with a wooden drawbridge and old-fashioned yew gardens.",
+      "sources": [
+        {
+          "chunk_id": 4,
+          "chapter": "CHAPTER I.",
+          "page_start": 7,
+          "page_end": 8
+        },
+        {
+          "chunk_id": 12,
+          "chapter": "CHAPTER I.",
+          "page_start": 9,
+          "page_end": 9
+        },
+        {
+          "chunk_id": 14,
+          "chapter": "CHAPTER I.",
+          "page_start": 10,
+          "page_end": 10
+        },
+        {
+          "chunk_id": 16,
+          "chapter": "CHAPTER I.",
+          "page_start": 10,
+          "page_end": 10
+        },
+        {
+          "chunk_id": 17,
+          "chapter": "CHAPTER I.",
+          "page_start": 10,
+          "page_end": 10
+        },
+        {
+          "chunk_id": 32,
+          "chapter": "CHAPTER III. The Tragedy of Birlstone",
+          "page_start": 14,
+          "page_end": 14
+        },
+        {
+          "chunk_id": 33,
+          "chapter": "CHAPTER III. The Tragedy of Birlstone",
+          "page_start": 14,
+          "page_end": 15
+        },
+        {
+          "chunk_id": 34,
+          "chapter": "CHAPTER III. The Tragedy of Birlstone",
+          "page_start": 15,
+          "page_end": 15
+        },
+        {
+          "chunk_id": 36,
+          "chapter": "CHAPTER III. The Tragedy of Birlstone",
+          "page_start": 15,
+          "page_end": 15
+        },
+        {
+          "chunk_id": 37,
+          "chapter": "CHAPTER III. The Tragedy of Birlstone",
+          "page_start": 15,
+          "page_end": 15
+        },
+        {
+          "chunk_id": 38,
+          "chapter": "CHAPTER III. The Tragedy of Birlstone",
+          "page_start": 15,
+          "page_end": 15
+        },
+        {
+          "chunk_id": 39,
+          "chapter": "CHAPTER III. The Tragedy of Birlstone",
+          "page_start": 15,
+          "page_end": 16
+        },
+        {
+          "chunk_id": 43,
+          "chapter": "CHAPTER III. The Tragedy of Birlstone",
+          "page_start": 16,
+          "page_end": 16
+        },
+        {
+          "chunk_id": 44,
+          "chapter": "CHAPTER III. The Tragedy of Birlstone",
+          "page_start": 16,
+          "page_end": 17
+        },
+        {
+          "chunk_id": 47,
+          "chapter": "CHAPTER III. The Tragedy of Birlstone",
+          "page_start": 17,
+          "page_end": 17
+        },
+        {
+          "chunk_id": 55,
+          "chapter": "CHAPTER IV.",
+          "page_start": 19,
+          "page_end": 19
+        },
+        {
+          "chunk_id": 57,
+          "chapter": "CHAPTER IV.",
+          "page_start": 20,
+          "page_end": 20
+        },
+        {
+          "chunk_id": 58,
+          "chapter": "CHAPTER IV.",
+          "page_start": 20,
+          "page_end": 20
+        },
+        {
+          "chunk_id": 60,
+          "chapter": "CHAPTER IV.",
+          "page_start": 20,
+          "page_end": 20
+        },
+        {
+          "chunk_id": 61,
+          "chapter": "CHAPTER IV.",
+          "page_start": 20,
+          "page_end": 21
+        },
+        {
+          "chunk_id": 62,
+          "chapter": "CHAPTER IV.",
+          "page_start": 21,
+          "page_end": 21
+        },
+        {
+          "chunk_id": 63,
+          "chapter": "CHAPTER IV.",
+          "page_start": 21,
+          "page_end": 21
+        }
+      ]
+    },
+    {
+      "name": "Birlstone",
+      "description": "A quaint English village featuring a street flanked by pollarded elms and ancient stone pillars topped by the Capus lion shape.",
+      "sources": [
+        {
+          "chunk_id": 19,
+          "chapter": "CHAPTER II. Sherlock Holmes Discourses",
+          "page_start": 11,
+          "page_end": 11
+        },
+        {
+          "chunk_id": 20,
+          "chapter": "CHAPTER II. Sherlock Holmes Discourses",
+          "page_start": 11,
+          "page_end": 11
+        },
+        {
+          "chunk_id": 22,
+          "chapter": "CHAPTER II. Sherlock Holmes Discourses",
+          "page_start": 12,
+          "page_end": 12
+        },
+        {
+          "chunk_id": 23,
+          "chapter": "CHAPTER II. Sherlock Holmes Discourses",
+          "page_start": 12,
+          "page_end": 12
+        },
+        {
+          "chunk_id": 25,
+          "chapter": "CHAPTER II. Sherlock Holmes Discourses",
+          "page_start": 12,
+          "page_end": 13
+        },
+        {
+          "chunk_id": 26,
+          "chapter": "CHAPTER II. Sherlock Holmes Discourses",
+          "page_start": 13,
+          "page_end": 13
+        },
+        {
+          "chunk_id": 27,
+          "chapter": "CHAPTER II. Sherlock Holmes Discourses",
+          "page_start": 13,
+          "page_end": 13
+        },
+        {
+          "chunk_id": 31,
+          "chapter": "CHAPTER II. Sherlock Holmes Discourses",
+          "page_start": 14,
+          "page_end": 14
+        },
+        {
+          "chunk_id": 32,
+          "chapter": "CHAPTER III. The Tragedy of Birlstone",
+          "page_start": 14,
+          "page_end": 14
+        },
+        {
+          "chunk_id": 33,
+          "chapter": "CHAPTER III. The Tragedy of Birlstone",
+          "page_start": 14,
+          "page_end": 15
+        },
+        {
+          "chunk_id": 38,
+          "chapter": "CHAPTER III. The Tragedy of Birlstone",
+          "page_start": 15,
+          "page_end": 15
+        },
+        {
+          "chunk_id": 39,
+          "chapter": "CHAPTER III. The Tragedy of Birlstone",
+          "page_start": 15,
+          "page_end": 16
+        },
+        {
+          "chunk_id": 40,
+          "chapter": "CHAPTER III. The Tragedy of Birlstone",
+          "page_start": 16,
+          "page_end": 16
+        },
+        {
+          "chunk_id": 43,
+          "chapter": "CHAPTER III. The Tragedy of Birlstone",
+          "page_start": 16,
+          "page_end": 16
+        },
+        {
+          "chunk_id": 46,
+          "chapter": "CHAPTER III. The Tragedy of Birlstone",
+          "page_start": 17,
+          "page_end": 17
+        },
+        {
+          "chunk_id": 52,
+          "chapter": "CHAPTER IV.",
+          "page_start": 18,
+          "page_end": 19
+        },
+        {
+          "chunk_id": 57,
+          "chapter": "CHAPTER IV.",
+          "page_start": 20,
+          "page_end": 20
+        },
+        {
+          "chunk_id": 73,
+          "chapter": "CHAPTER V. The People Of the Drama",
+          "page_start": 23,
+          "page_end": 23
+        },
+        {
+          "chunk_id": 74,
+          "chapter": "CHAPTER V. The People Of the Drama",
+          "page_start": 23,
+          "page_end": 24
+        },
+        {
+          "chunk_id": 75,
+          "chapter": "CHAPTER V. The People Of the Drama",
+          "page_start": 24,
+          "page_end": 24
+        },
+        {
+          "chunk_id": 78,
+          "chapter": "CHAPTER V. The People Of the Drama",
+          "page_start": 24,
+          "page_end": 24
+        }
+      ]
+    },
+    {
+      "name": "London",
+      "description": "City where Cecil Barker came to live and where Mr. Douglas met and became engaged to his second wife.",
+      "sources": [
+        {
+          "chunk_id": 19,
+          "chapter": "CHAPTER II. Sherlock Holmes Discourses",
+          "page_start": 11,
+          "page_end": 11
+        },
+        {
+          "chunk_id": 20,
+          "chapter": "CHAPTER II. Sherlock Holmes Discourses",
+          "page_start": 11,
+          "page_end": 11
+        },
+        {
+          "chunk_id": 25,
+          "chapter": "CHAPTER II. Sherlock Holmes Discourses",
+          "page_start": 12,
+          "page_end": 13
+        },
+        {
+          "chunk_id": 31,
+          "chapter": "CHAPTER II. Sherlock Holmes Discourses",
+          "page_start": 14,
+          "page_end": 14
+        },
+        {
+          "chunk_id": 35,
+          "chapter": "CHAPTER III. The Tragedy of Birlstone",
+          "page_start": 15,
+          "page_end": 15
+        },
+        {
+          "chunk_id": 73,
+          "chapter": "CHAPTER V. The People Of the Drama",
+          "page_start": 23,
+          "page_end": 23
+        },
+        {
+          "chunk_id": 76,
+          "chapter": "CHAPTER V. The People Of the Drama",
+          "page_start": 24,
+          "page_end": 24
+        },
+        {
+          "chunk_id": 81,
+          "chapter": "CHAPTER V. The People Of the Drama",
+          "page_start": 25,
+          "page_end": 25
+        },
+        {
+          "chunk_id": 89,
+          "chapter": "CHAPTER V. The People Of the Drama",
+          "page_start": 27,
+          "page_end": 27
+        }
+      ]
+    },
+    {
+      "name": "Camberwell",
+      "description": "A district in London where Porlock's letters were posted and where money was directed to the post office.",
+      "sources": [
+        {
+          "chunk_id": 18,
+          "chapter": "CHAPTER II. Sherlock Holmes Discourses",
+          "page_start": 11,
+          "page_end": 11
+        },
+        {
+          "chunk_id": 21,
+          "chapter": "CHAPTER II. Sherlock Holmes Discourses",
+          "page_start": 11,
+          "page_end": 12
+        }
+      ]
+    },
+    {
+      "name": "Hales Lodge, Hampstead",
+      "description": "The residence of Cecil James Barker.",
+      "sources": [
+        {
+          "chunk_id": 38,
+          "chapter": "CHAPTER III. The Tragedy of Birlstone",
+          "page_start": 15,
+          "page_end": 15
+        }
+      ]
+    },
+    {
+      "name": "Westville Arms",
+      "description": "An inn in Birlstone where Sherlock Holmes, Dr. Watson, and MacDonald reside during the investigation.",
+      "sources": [
+        {
+          "chunk_id": 52,
+          "chapter": "CHAPTER IV.",
+          "page_start": 18,
+          "page_end": 19
+        }
+      ]
+    },
+    {
+      "name": "Sussex",
+      "description": "The English county where the village of Birlstone and the crime scene are located.",
+      "sources": [
+        {
+          "chunk_id": 54,
+          "chapter": "CHAPTER IV.",
+          "page_start": 19,
+          "page_end": 19
+        }
+      ]
+    },
+    {
+      "name": "Tunbridge Wells",
+      "description": "Town where Mr. Douglas went shopping the day before the crime.",
+      "sources": [
+        {
+          "chunk_id": 73,
+          "chapter": "CHAPTER V. The People Of the Drama",
+          "page_start": 23,
+          "page_end": 23
+        }
+      ]
+    },
+    {
+      "name": "Benito Canyon",
+      "description": "Location in California where Mr. Douglas and Cecil Barker were successful mining partners.",
+      "sources": [
+        {
+          "chunk_id": 76,
+          "chapter": "CHAPTER V. The People Of the Drama",
+          "page_start": 24,
+          "page_end": 24
+        }
+      ]
+    },
+    {
+      "name": "Valley of Fear",
+      "description": "Valley where Mr. Douglas had previously lived and experienced a terrible ordeal, connected to Bodymaster McGinty.",
+      "sources": [
+        {
+          "chunk_id": 88,
+          "chapter": "CHAPTER V. The People Of the Drama",
+          "page_start": 26,
+          "page_end": 27
+        },
+        {
+          "chunk_id": 89,
+          "chapter": "CHAPTER V. The People Of the Drama",
+          "page_start": 27,
+          "page_end": 27
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "subject": "Fred Porlock",
+      "relation": "associated_with",
+      "object": "Professor Moriarty",
+      "explanation": "Porlock is a link in Professor Moriarty's criminal chain and acts on the fringe of his organization.",
+      "sources": [
+        {
+          "chunk_id": 2,
+          "chapter": "CHAPTER I.",
+          "page_start": 7,
+          "page_end": 7
+        },
+        {
+          "chunk_id": 3,
+          "chapter": "CHAPTER I.",
+          "page_start": 7,
+          "page_end": 7
+        },
+        {
+          "chunk_id": 4,
+          "chapter": "CHAPTER I.",
+          "page_start": 7,
+          "page_end": 8
+        },
+        {
+          "chunk_id": 5,
+          "chapter": "CHAPTER I.",
+          "page_start": 8,
+          "page_end": 8
+        },
+        {
+          "chunk_id": 11,
+          "chapter": "CHAPTER I.",
+          "page_start": 9,
+          "page_end": 9
+        }
+      ]
+    },
+    {
+      "subject": "Fred Porlock",
+      "relation": "sent_message_to",
+      "object": "Sherlock Holmes",
+      "explanation": "Porlock periodically sends coded advance warnings and messages to Holmes.",
+      "sources": [
+        {
+          "chunk_id": 1,
+          "chapter": "CHAPTER I.",
+          "page_start": 7,
+          "page_end": 7
+        },
+        {
+          "chunk_id": 2,
+          "chapter": "CHAPTER I.",
+          "page_start": 7,
+          "page_end": 7
+        },
+        {
+          "chunk_id": 3,
+          "chapter": "CHAPTER I.",
+          "page_start": 7,
+          "page_end": 7
+        },
+        {
+          "chunk_id": 5,
+          "chapter": "CHAPTER I.",
+          "page_start": 8,
+          "page_end": 8
+        },
+        {
+          "chunk_id": 6,
+          "chapter": "CHAPTER I.",
+          "page_start": 8,
+          "page_end": 8
+        },
+        {
+          "chunk_id": 7,
+          "chapter": "CHAPTER I.",
+          "page_start": 8,
+          "page_end": 8
+        },
+        {
+          "chunk_id": 8,
+          "chapter": "CHAPTER I.",
+          "page_start": 8,
+          "page_end": 9
+        },
+        {
+          "chunk_id": 10,
+          "chapter": "CHAPTER I.",
+          "page_start": 9,
+          "page_end": 9
+        },
+        {
+          "chunk_id": 12,
+          "chapter": "CHAPTER I.",
+          "page_start": 9,
+          "page_end": 9
+        }
+      ]
+    },
+    {
+      "subject": "Inspector Alec MacDonald",
+      "relation": "works_with",
+      "object": "Sherlock Holmes",
+      "explanation": "MacDonald consults Holmes on difficult investigations and respects his analytical genius.",
+      "sources": [
+        {
+          "chunk_id": 13,
+          "chapter": "CHAPTER I.",
+          "page_start": 9,
+          "page_end": 10
+        },
+        {
+          "chunk_id": 14,
+          "chapter": "CHAPTER I.",
+          "page_start": 10,
+          "page_end": 10
+        },
+        {
+          "chunk_id": 15,
+          "chapter": "CHAPTER I.",
+          "page_start": 10,
+          "page_end": 10
+        },
+        {
+          "chunk_id": 16,
+          "chapter": "CHAPTER I.",
+          "page_start": 10,
+          "page_end": 10
+        },
+        {
+          "chunk_id": 17,
+          "chapter": "CHAPTER I.",
+          "page_start": 10,
+          "page_end": 10
+        }
+      ]
+    },
+    {
+      "subject": "Dr. John H. Watson",
+      "relation": "companion_of",
+      "object": "Sherlock Holmes",
+      "explanation": "Watson lives with and assists Holmes in analyzing cases and deciphering coded messages.",
+      "sources": [
+        {
+          "chunk_id": 0,
+          "chapter": "CHAPTER I.",
+          "page_start": 7,
+          "page_end": 7
+        },
+        {
+          "chunk_id": 3,
+          "chapter": "CHAPTER I.",
+          "page_start": 7,
+          "page_end": 7
+        },
+        {
+          "chunk_id": 4,
+          "chapter": "CHAPTER I.",
+          "page_start": 7,
+          "page_end": 8
+        },
+        {
+          "chunk_id": 12,
+          "chapter": "CHAPTER I.",
+          "page_start": 9,
+          "page_end": 9
+        },
+        {
+          "chunk_id": 13,
+          "chapter": "CHAPTER I.",
+          "page_start": 9,
+          "page_end": 10
+        },
+        {
+          "chunk_id": 16,
+          "chapter": "CHAPTER I.",
+          "page_start": 10,
+          "page_end": 10
+        },
+        {
+          "chunk_id": 57,
+          "chapter": "CHAPTER IV.",
+          "page_start": 20,
+          "page_end": 20
+        }
+      ]
+    },
+    {
+      "subject": "Professor Moriarty",
+      "relation": "suspects",
+      "object": "Fred Porlock",
+      "explanation": "Moriarty made an unexpected visit to Porlock, causing Porlock to realize he was suspected of treachery.",
+      "sources": [
+        {
+          "chunk_id": 4,
+          "chapter": "CHAPTER I.",
+          "page_start": 7,
+          "page_end": 8
+        },
+        {
+          "chunk_id": 5,
+          "chapter": "CHAPTER I.",
+          "page_start": 8,
+          "page_end": 8
+        },
+        {
+          "chunk_id": 7,
+          "chapter": "CHAPTER I.",
+          "page_start": 8,
+          "page_end": 8
+        }
+      ]
+    },
+    {
+      "subject": "Mr. Douglas",
+      "relation": "lives_at",
+      "object": "Birlstone Manor House",
+      "explanation": "Mr. Douglas is described as a country gentleman residing at Birlstone Manor House.",
+      "sources": [
+        {
+          "chunk_id": 12,
+          "chapter": "CHAPTER I.",
+          "page_start": 9,
+          "page_end": 9
+        },
+        {
+          "chunk_id": 14,
+          "chapter": "CHAPTER I.",
+          "page_start": 10,
+          "page_end": 10
+        },
+        {
+          "chunk_id": 17,
+          "chapter": "CHAPTER I.",
+          "page_start": 10,
+          "page_end": 10
+        }
+      ]
+    },
+    {
+      "subject": "Sherlock Holmes",
+      "relation": "works_with",
+      "object": "Inspector MacDonald",
+      "explanation": "Inspector MacDonald consults Sherlock Holmes on major criminal matters, including the Birlstone murder.",
+      "sources": [
+        {
+          "chunk_id": 18,
+          "chapter": "CHAPTER II. Sherlock Holmes Discourses",
+          "page_start": 11,
+          "page_end": 11
+        },
+        {
+          "chunk_id": 19,
+          "chapter": "CHAPTER II. Sherlock Holmes Discourses",
+          "page_start": 11,
+          "page_end": 11
+        },
+        {
+          "chunk_id": 20,
+          "chapter": "CHAPTER II. Sherlock Holmes Discourses",
+          "page_start": 11,
+          "page_end": 11
+        },
+        {
+          "chunk_id": 28,
+          "chapter": "CHAPTER II. Sherlock Holmes Discourses",
+          "page_start": 13,
+          "page_end": 13
+        },
+        {
+          "chunk_id": 29,
+          "chapter": "CHAPTER II. Sherlock Holmes Discourses",
+          "page_start": 13,
+          "page_end": 13
+        },
+        {
+          "chunk_id": 30,
+          "chapter": "CHAPTER II. Sherlock Holmes Discourses",
+          "page_start": 13,
+          "page_end": 14
+        },
+        {
+          "chunk_id": 31,
+          "chapter": "CHAPTER II. Sherlock Holmes Discourses",
+          "page_start": 14,
+          "page_end": 14
+        }
+      ]
+    },
+    {
+      "subject": "Inspector MacDonald",
+      "relation": "friend_of",
+      "object": "White Mason",
+      "explanation": "White Mason is described as a personal friend of Inspector MacDonald.",
+      "sources": [
+        {
+          "chunk_id": 30,
+          "chapter": "CHAPTER II. Sherlock Holmes Discourses",
+          "page_start": 13,
+          "page_end": 14
+        }
+      ]
+    },
+    {
+      "subject": "Colonel Sebastian Moran",
+      "relation": "chief_of_staff_of",
+      "object": "Professor Moriarty",
+      "explanation": "Colonel Sebastian Moran serves as chief of staff for Professor Moriarty's criminal organization.",
+      "sources": [
+        {
+          "chunk_id": 26,
+          "chapter": "CHAPTER II. Sherlock Holmes Discourses",
+          "page_start": 13,
+          "page_end": 13
+        },
+        {
+          "chunk_id": 27,
+          "chapter": "CHAPTER II. Sherlock Holmes Discourses",
+          "page_start": 13,
+          "page_end": 13
+        }
+      ]
+    },
+    {
+      "subject": "Porlock",
+      "relation": "sent_message_to",
+      "object": "Sherlock Holmes",
+      "explanation": "Porlock sent Holmes an encrypted warning message regarding danger to John Douglas.",
+      "sources": [
+        {
+          "chunk_id": 18,
+          "chapter": "CHAPTER II. Sherlock Holmes Discourses",
+          "page_start": 11,
+          "page_end": 11
+        },
+        {
+          "chunk_id": 19,
+          "chapter": "CHAPTER II. Sherlock Holmes Discourses",
+          "page_start": 11,
+          "page_end": 11
+        },
+        {
+          "chunk_id": 21,
+          "chapter": "CHAPTER II. Sherlock Holmes Discourses",
+          "page_start": 11,
+          "page_end": 12
+        },
+        {
+          "chunk_id": 29,
+          "chapter": "CHAPTER II. Sherlock Holmes Discourses",
+          "page_start": 13,
+          "page_end": 13
+        }
+      ]
+    },
+    {
+      "subject": "Mrs. Douglas",
+      "relation": "married_to",
+      "object": "John Douglas",
+      "explanation": "Mrs. Douglas is married to John Douglas of Birlstone Manor House.",
+      "sources": [
+        {
+          "chunk_id": 33,
+          "chapter": "CHAPTER III. The Tragedy of Birlstone",
+          "page_start": 14,
+          "page_end": 15
+        },
+        {
+          "chunk_id": 35,
+          "chapter": "CHAPTER III. The Tragedy of Birlstone",
+          "page_start": 15,
+          "page_end": 15
+        }
+      ]
+    },
+    {
+      "subject": "John Douglas",
+      "relation": "lives_at",
+      "object": "Birlstone Manor House",
+      "explanation": "John Douglas has lived at the Manor House of Birlstone for five years.",
+      "sources": [
+        {
+          "chunk_id": 33,
+          "chapter": "CHAPTER III. The Tragedy of Birlstone",
+          "page_start": 14,
+          "page_end": 15
+        },
+        {
+          "chunk_id": 34,
+          "chapter": "CHAPTER III. The Tragedy of Birlstone",
+          "page_start": 15,
+          "page_end": 15
+        }
+      ]
+    },
+    {
+      "subject": "John Douglas",
+      "relation": "married_to",
+      "object": "Mrs. Douglas",
+      "explanation": "John Douglas met Mrs. Douglas in London when he was a widower, and they married.",
+      "sources": [
+        {
+          "chunk_id": 36,
+          "chapter": "CHAPTER III. The Tragedy of Birlstone",
+          "page_start": 15,
+          "page_end": 15
+        },
+        {
+          "chunk_id": 37,
+          "chapter": "CHAPTER III. The Tragedy of Birlstone",
+          "page_start": 15,
+          "page_end": 15
+        }
+      ]
+    },
+    {
+      "subject": "Cecil James Barker",
+      "relation": "friend_of",
+      "object": "John Douglas",
+      "explanation": "Cecil Barker first knew John Douglas in America, lived on intimate terms with him, and remained his close friend in England.",
+      "sources": [
+        {
+          "chunk_id": 38,
+          "chapter": "CHAPTER III. The Tragedy of Birlstone",
+          "page_start": 15,
+          "page_end": 15
+        },
+        {
+          "chunk_id": 39,
+          "chapter": "CHAPTER III. The Tragedy of Birlstone",
+          "page_start": 15,
+          "page_end": 16
+        },
+        {
+          "chunk_id": 41,
+          "chapter": "CHAPTER III. The Tragedy of Birlstone",
+          "page_start": 16,
+          "page_end": 16
+        }
+      ]
+    },
+    {
+      "subject": "Cecil James Barker",
+      "relation": "friend_of",
+      "object": "Mrs. Douglas",
+      "explanation": "Barker was friendly with Mrs. Douglas, driving around the countryside with her during her husband's absence.",
+      "sources": [
+        {
+          "chunk_id": 40,
+          "chapter": "CHAPTER III. The Tragedy of Birlstone",
+          "page_start": 16,
+          "page_end": 16
+        },
+        {
+          "chunk_id": 41,
+          "chapter": "CHAPTER III. The Tragedy of Birlstone",
+          "page_start": 16,
+          "page_end": 16
+        }
+      ]
+    },
+    {
+      "subject": "Ames",
+      "relation": "employs",
+      "object": "John Douglas",
+      "explanation": "Ames serves as the butler for John Douglas at Birlstone Manor House.",
+      "sources": [
+        {
+          "chunk_id": 39,
+          "chapter": "CHAPTER III. The Tragedy of Birlstone",
+          "page_start": 15,
+          "page_end": 16
+        },
+        {
+          "chunk_id": 40,
+          "chapter": "CHAPTER III. The Tragedy of Birlstone",
+          "page_start": 16,
+          "page_end": 16
+        },
+        {
+          "chunk_id": 42,
+          "chapter": "CHAPTER III. The Tragedy of Birlstone",
+          "page_start": 16,
+          "page_end": 16
+        }
+      ]
+    },
+    {
+      "subject": "Mrs. Allen",
+      "relation": "works_with",
+      "object": "Mrs. Douglas",
+      "explanation": "Mrs. Allen acts as housekeeper and assists Mrs. Douglas with domestic cares.",
+      "sources": [
+        {
+          "chunk_id": 42,
+          "chapter": "CHAPTER III. The Tragedy of Birlstone",
+          "page_start": 16,
+          "page_end": 16
+        },
+        {
+          "chunk_id": 43,
+          "chapter": "CHAPTER III. The Tragedy of Birlstone",
+          "page_start": 16,
+          "page_end": 16
+        }
+      ]
+    },
+    {
+      "subject": "White Mason",
+      "relation": "works_with",
+      "object": "Sergeant Wilson",
+      "explanation": "Sergeant Wilson calls White Mason, chief Sussex detective, to lead the local murder investigation.",
+      "sources": [
+        {
+          "chunk_id": 50,
+          "chapter": "CHAPTER III. The Tragedy of Birlstone",
+          "page_start": 18,
+          "page_end": 18
+        },
+        {
+          "chunk_id": 52,
+          "chapter": "CHAPTER IV.",
+          "page_start": 18,
+          "page_end": 19
+        }
+      ]
+    },
+    {
+      "subject": "Sherlock Holmes",
+      "relation": "companion_of",
+      "object": "Dr. Watson",
+      "explanation": "Dr. Watson accompanies Sherlock Holmes to Birlstone for the murder investigation.",
+      "sources": [
+        {
+          "chunk_id": 52,
+          "chapter": "CHAPTER IV.",
+          "page_start": 18,
+          "page_end": 19
+        },
+        {
+          "chunk_id": 53,
+          "chapter": "CHAPTER IV.",
+          "page_start": 19,
+          "page_end": 19
+        }
+      ]
+    },
+    {
+      "subject": "Mr. John Douglas",
+      "relation": "employs",
+      "object": "Ames",
+      "explanation": "Ames has served as butler to Mr. Douglas for five years since Douglas took Birlstone Manor House.",
+      "sources": [
+        {
+          "chunk_id": 55,
+          "chapter": "CHAPTER IV.",
+          "page_start": 19,
+          "page_end": 19
+        }
+      ]
+    },
+    {
+      "subject": "Ames",
+      "relation": "works_for",
+      "object": "Sir Charles Chandos",
+      "explanation": "Ames worked ten years as butler for Sir Charles Chandos prior to his employment with Mr. Douglas.",
+      "sources": [
+        {
+          "chunk_id": 55,
+          "chapter": "CHAPTER IV.",
+          "page_start": 19,
+          "page_end": 19
+        }
+      ]
+    },
+    {
+      "subject": "Mrs. Douglas",
+      "relation": "married_to",
+      "object": "Mr. John Douglas",
+      "explanation": "Mrs. Douglas is the wife of the victim, Mr. John Douglas.",
+      "sources": [
+        {
+          "chunk_id": 63,
+          "chapter": "CHAPTER IV.",
+          "page_start": 21,
+          "page_end": 21
+        },
+        {
+          "chunk_id": 64,
+          "chapter": "CHAPTER IV.",
+          "page_start": 21,
+          "page_end": 21
+        }
+      ]
+    },
+    {
+      "subject": "White Mason",
+      "relation": "works_with",
+      "object": "Inspector MacDonald",
+      "explanation": "White Mason and Inspector MacDonald cooperate on the official investigation into Mr. Douglas's murder.",
+      "sources": [
+        {
+          "chunk_id": 54,
+          "chapter": "CHAPTER IV.",
+          "page_start": 19,
+          "page_end": 19
+        },
+        {
+          "chunk_id": 55,
+          "chapter": "CHAPTER IV.",
+          "page_start": 19,
+          "page_end": 19
+        },
+        {
+          "chunk_id": 57,
+          "chapter": "CHAPTER IV.",
+          "page_start": 20,
+          "page_end": 20
+        }
+      ]
+    },
+    {
+      "subject": "Sergeant Wilson",
+      "relation": "works_for",
+      "object": "White Mason",
+      "explanation": "Sergeant Wilson managed the initial police guard at the scene until White Mason arrived to take over.",
+      "sources": [
+        {
+          "chunk_id": 54,
+          "chapter": "CHAPTER IV.",
+          "page_start": 19,
+          "page_end": 19
+        },
+        {
+          "chunk_id": 63,
+          "chapter": "CHAPTER IV.",
+          "page_start": 21,
+          "page_end": 21
+        }
+      ]
+    },
+    {
+      "subject": "Cecil Barker",
+      "relation": "friend_of",
+      "object": "Mr. Douglas",
+      "explanation": "Cecil Barker and Mr. Douglas were mining partners in California and remained close friends.",
+      "sources": [
+        {
+          "chunk_id": 76,
+          "chapter": "CHAPTER V. The People Of the Drama",
+          "page_start": 24,
+          "page_end": 24
+        },
+        {
+          "chunk_id": 84,
+          "chapter": "CHAPTER V. The People Of the Drama",
+          "page_start": 25,
+          "page_end": 26
+        }
+      ]
+    },
+    {
+      "subject": "Mr. Douglas",
+      "relation": "married_to",
+      "object": "Mrs. Douglas",
+      "explanation": "Mr. Douglas and Mrs. Douglas had been married for five years before his death.",
+      "sources": [
+        {
+          "chunk_id": 81,
+          "chapter": "CHAPTER V. The People Of the Drama",
+          "page_start": 25,
+          "page_end": 25
+        },
+        {
+          "chunk_id": 89,
+          "chapter": "CHAPTER V. The People Of the Drama",
+          "page_start": 27,
+          "page_end": 27
+        }
+      ]
+    },
+    {
+      "subject": "Ames",
+      "relation": "employed_by",
+      "object": "Mr. Douglas",
+      "explanation": "Ames worked as butler for Mr. Douglas for five years.",
+      "sources": [
+        {
+          "chunk_id": 73,
+          "chapter": "CHAPTER V. The People Of the Drama",
+          "page_start": 23,
+          "page_end": 23
+        },
+        {
+          "chunk_id": 74,
+          "chapter": "CHAPTER V. The People Of the Drama",
+          "page_start": 23,
+          "page_end": 24
+        }
+      ]
+    },
+    {
+      "subject": "Mrs. Allen",
+      "relation": "employed_by",
+      "object": "Mr. Douglas",
+      "explanation": "Mrs. Allen worked as housekeeper at Mr. Douglas's home.",
+      "sources": [
+        {
+          "chunk_id": 74,
+          "chapter": "CHAPTER V. The People Of the Drama",
+          "page_start": 23,
+          "page_end": 24
+        },
+        {
+          "chunk_id": 78,
+          "chapter": "CHAPTER V. The People Of the Drama",
+          "page_start": 24,
+          "page_end": 24
+        }
+      ]
+    },
+    {
+      "subject": "Cecil Barker",
+      "relation": "best_man_for",
+      "object": "Mr. Douglas",
+      "explanation": "Barker served as best man at Mr. Douglas's marriage to his second wife.",
+      "sources": [
+        {
+          "chunk_id": 81,
+          "chapter": "CHAPTER V. The People Of the Drama",
+          "page_start": 25,
+          "page_end": 25
+        }
+      ]
+    },
+    {
+      "subject": "Mr. Douglas",
+      "relation": "feared",
+      "object": "Bodymaster McGinty",
+      "explanation": "During a feverish delirium, Mr. Douglas repeatedly spoke Bodymaster McGinty's name with anger and horror.",
+      "sources": [
+        {
+          "chunk_id": 89,
+          "chapter": "CHAPTER V. The People Of the Drama",
+          "page_start": 27,
+          "page_end": 27
+        }
+      ]
+    }
+  ],
+  "events": [],
+  "facts": []
+}

@@ -1,0 +1,234 @@
+[
+  {
+    "id": 1,
+    "question": "Who is Professor Moriarty?",
+    "category": "character",
+    "unanswerable": false,
+    "retrieval": {
+      "story_only_coverage": 1.0,
+      "hybrid_coverage": 1.0
+    },
+    "story_only": {
+      "answer": "Based on the provided story passages, Professor Moriarty is:\n\n* **The Controlling Brain of the Underworld:** He is described as \"the greatest schemer of all time, the organizer of every deviltry,\" and a \"Napoleon-gone-wrong\" who sits at the top of a vast network of criminals [Page 7, Page 13].\n* **A Strict Leader:** He rules over his organization with tremendous discipline, enforcing death as the sole punishment in his code [Page 13]. He engineers crimes for payment or a share of spoils, and employs Colonel Sebastian Moran as his chief of staff [Page 13].\n* **A Celebrated Academic:** Publicly, he is a slandered professor and the author of *The Dynamics of an Asteroid*, a book on pure mathematics written at such rarefied heights that few in the scientific press could criticize it [Page 7].\n* **Aloof and Immune from Suspicion:** He manages his affairs with such self-effacement that he is legally immune from criticism and aloof from general public suspicion, to the point that calling him a criminal in public could result in a libel lawsuit [Page 7]. \n* **Extremely Wealthy:** He earns massive amounts from his enterprise—paying his chief of staff £6,000 a year—and secretly maintains dozens of bank accounts to hide the full extent of his fortune [Page 13].",
+      "scores": {
+        "concept_coverage": 1.0,
+        "citation": true,
+        "correct_refusal": false,
+        "quality_score": 1.0
+      }
+    },
+    "hybrid": {
+      "answer": "Based on the supplied evidence, Professor Moriarty is a mathematician and criminal mastermind described by Sherlock Holmes as \"the greatest schemer of all time, the organizer of every deviltry, the controlling brain of the underworld\" [Page 7]. \n\nKey details established about him include:\n\n* **Academic Background:** He is a professor and the celebrated author of *The Dynamics of an Asteroid*, a book on pure mathematics so advanced that no one in the scientific press was considered capable of criticizing it [Page 7].\n* **Criminal Empire:** He rules over a vast criminal network like a \"Napoleon-gone-wrong\" with absolute discipline—where the sole punishment for betrayal is death—and employs Colonel Sebastian Moran as his chief of staff [Page 13].\n* **Public Standing and Wealth:** He maintains an air of respectability, self-effacement, and aloofness from general suspicion, leaving him immune to legal criticism [Page 7]. He conceals his immense fortune by using numerous bank accounts [Page 13].",
+      "scores": {
+        "concept_coverage": 1.0,
+        "citation": true,
+        "correct_refusal": false,
+        "quality_score": 1.0
+      }
+    },
+    "winner": "tie"
+  },
+  {
+    "id": 2,
+    "question": "What is the relationship between Holmes and Watson?",
+    "category": "relationship",
+    "unanswerable": false,
+    "retrieval": {
+      "story_only_coverage": 1.0,
+      "hybrid_coverage": 1.0
+    },
+    "story_only": {
+      "answer": "Based on the provided passages, Holmes and Watson have the following relationship:\n\n* **Friends:** Their friendship is described as being well known [Page 29].\n* **Companions in Investigation:** Watson accompanies Holmes on his investigative work, stays with him (such as sharing a double-bedded room at a country inn during a case), and discusses case clues, ciphers, and theories directly with him [Pages 8, 9, 29, 33].\n* **Affectionate Colleagues:** Holmes speaks to Watson warmly, frequently addressing him as \"my dear Watson\" and complimenting his \"native shrewdness\" [Pages 8, 9, 29].",
+      "scores": {
+        "concept_coverage": 1.0,
+        "citation": true,
+        "correct_refusal": false,
+        "quality_score": 1.0
+      }
+    },
+    "hybrid": {
+      "answer": "Based on the supplied evidence, Holmes and Watson are close friends and investigative companions who work together to solve cases [Pages 8, 29]. Their well-known friendship involves collaborating on investigations, traveling together, and sharing accommodations, with Holmes frequently addressing Watson as \"my dear Watson\" [Pages 8, 9, 29, 33].",
+      "scores": {
+        "concept_coverage": 1.0,
+        "citation": true,
+        "correct_refusal": false,
+        "quality_score": 1.0
+      }
+    },
+    "winner": "tie"
+  },
+  {
+    "id": 3,
+    "question": "Who is Porlock and why is he important?",
+    "category": "character_reasoning",
+    "unanswerable": false,
+    "retrieval": {
+      "story_only_coverage": 1.0,
+      "hybrid_coverage": 1.0
+    },
+    "story_only": {
+      "answer": "Based on the provided story excerpts:\n\n**Who is Porlock:**\n* \"Porlock\" is a nom-de-plume (pseudonym) and mere identification mark for a person with a \"shifty and evasive personality\" whose real identity remains unknown [Page 7]. \n* He is a \"link in the chain\" and an associate in touch with the formidable and sinister Professor Moriarty [Page 7].\n\n**Why he is important:**\n* He is important due to his connection to Professor Moriarty [Page 7].\n* Motivated by \"rudimentary aspirations towards right\" as well as occasional ten-pound notes sent by Holmes, he sometimes provides Holmes with valuable advance information that \"anticipates and prevents rather than avenges crime\" [Page 7]. \n* He sends Holmes coded warning communications, such as a cipher message warning of impending danger concerning \"Douglas\" at \"Birlstone House\" [Pages 7, 9-10].",
+      "scores": {
+        "concept_coverage": 1.0,
+        "citation": true,
+        "correct_refusal": false,
+        "quality_score": 1.0
+      }
+    },
+    "hybrid": {
+      "answer": "**Who is Porlock?**\n\"Porlock\" is a pseudonym (\"nom-de-plume\") used by an individual with a \"shifty and evasive personality\" [Page 7]. He is a member of Professor Moriarty's criminal network, acting as an imperfect link (\"the only flaw in that chain\") [Page 7].\n\n**Why is he important?**\nPorlock is important because:\n* He is in direct contact with the formidable Professor Moriarty [Page 7].\n* Driven by \"rudimentary aspirations towards right\" and payment (\"an occasional ten-pound note\"), he occasionally provides Sherlock Holmes with valuable advance information that helps anticipate and prevent crimes [Page 7].",
+      "scores": {
+        "concept_coverage": 1.0,
+        "citation": true,
+        "correct_refusal": false,
+        "quality_score": 1.0
+      }
+    },
+    "winner": "tie"
+  },
+  {
+    "id": 4,
+    "question": "Why is Holmes interested in Porlock?",
+    "category": "reasoning",
+    "unanswerable": false,
+    "retrieval": {
+      "story_only_coverage": 1.0,
+      "hybrid_coverage": 1.0
+    },
+    "story_only": {
+      "answer": "Based on the provided story excerpts, Holmes is interested in Porlock because:\n\n* Porlock is in contact with Professor Moriarty, a formidable and sinister figure [Pages 7-7].\n* Porlock has occasionally supplied Holmes with valuable advance information that allows Holmes to anticipate and prevent crimes rather than just avenge them [Pages 7-7].",
+      "scores": {
+        "concept_coverage": 1.0,
+        "citation": true,
+        "correct_refusal": false,
+        "quality_score": 1.0
+      }
+    },
+    "hybrid": {
+      "answer": "According to the story, Holmes is interested in Porlock because Porlock is in touch with Professor Moriarty [Pages 7–7]. Additionally, Porlock occasionally provides Holmes with valuable advance information that allows Holmes to anticipate and prevent crimes [Pages 7–7].",
+      "scores": {
+        "concept_coverage": 1.0,
+        "citation": true,
+        "correct_refusal": false,
+        "quality_score": 1.0
+      }
+    },
+    "winner": "tie"
+  },
+  {
+    "id": 5,
+    "question": "Is Porlock his real name?",
+    "category": "fact",
+    "unanswerable": false,
+    "retrieval": {
+      "story_only_coverage": 1.0,
+      "hybrid_coverage": 1.0
+    },
+    "story_only": {
+      "answer": "No, \"Porlock\" is not his real name. \n\nIt is a \"nom-de-plume\" and a \"mere identification mark\" [Page 7]. In a previous letter, he explicitly informed Sherlock Holmes that the name was not his own [Page 7], and Inspector MacDonald also notes that the name is assumed [Pages 11-12].",
+      "scores": {
+        "concept_coverage": 1.0,
+        "citation": true,
+        "correct_refusal": false,
+        "quality_score": 1.0
+      }
+    },
+    "hybrid": {
+      "answer": "No, Porlock is not his real name. Sherlock Holmes explains that \"Porlock\" is a \"nom-de-plume\" or assumed name, and Porlock previously informed Holmes in a letter that the name was not his own [Page 7].",
+      "scores": {
+        "concept_coverage": 1.0,
+        "citation": true,
+        "correct_refusal": false,
+        "quality_score": 1.0
+      }
+    },
+    "winner": "tie"
+  },
+  {
+    "id": 6,
+    "question": "What is Professor Moriarty's public reputation?",
+    "category": "fact",
+    "unanswerable": false,
+    "retrieval": {
+      "story_only_coverage": 1.0,
+      "hybrid_coverage": 1.0
+    },
+    "story_only": {
+      "answer": "Based on the provided passages, Professor Moriarty's public reputation is that of an unassailable, respected academic rather than a criminal:\n\n* **Aloof from suspicion and criticism:** He is so immune from public criticism, aloof from general suspicion, and admirable in his self-effacement that calling him a criminal in public is considered libel in the eyes of the law [Page 7].\n* **Celebrated scholar:** He is known publicly as the celebrated author of *The Dynamics of an Asteroid*, a book on pure mathematics written at such advanced heights that no one in the scientific press was said to be capable of criticizing it [Page 7].",
+      "scores": {
+        "concept_coverage": 0.5,
+        "citation": true,
+        "correct_refusal": false,
+        "quality_score": 0.6
+      }
+    },
+    "hybrid": {
+      "answer": "In public, Professor Moriarty is completely above suspicion and immune from criticism [Page 7]. He is publicly known as a highly respectable, learned, and talented professor, as well as the celebrated author of *The Dynamics of an Asteroid*—a work of pure mathematics so advanced that no one in the scientific press was considered capable of criticizing it [Page 7].",
+      "scores": {
+        "concept_coverage": 1.0,
+        "citation": true,
+        "correct_refusal": false,
+        "quality_score": 1.0
+      }
+    },
+    "winner": "hybrid"
+  },
+  {
+    "id": 7,
+    "question": "Who is Alec MacDonald?",
+    "category": "character",
+    "unanswerable": false,
+    "retrieval": {
+      "story_only_coverage": 0.6667,
+      "hybrid_coverage": 1.0
+    },
+    "story_only": {
+      "answer": "Based on the provided excerpts, Alec MacDonald is a young, trusted member of the detective force (who later achieved national fame) [Page 10]. \n\nKey details about him include:\n* **Career:** He distinguished himself in several cases entrusted to him, and Sherlock Holmes had helped him attain success twice in his career [Page 10].\n* **Physical Appearance:** He has a tall, bony figure that promises exceptional physical strength, a great cranium, deep-set and lustrous eyes, and bushy eyebrows [Page 10].\n* **Personality & Demeanor:** He is a silent, precise man with a dour nature, a keen intelligence, and a hard Aberdonian accent [Page 10].",
+      "scores": {
+        "concept_coverage": 1.0,
+        "citation": true,
+        "correct_refusal": false,
+        "quality_score": 1.0
+      }
+    },
+    "hybrid": {
+      "answer": "Based on the supplied story evidence, Alec MacDonald is a young but trusted member of the detective force (an inspector) who distinguished himself in several cases entrusted to him and later achieved national fame [Page 10]. \n\nHe is described as:\n* Having a tall, bony figure that promises exceptional physical strength [Page 10].\n* Possessing a great cranium, bushy eyebrows, and deep-set, lustrous eyes that demonstrate a keen intelligence [Page 10].\n* Being a silent, precise man with a dour nature and a hard Aberdonian accent [Page 10].\n\nSherlock Holmes had previously helped him achieve success in two of his past cases [Page 10].",
+      "scores": {
+        "concept_coverage": 1.0,
+        "citation": true,
+        "correct_refusal": false,
+        "quality_score": 1.0
+      }
+    },
+    "winner": "tie"
+  },
+  {
+    "id": 8,
+    "question": "What smartphone does Sherlock Holmes use?",
+    "category": "unanswerable",
+    "unanswerable": true,
+    "retrieval": {
+      "story_only_coverage": 1.0,
+      "hybrid_coverage": 1.0
+    },
+    "story_only": {
+      "answer": "The available story evidence does not establish that.",
+      "scores": {
+        "concept_coverage": 1.0,
+        "citation": false,
+        "correct_refusal": true,
+        "quality_score": 1.0
+      }
+    },
+    "hybrid": {
+      "answer": "The available story evidence does not establish that.",
+      "scores": {
+        "concept_coverage": 1.0,
+        "citation": false,
+        "correct_refusal": true,
+        "quality_score": 1.0
+      }
+    },
+    "winner": "tie"
+  }
+]

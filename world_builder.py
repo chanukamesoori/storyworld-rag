@@ -1,11 +1,11 @@
 import json
-import time
 import re
+import time
 from pathlib import Path
+from typing import List
 
 from google import genai
 from pydantic import BaseModel
-from typing import List
 
 
 # ============================================================
@@ -27,102 +27,131 @@ PROGRESS_FILE = Path(
 LLM_MODEL = "gemini-3.6-flash"
 
 
-# ------------------------------------------------------------
-# FIRST TEST ONLY
+# ============================================================
+# FULL BOOK
 #
-# Keep this at 20 until we inspect the World Memory.
+# None = process every remaining chunk
 #
-# Later:
+# You can temporarily use:
+# MAX_CHUNKS = 50
 #
-# MAX_CHUNKS = None
-# ------------------------------------------------------------
+# if you ever want to limit one run.
+# ============================================================
 
-MAX_CHUNKS = 20
+MAX_CHUNKS = None
 
 
-# Delay between successful requests
-REQUEST_DELAY_SECONDS = 4
+# Paid API means we do not need aggressive free-tier
+# optimization, but a small delay is still polite and
+# reduces the chance of RPM spikes.
+REQUEST_DELAY_SECONDS = 1
+
+MAX_RETRIES = 3
 
 
 # ============================================================
-# STRUCTURED OUTPUT MODELS
+# STRUCTURED OUTPUT
 # ============================================================
 
 class CharacterExtraction(BaseModel):
 
     name: str
-
     description: str
 
 
 class LocationExtraction(BaseModel):
 
     name: str
-
     description: str
 
 
 class RelationshipExtraction(BaseModel):
 
     subject: str
-
     relation: str
-
     object: str
-
     explanation: str
 
 
 class EventExtraction(BaseModel):
 
     summary: str
-
     participants: List[str]
-
     location: str
-
     explanation: str
 
 
 class FactExtraction(BaseModel):
 
     subject: str
-
     predicate: str
-
     object: str
-
     explanation: str
 
 
 class WorldExtraction(BaseModel):
 
-    characters: List[
-        CharacterExtraction
-    ]
+    characters: List[CharacterExtraction]
 
-    locations: List[
-        LocationExtraction
-    ]
+    locations: List[LocationExtraction]
 
-    relationships: List[
-        RelationshipExtraction
-    ]
+    relationships: List[RelationshipExtraction]
 
-    events: List[
-        EventExtraction
-    ]
+    events: List[EventExtraction]
 
-    facts: List[
-        FactExtraction
-    ]
+    facts: List[FactExtraction]
 
 
 # ============================================================
-# GEMINI
+# GEMINI CLIENT
 # ============================================================
 
 client = genai.Client()
+
+
+# ============================================================
+# NORMALIZATION
+# ============================================================
+
+def normalize(text):
+
+    if not text:
+        return ""
+
+    return " ".join(
+        str(text)
+        .lower()
+        .strip()
+        .split()
+    )
+
+
+# ============================================================
+# EMPTY WORLD
+# ============================================================
+
+def create_empty_world():
+
+    return {
+
+        "processed_chunk_ids":
+            [],
+
+        "characters":
+            [],
+
+        "locations":
+            [],
+
+        "relationships":
+            [],
+
+        "events":
+            [],
+
+        "facts":
+            []
+    }
 
 
 # ============================================================
@@ -134,9 +163,10 @@ def load_chunks():
     if not CHUNKS_FILE.exists():
 
         raise FileNotFoundError(
-            f"{CHUNKS_FILE} does not exist. "
+            f"{CHUNKS_FILE} not found. "
             "Run ingest.py first."
         )
+
 
     with open(
         CHUNKS_FILE,
@@ -144,51 +174,27 @@ def load_chunks():
         encoding="utf-8"
     ) as file:
 
-        chunks = json.load(
+        return json.load(
             file
         )
 
-    print(
-        f"Loaded {len(chunks)} "
-        f"story chunks."
-    )
-
-    return chunks
-
 
 # ============================================================
-# EMPTY WORLD
-# ============================================================
-
-def create_empty_world():
-
-    return {
-
-        "processed_chunk_ids": [],
-
-        "characters": [],
-
-        "locations": [],
-
-        "relationships": [],
-
-        "events": [],
-
-        "facts": []
-    }
-
-
-# ============================================================
-# LOAD PROGRESS
+# LOAD EXISTING PROGRESS
 # ============================================================
 
 def load_world():
 
+    # --------------------------------------------------------
+    # Prefer checkpoint because it represents the latest
+    # successfully processed state.
+    # --------------------------------------------------------
+
     if PROGRESS_FILE.exists():
 
         print(
-            "Existing World Memory "
-            "progress found."
+            f"Loading progress from "
+            f"{PROGRESS_FILE}"
         )
 
         with open(
@@ -201,14 +207,51 @@ def load_world():
                 file
             )
 
+
+    # --------------------------------------------------------
+    # Fallback to existing world
+    # --------------------------------------------------------
+
+    if WORLD_FILE.exists():
+
+        print(
+            f"No progress file found."
+        )
+
+        print(
+            f"Loading existing world from "
+            f"{WORLD_FILE}"
+        )
+
+        with open(
+            WORLD_FILE,
+            "r",
+            encoding="utf-8"
+        ) as file:
+
+            return json.load(
+                file
+            )
+
+
+    print(
+        "No previous World Memory found."
+    )
+
+    print(
+        "Starting from scratch."
+    )
+
     return create_empty_world()
 
 
 # ============================================================
-# SAVE PROGRESS
+# SAVE CHECKPOINT
 # ============================================================
 
-def save_progress(world):
+def save_progress(
+    world
+):
 
     with open(
         PROGRESS_FILE,
@@ -225,10 +268,12 @@ def save_progress(world):
 
 
 # ============================================================
-# SAVE FINAL
+# SAVE FINAL WORLD
 # ============================================================
 
-def save_final_world(world):
+def save_world(
+    world
+):
 
     with open(
         WORLD_FILE,
@@ -245,23 +290,12 @@ def save_final_world(world):
 
 
 # ============================================================
-# NORMALIZATION
-# ============================================================
-
-def normalize(text):
-
-    return " ".join(
-        text.lower()
-        .strip()
-        .split()
-    )
-
-
-# ============================================================
 # SOURCE METADATA
 # ============================================================
 
-def get_source(chunk):
+def make_source(
+    chunk
+):
 
     return {
 
@@ -279,19 +313,61 @@ def get_source(chunk):
         "page_start":
             chunk.get(
                 "page_start",
-                chunk.get("page")
+                chunk.get(
+                    "page"
+                )
             ),
 
         "page_end":
             chunk.get(
                 "page_end",
-                chunk.get("page")
+                chunk.get(
+                    "page"
+                )
             )
     }
 
 
 # ============================================================
-# CHARACTER
+# MERGE SOURCE LISTS
+# ============================================================
+
+def merge_sources(
+    existing_sources,
+    incoming_sources
+):
+
+    existing_ids = {
+
+        source.get(
+            "chunk_id"
+        )
+
+        for source
+        in existing_sources
+    }
+
+
+    for source in incoming_sources:
+
+        chunk_id = source.get(
+            "chunk_id"
+        )
+
+
+        if chunk_id not in existing_ids:
+
+            existing_sources.append(
+                source
+            )
+
+            existing_ids.add(
+                chunk_id
+            )
+
+
+# ============================================================
+# CHARACTER MERGE
 # ============================================================
 
 def add_character(
@@ -300,33 +376,55 @@ def add_character(
     source
 ):
 
-    name_key = normalize(
+    key = normalize(
         character.name
     )
 
-    if not name_key:
+
+    if not key:
         return
 
-    for existing in (
-        world["characters"]
-    ):
+
+    for existing in world[
+        "characters"
+    ]:
 
         if normalize(
-            existing["name"]
-        ) == name_key:
+            existing.get(
+                "name"
+            )
+        ) == key:
 
+            merge_sources(
+                existing.setdefault(
+                    "sources",
+                    []
+                ),
+                [source]
+            )
+
+
+            # Keep the more informative description.
             if (
-                source
-                not in existing["sources"]
+                len(
+                    character.description
+                )
+                >
+                len(
+                    existing.get(
+                        "description",
+                        ""
+                    )
+                )
             ):
 
                 existing[
-                    "sources"
-                ].append(
-                    source
-                )
+                    "description"
+                ] = character.description
+
 
             return
+
 
     world[
         "characters"
@@ -338,14 +436,13 @@ def add_character(
         "description":
             character.description,
 
-        "sources": [
-            source
-        ]
+        "sources":
+            [source]
     })
 
 
 # ============================================================
-# LOCATION
+# LOCATION MERGE
 # ============================================================
 
 def add_location(
@@ -354,33 +451,54 @@ def add_location(
     source
 ):
 
-    name_key = normalize(
+    key = normalize(
         location.name
     )
 
-    if not name_key:
+
+    if not key:
         return
 
-    for existing in (
-        world["locations"]
-    ):
+
+    for existing in world[
+        "locations"
+    ]:
 
         if normalize(
-            existing["name"]
-        ) == name_key:
+            existing.get(
+                "name"
+            )
+        ) == key:
+
+            merge_sources(
+                existing.setdefault(
+                    "sources",
+                    []
+                ),
+                [source]
+            )
+
 
             if (
-                source
-                not in existing["sources"]
+                len(
+                    location.description
+                )
+                >
+                len(
+                    existing.get(
+                        "description",
+                        ""
+                    )
+                )
             ):
 
                 existing[
-                    "sources"
-                ].append(
-                    source
-                )
+                    "description"
+                ] = location.description
+
 
             return
+
 
     world[
         "locations"
@@ -392,14 +510,13 @@ def add_location(
         "description":
             location.description,
 
-        "sources": [
-            source
-        ]
+        "sources":
+            [source]
     })
 
 
 # ============================================================
-# RELATIONSHIP
+# RELATIONSHIP MERGE
 # ============================================================
 
 def add_relationship(
@@ -423,42 +540,45 @@ def add_relationship(
         )
     )
 
-    if not all(key):
-        return
 
-    for existing in (
-        world["relationships"]
-    ):
+    for existing in world[
+        "relationships"
+    ]:
 
         existing_key = (
 
             normalize(
-                existing["subject"]
+                existing.get(
+                    "subject"
+                )
             ),
 
             normalize(
-                existing["relation"]
+                existing.get(
+                    "relation"
+                )
             ),
 
             normalize(
-                existing["object"]
+                existing.get(
+                    "object"
+                )
             )
         )
 
+
         if existing_key == key:
 
-            if (
-                source
-                not in existing["sources"]
-            ):
-
-                existing[
-                    "sources"
-                ].append(
-                    source
-                )
+            merge_sources(
+                existing.setdefault(
+                    "sources",
+                    []
+                ),
+                [source]
+            )
 
             return
+
 
     world[
         "relationships"
@@ -476,14 +596,13 @@ def add_relationship(
         "explanation":
             relationship.explanation,
 
-        "sources": [
-            source
-        ]
+        "sources":
+            [source]
     })
 
 
 # ============================================================
-# EVENT
+# EVENT MERGE
 # ============================================================
 
 def add_event(
@@ -496,29 +615,31 @@ def add_event(
         event.summary
     )
 
+
     if not key:
         return
 
-    for existing in (
-        world["events"]
-    ):
+
+    for existing in world[
+        "events"
+    ]:
 
         if normalize(
-            existing["summary"]
+            existing.get(
+                "summary"
+            )
         ) == key:
 
-            if (
-                source
-                not in existing["sources"]
-            ):
-
-                existing[
-                    "sources"
-                ].append(
-                    source
-                )
+            merge_sources(
+                existing.setdefault(
+                    "sources",
+                    []
+                ),
+                [source]
+            )
 
             return
+
 
     world[
         "events"
@@ -536,14 +657,13 @@ def add_event(
         "explanation":
             event.explanation,
 
-        "sources": [
-            source
-        ]
+        "sources":
+            [source]
     })
 
 
 # ============================================================
-# FACT
+# FACT MERGE
 # ============================================================
 
 def add_fact(
@@ -567,42 +687,45 @@ def add_fact(
         )
     )
 
-    if not all(key):
-        return
 
-    for existing in (
-        world["facts"]
-    ):
+    for existing in world[
+        "facts"
+    ]:
 
         existing_key = (
 
             normalize(
-                existing["subject"]
+                existing.get(
+                    "subject"
+                )
             ),
 
             normalize(
-                existing["predicate"]
+                existing.get(
+                    "predicate"
+                )
             ),
 
             normalize(
-                existing["object"]
+                existing.get(
+                    "object"
+                )
             )
         )
 
+
         if existing_key == key:
 
-            if (
-                source
-                not in existing["sources"]
-            ):
-
-                existing[
-                    "sources"
-                ].append(
-                    source
-                )
+            merge_sources(
+                existing.setdefault(
+                    "sources",
+                    []
+                ),
+                [source]
+            )
 
             return
+
 
     world[
         "facts"
@@ -620,14 +743,13 @@ def add_fact(
         "explanation":
             fact.explanation,
 
-        "sources": [
-            source
-        ]
+        "sources":
+            [source]
     })
 
 
 # ============================================================
-# MERGE EXTRACTION
+# MERGE COMPLETE EXTRACTION
 # ============================================================
 
 def merge_extraction(
@@ -636,242 +758,406 @@ def merge_extraction(
     chunk
 ):
 
-    source = get_source(
+    source = make_source(
         chunk
     )
 
-    for character in (
-        extraction.characters
-    ):
+
+    for item in extraction.characters:
 
         add_character(
             world,
-            character,
+            item,
             source
         )
 
-    for location in (
-        extraction.locations
-    ):
+
+    for item in extraction.locations:
 
         add_location(
             world,
-            location,
+            item,
             source
         )
 
-    for relationship in (
-        extraction.relationships
-    ):
+
+    for item in extraction.relationships:
 
         add_relationship(
             world,
-            relationship,
+            item,
             source
         )
 
-    for event in (
-        extraction.events
-    ):
+
+    for item in extraction.events:
 
         add_event(
             world,
-            event,
+            item,
             source
         )
 
-    for fact in (
-        extraction.facts
-    ):
+
+    for item in extraction.facts:
 
         add_fact(
             world,
-            fact,
+            item,
             source
         )
 
 
 # ============================================================
-# EXTRACT ONE CHUNK
+# EXTRACTION PROMPT
 # ============================================================
 
-def extract_world_from_chunk(
+def build_prompt(
     chunk
 ):
 
-    chapter = chunk.get(
-        "chapter",
-        "Unknown"
-    )
+    return f"""
+You are extracting structured World Memory from ONE
+passage of a fictional story.
 
-    page_start = chunk.get(
-        "page_start",
-        chunk.get("page")
-    )
+Use ONLY the supplied story passage.
 
-    page_end = chunk.get(
-        "page_end",
-        chunk.get("page")
-    )
+Do NOT use outside knowledge about:
+- Sherlock Holmes
+- the novel
+- the author
+- other chapters
+- later events
+- adaptations
 
-    story_text = (
-        chunk["text"]
-    )
 
-    prompt = f"""
-You are building a structured database representing
-a fictional story world.
+============================================================
+SOURCE
+============================================================
 
-You are NOT answering a user question.
+Chunk ID:
+{chunk.get("chunk_id")}
 
-Extract only information supported by the supplied
-story passage.
+Chapter:
+{chunk.get("chapter")}
 
-RULES:
+Pages:
+{chunk.get("page_start")} - {chunk.get("page_end")}
 
-1. Use ONLY the supplied passage.
 
-2. Do NOT use prior knowledge of the book.
+============================================================
+STORY PASSAGE
+============================================================
 
-3. Do NOT invent information.
+{chunk.get("text")}
 
-4. If something is uncertain, leave it out.
 
-5. Extract characters actually mentioned or present.
+============================================================
+TASK
+============================================================
 
-6. Extract meaningful locations.
+Extract useful structured information that is actually
+supported by this passage.
 
-7. Extract meaningful relationships between entities.
 
-8. Extract important events.
+CHARACTERS
+----------
 
-9. Extract useful factual statements.
+Extract actual characters mentioned or clearly involved.
 
-10. Use short machine-readable relationship names.
+For each:
+- name
+- concise description
 
-Examples:
+Prefer proper names when the passage establishes them.
+
+Avoid creating separate character entities for vague
+labels such as:
+
+- Narrator
+- The Speaker
+- Watson's companion
+- The Man
+- His Companion
+
+when the passage clearly identifies that person as an
+already named character.
+
+
+LOCATIONS
+---------
+
+Extract meaningful story-relevant locations.
+
+For each:
+- name
+- concise description
+
+
+RELATIONSHIPS
+-------------
+
+Extract meaningful relationships.
+
+Use short snake_case labels such as:
 
 friend_of
 companion_of
-lives_at
 works_with
 knows
-married_to
-parent_of
 enemy_of
-respects
-suspects
-owns
-visited
+associated_with
+in_touch_with
 helped
+warned
+sent_message_to
 speaks_to
-travels_with
+employs
+suspects
+lives_at
+visited
+author_of
 
-11. Use short machine-readable fact predicates.
+
+Only extract relationships actually supported by the
+passage.
+
+
+EVENTS
+------
+
+Extract important actions or developments that happen
+in this passage.
 
 Examples:
 
+- receiving a letter
+- decoding a message
+- someone arriving
+- discussing a threat
+- discovering information
+- committing a crime
+- warning another character
+
+Do NOT list every tiny physical action.
+
+Extract events useful for answering:
+
+"What happened?"
+"What did this character do?"
+"What happened before or after something?"
+
+
+FACTS
+-----
+
+Extract useful facts established in the passage.
+
+Possible predicates include:
+
+identity
 occupation
-residence
 appearance
+residence
+reputation
+status
+personality
 possesses
 believes
 knows
-status
-identity
+ability
+role
+motive
 
-12. The explanation must briefly state what evidence
-supports the extraction.
 
-13. Do not create facts merely because they are commonly
-known about the story.
+A fact differs from an event.
 
-14. Return empty arrays where no useful information exists.
+Example:
 
-STORY METADATA
+EVENT:
+Holmes examines Porlock's letter.
 
-Chapter:
-{chapter}
+FACT:
+Holmes recognizes Porlock's handwriting.
 
-Pages:
-{page_start} - {page_end}
 
-STORY PASSAGE:
+============================================================
+IMPORTANT RULES
+============================================================
 
-{story_text}
+1. Use ONLY this passage.
+
+2. Do not invent information.
+
+3. Do not omit Facts merely because the same information
+   appears in a character description.
+
+4. Do not omit Events merely because an action also creates
+   a relationship.
+
+5. Quality is more important than quantity.
+
+6. Keep descriptions and explanations concise.
+
+7. Every category must be returned.
+
+8. Empty lists are allowed only when that category truly
+   has no useful information in this passage.
 """
-
-    interaction = (
-        client.interactions.create(
-
-            model=LLM_MODEL,
-
-            input=prompt,
-
-            response_format={
-
-                "type":
-                    "text",
-
-                "mime_type":
-                    "application/json",
-
-                "schema":
-                    WorldExtraction
-                    .model_json_schema()
-            },
-
-            store=False
-        )
-    )
-
-    extraction = (
-        WorldExtraction
-        .model_validate_json(
-            interaction.output_text
-        )
-    )
-
-    return extraction
 
 
 # ============================================================
-# EXTRACT RETRY TIME FROM GEMINI ERROR
+# RETRY PARSER
 # ============================================================
 
 def get_retry_seconds(
     error_message
 ):
 
-    # Example:
-    # "Please retry in 45.329404514s"
+    patterns = [
 
-    match = re.search(
         r"retry in ([0-9.]+)s",
-        error_message,
-        re.IGNORECASE
-    )
 
-    if match:
+        r"retry after ([0-9.]+)s"
+    ]
 
-        seconds = float(
-            match.group(1)
+
+    for pattern in patterns:
+
+        match = re.search(
+            pattern,
+            error_message,
+            re.IGNORECASE
         )
 
-        # Add a small safety margin
-        return seconds + 2
 
-    # Default fallback
-    return 60
+        if match:
+
+            return (
+                float(
+                    match.group(1)
+                )
+                + 2
+            )
+
+
+    return 30
 
 
 # ============================================================
-# STATISTICS
+# GEMINI EXTRACTION
 # ============================================================
 
-def print_statistics(world):
+def extract_world_from_chunk(
+    chunk
+):
+
+    prompt = build_prompt(
+        chunk
+    )
+
+
+    for attempt in range(
+        1,
+        MAX_RETRIES + 1
+    ):
+
+        try:
+
+            interaction = (
+                client
+                .interactions
+                .create(
+
+                    model=
+                        LLM_MODEL,
+
+                    input=
+                        prompt,
+
+                    response_format={
+                        "type":
+                            "text",
+
+                        "mime_type":
+                            "application/json",
+
+                        "schema":
+                            WorldExtraction
+                            .model_json_schema()
+                    },
+
+                    store=False
+                )
+            )
+
+
+            return (
+                WorldExtraction
+                .model_validate_json(
+                    interaction.output_text
+                )
+            )
+
+
+        except Exception as error:
+
+            error_text = str(
+                error
+            )
+
+
+            print()
+
+            print(
+                f"Gemini attempt "
+                f"{attempt}/{MAX_RETRIES} failed."
+            )
+
+            print(
+                error_text
+            )
+
+
+            if attempt >= MAX_RETRIES:
+
+                raise
+
+
+            if "429" in error_text:
+
+                wait_seconds = (
+                    get_retry_seconds(
+                        error_text
+                    )
+                )
+
+            else:
+
+                wait_seconds = 5
+
+
+            print(
+                f"Retrying in "
+                f"{wait_seconds:.0f}s..."
+            )
+
+
+            time.sleep(
+                wait_seconds
+            )
+
+
+# ============================================================
+# WORLD STATISTICS
+# ============================================================
+
+def print_stats(
+    world
+):
 
     print()
+
     print(
         "Current World Memory:"
     )
@@ -901,7 +1187,10 @@ def print_statistics(world):
         f"{len(world['facts'])}"
     )
 
-    print()
+    print(
+        f"Processed     : "
+        f"{len(world['processed_chunk_ids'])}"
+    )
 
 
 # ============================================================
@@ -914,259 +1203,316 @@ def main():
     print("=" * 70)
 
     print(
-        "STORYWORLD — WORLD MEMORY BUILDER"
+        "STORYWORLD — FULL WORLD MEMORY BUILDER"
     )
 
     print("=" * 70)
-    print()
+
 
     chunks = load_chunks()
 
     world = load_world()
 
-    processed_ids = set(
-        world[
-            "processed_chunk_ids"
-        ]
-    )
 
-    # --------------------------------------------------------
-    # TEST LIMIT
-    # --------------------------------------------------------
+    processed_ids = {
+
+        int(chunk_id)
+
+        for chunk_id
+        in world.get(
+            "processed_chunk_ids",
+            []
+        )
+    }
+
+
+    # ========================================================
+    # FIND ONLY UNPROCESSED CHUNKS
+    # ========================================================
+
+    remaining_chunks = [
+
+        chunk
+
+        for chunk
+        in chunks
+
+        if int(
+            chunk.get(
+                "chunk_id"
+            )
+        )
+        not in processed_ids
+    ]
+
+
+    # ========================================================
+    # OPTIONAL RUN LIMIT
+    # ========================================================
 
     if MAX_CHUNKS is not None:
 
-        chunks_to_process = (
-            chunks[:MAX_CHUNKS]
+        remaining_chunks = (
+            remaining_chunks[
+                :MAX_CHUNKS
+            ]
         )
 
-    else:
-
-        chunks_to_process = (
-            chunks
-        )
-
-    total = len(
-        chunks_to_process
-    )
-
-    print(
-        f"Chunks selected for this run: "
-        f"{total}"
-    )
 
     print()
 
-    # --------------------------------------------------------
-    # PROCESS CHUNKS
-    # --------------------------------------------------------
+    print(
+        f"Total story chunks : "
+        f"{len(chunks)}"
+    )
 
-    for position, chunk in enumerate(
-        chunks_to_process,
-        start=1
-    ):
+    print(
+        f"Already processed  : "
+        f"{len(processed_ids)}"
+    )
 
-        chunk_id = (
-            chunk["chunk_id"]
+    print(
+        f"Remaining this run : "
+        f"{len(remaining_chunks)}"
+    )
+
+
+    # ========================================================
+    # ALREADY COMPLETE
+    # ========================================================
+
+    if not remaining_chunks:
+
+        save_world(
+            world
         )
-
-        # ----------------------------------------------------
-        # Already completed
-        # ----------------------------------------------------
-
-        if chunk_id in processed_ids:
-
-            print(
-                f"[{position}/{total}] "
-                f"Chunk {chunk_id} "
-                f"already processed."
-            )
-
-            continue
 
         print()
         print(
-            "-" * 70
+            "All story chunks have "
+            "already been processed."
         )
 
+        print_stats(
+            world
+        )
+
+        return
+
+
+    # ========================================================
+    # PROCESS FULL BOOK
+    # ========================================================
+
+    for number, chunk in enumerate(
+        remaining_chunks,
+        start=1
+    ):
+
+        chunk_id = int(
+            chunk[
+                "chunk_id"
+            ]
+        )
+
+
+        print()
+        print("-" * 70)
+
         print(
-            f"[{position}/{total}] "
+            f"[{number}/"
+            f"{len(remaining_chunks)}] "
             f"Processing chunk "
             f"{chunk_id}"
         )
 
         print(
             f"Chapter: "
-            f"{chunk.get('chapter', 'Unknown')}"
+            f"{chunk.get('chapter')}"
         )
 
         print(
             f"Pages: "
-            f"{chunk.get('page_start', chunk.get('page'))}"
-            f" → "
-            f"{chunk.get('page_end', chunk.get('page'))}"
+            f"{chunk.get('page_start')} "
+            f"→ "
+            f"{chunk.get('page_end')}"
         )
 
-        extraction = None
 
-        # ----------------------------------------------------
-        # RETRIES
-        # ----------------------------------------------------
+        try:
 
-        for attempt in range(
-            1,
-            4
-        ):
-
-            try:
-
-                extraction = (
-                    extract_world_from_chunk(
-                        chunk
-                    )
+            extraction = (
+                extract_world_from_chunk(
+                    chunk
                 )
+            )
 
-                break
 
-            except Exception as error:
+            # ------------------------------------------------
+            # Useful diagnostic
+            # ------------------------------------------------
 
-                error_text = str(
-                    error
-                )
-
-                print(
-                    f"Attempt {attempt} failed:"
-                )
-
-                print(
-                    error_text
-                )
-
-                # ------------------------------------------------
-                # Gemini rate limit
-                # ------------------------------------------------
-
-                if "429" in error_text:
-
-                    retry_seconds = (
-                        get_retry_seconds(
-                            error_text
-                        )
-                    )
-
-                    if attempt < 3:
-
-                        print(
-                            f"Rate limit reached."
-                        )
-
-                        print(
-                            f"Retrying after "
-                            f"{retry_seconds:.0f} "
-                            f"seconds..."
-                        )
-
-                        time.sleep(
-                            retry_seconds
-                        )
-
-                elif attempt < 3:
-
-                    print(
-                        "Retrying after 5 seconds..."
-                    )
-
-                    time.sleep(
-                        5
-                    )
-
-        # ----------------------------------------------------
-        # FAILED COMPLETELY
-        # ----------------------------------------------------
-
-        if extraction is None:
-
-            print()
             print(
-                "Could not process this chunk."
+                "✓ World information extracted"
             )
 
             print(
-                "All completed progress "
-                "has already been saved."
+                f"  Characters    : "
+                f"{len(extraction.characters)}"
             )
+
+            print(
+                f"  Locations     : "
+                f"{len(extraction.locations)}"
+            )
+
+            print(
+                f"  Relationships : "
+                f"{len(extraction.relationships)}"
+            )
+
+            print(
+                f"  Events        : "
+                f"{len(extraction.events)}"
+            )
+
+            print(
+                f"  Facts         : "
+                f"{len(extraction.facts)}"
+            )
+
+
+            # ------------------------------------------------
+            # Merge into persistent World Memory
+            # ------------------------------------------------
+
+            merge_extraction(
+                world,
+                extraction,
+                chunk
+            )
+
+
+            # ------------------------------------------------
+            # Mark processed ONLY after successful extraction
+            # ------------------------------------------------
+
+            if (
+                chunk_id
+                not in
+                world[
+                    "processed_chunk_ids"
+                ]
+            ):
+
+                world[
+                    "processed_chunk_ids"
+                ].append(
+                    chunk_id
+                )
+
+
+            world[
+                "processed_chunk_ids"
+            ] = sorted(
+                set(
+                    world[
+                        "processed_chunk_ids"
+                    ]
+                )
+            )
+
+
+            # ------------------------------------------------
+            # CHECKPOINT AFTER EVERY CHUNK
+            # ------------------------------------------------
 
             save_progress(
                 world
             )
 
-            save_final_world(
+
+            print_stats(
                 world
             )
 
-            break
 
-        # ----------------------------------------------------
-        # MERGE
-        # ----------------------------------------------------
+        except KeyboardInterrupt:
 
-        merge_extraction(
-            world,
-            extraction,
-            chunk
-        )
+            print()
+            print()
+            print(
+                "Run interrupted."
+            )
 
-        # ----------------------------------------------------
-        # MARK COMPLETE
-        # ----------------------------------------------------
+            print(
+                "Progress has been saved "
+                "through the previous chunk."
+            )
 
-        world[
-            "processed_chunk_ids"
-        ].append(
-            chunk_id
-        )
+            return
 
-        processed_ids.add(
-            chunk_id
-        )
 
-        # ----------------------------------------------------
-        # SAVE AFTER EVERY CHUNK
-        # ----------------------------------------------------
+        except Exception as error:
 
-        save_progress(
-            world
-        )
+            print()
+            print()
 
-        print(
-            "✓ World information extracted"
-        )
+            print(
+                "ERROR while processing "
+                f"chunk {chunk_id}:"
+            )
 
-        print_statistics(
-            world
-        )
+            print(
+                error
+            )
 
-        # ----------------------------------------------------
-        # SMALL DELAY BETWEEN REQUESTS
-        # ----------------------------------------------------
+            print()
 
-        time.sleep(
-            REQUEST_DELAY_SECONDS
-        )
+            print(
+                "Progress has been preserved."
+            )
 
-    # --------------------------------------------------------
-    # FINAL SAVE
-    # --------------------------------------------------------
+            print(
+                "Run python world_builder.py "
+                "again to resume."
+            )
 
-    save_final_world(
+            return
+
+
+        if (
+            number
+            <
+            len(
+                remaining_chunks
+            )
+        ):
+
+            time.sleep(
+                REQUEST_DELAY_SECONDS
+            )
+
+
+    # ========================================================
+    # COMPLETE
+    # ========================================================
+
+    save_progress(
         world
     )
 
+    save_world(
+        world
+    )
+
+
+    print()
     print()
     print("=" * 70)
 
     print(
-        "WORLD MEMORY BUILD COMPLETE"
+        "FULL STORY WORLD MEMORY BUILD COMPLETE"
     )
 
     print("=" * 70)
@@ -1174,11 +1520,19 @@ def main():
     print()
 
     print(
-        f"Saved to: "
-        f"{WORLD_FILE}"
+        f"Saved:"
     )
 
-    print_statistics(
+    print(
+        WORLD_FILE
+    )
+
+    print(
+        PROGRESS_FILE
+    )
+
+
+    print_stats(
         world
     )
 

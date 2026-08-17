@@ -1,0 +1,227 @@
+{
+  "characters": [
+    {
+      "name": "Sherlock Holmes",
+      "description": "Consulting detective investigating the murder at Birlstone.",
+      "source_chunk_ids": [
+        72,
+        73,
+        85,
+        87,
+        88
+      ]
+    },
+    {
+      "name": "Inspector MacDonald",
+      "description": "Police inspector conducting interviews and leading the investigation into Mr. Douglas's death.",
+      "source_chunk_ids": [
+        79,
+        80,
+        81,
+        85,
+        86,
+        87,
+        89
+      ]
+    },
+    {
+      "name": "White Mason",
+      "description": "An officer involved in the investigation at Birlstone who suggests interviewing household witnesses in the dining room.",
+      "source_chunk_ids": [
+        73
+      ]
+    },
+    {
+      "name": "Ames",
+      "description": "Butler at Birlstone Manor who has served Mr. Douglas for five years.",
+      "source_chunk_ids": [
+        73,
+        74,
+        75,
+        76,
+        78
+      ]
+    },
+    {
+      "name": "Mr. Douglas",
+      "description": "Also known as Jack Douglas; a rich gentleman who made his fortune in mining in California and was murdered at his residence, Birlstone Manor.",
+      "source_chunk_ids": [
+        73,
+        74,
+        76,
+        77,
+        79,
+        80,
+        81,
+        83,
+        84,
+        88,
+        89
+      ]
+    },
+    {
+      "name": "Mrs. Douglas",
+      "description": "Wife of Mr. Douglas; a tall, beautiful, and self-possessed woman of thirty.",
+      "source_chunk_ids": [
+        73,
+        74,
+        75,
+        78,
+        80,
+        81,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89
+      ]
+    },
+    {
+      "name": "Cecil Barker",
+      "description": "Former mining partner and devoted friend of Mr. Douglas from California who was staying at Birlstone.",
+      "source_chunk_ids": [
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88
+      ]
+    },
+    {
+      "name": "Mrs. Allen",
+      "description": "Housekeeper at Birlstone Manor who is somewhat hard of hearing.",
+      "source_chunk_ids": [
+        74,
+        75,
+        78,
+        79,
+        80,
+        88
+      ]
+    },
+    {
+      "name": "Bodymaster McGinty",
+      "description": "An individual associated with the Valley of Fear whose name Mr. Douglas uttered with anger and horror while delirious.",
+      "source_chunk_ids": [
+        89
+      ]
+    }
+  ],
+  "locations": [
+    {
+      "name": "Birlstone",
+      "description": "Ancient manor house surrounded by a shallow moat with a drawbridge, where Mr. Douglas lived and was killed.",
+      "source_chunk_ids": [
+        73,
+        74,
+        75,
+        78
+      ]
+    },
+    {
+      "name": "Tunbridge Wells",
+      "description": "Town where Mr. Douglas went shopping the day before the crime.",
+      "source_chunk_ids": [
+        73
+      ]
+    },
+    {
+      "name": "Benito Canyon",
+      "description": "Location in California where Mr. Douglas and Cecil Barker were successful mining partners.",
+      "source_chunk_ids": [
+        76
+      ]
+    },
+    {
+      "name": "London",
+      "description": "City where Cecil Barker came to live and where Mr. Douglas met and became engaged to his second wife.",
+      "source_chunk_ids": [
+        73,
+        76,
+        81,
+        89
+      ]
+    },
+    {
+      "name": "Valley of Fear",
+      "description": "Valley where Mr. Douglas had previously lived and experienced a terrible ordeal, connected to Bodymaster McGinty.",
+      "source_chunk_ids": [
+        88,
+        89
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "subject": "Cecil Barker",
+      "relation": "friend_of",
+      "object": "Mr. Douglas",
+      "explanation": "Cecil Barker and Mr. Douglas were mining partners in California and remained close friends.",
+      "source_chunk_ids": [
+        76,
+        84
+      ]
+    },
+    {
+      "subject": "Mr. Douglas",
+      "relation": "married_to",
+      "object": "Mrs. Douglas",
+      "explanation": "Mr. Douglas and Mrs. Douglas had been married for five years before his death.",
+      "source_chunk_ids": [
+        81,
+        89
+      ]
+    },
+    {
+      "subject": "Ames",
+      "relation": "employed_by",
+      "object": "Mr. Douglas",
+      "explanation": "Ames worked as butler for Mr. Douglas for five years.",
+      "source_chunk_ids": [
+        73,
+        74
+      ]
+    },
+    {
+      "subject": "Mrs. Allen",
+      "relation": "employed_by",
+      "object": "Mr. Douglas",
+      "explanation": "Mrs. Allen worked as housekeeper at Mr. Douglas's home.",
+      "source_chunk_ids": [
+        74,
+        78
+      ]
+    },
+    {
+      "subject": "Cecil Barker",
+      "relation": "best_man_for",
+      "object": "Mr. Douglas",
+      "explanation": "Barker served as best man at Mr. Douglas's marriage to his second wife.",
+      "source_chunk_ids": [
+        81
+      ]
+    },
+    {
+      "subject": "Mr. Douglas",
+      "relation": "feared",
+      "object": "Bodymaster McGinty",
+      "explanation": "During a feverish delirium, Mr. Douglas repeatedly spoke Bodymaster McGinty's name with anger and horror.",
+      "source_chunk_ids": [
+        89
+      ]
+    }
+  ],
+  "events": [],
+  "facts": []
+}

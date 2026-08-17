@@ -1,0 +1,227 @@
+{
+  "characters": [
+    {
+      "name": "Sherlock Holmes",
+      "description": "The consulting detective investigating the peculiar murder at Birlstone Manor House.",
+      "source_chunk_ids": [
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71
+      ]
+    },
+    {
+      "name": "Dr. John H. Watson",
+      "description": "Sherlock Holmes's friend and companion who accompanies him to Birlstone and records the investigation.",
+      "source_chunk_ids": [
+        57,
+        63
+      ]
+    },
+    {
+      "name": "White Mason",
+      "description": "A local Sussex detective/specialist with a cool, clear, common-sense approach in charge of the Birlstone investigation.",
+      "source_chunk_ids": [
+        54,
+        55,
+        57,
+        59,
+        60,
+        61,
+        63,
+        68
+      ]
+    },
+    {
+      "name": "Inspector MacDonald",
+      "description": "An official police inspector with a noticeable Aberdonian accent working on the case.",
+      "source_chunk_ids": [
+        54,
+        55,
+        56,
+        57,
+        61,
+        65,
+        66,
+        67,
+        68,
+        71
+      ]
+    },
+    {
+      "name": "Sergeant Wilson",
+      "description": "A tall, formal, melancholy village sergeant in Sussex who held vigil at the crime scene until White Mason took over.",
+      "source_chunk_ids": [
+        54,
+        56,
+        62,
+        63
+      ]
+    },
+    {
+      "name": "Ames",
+      "description": "The butler at Birlstone Manor House, described as a quaint, gnarled, dried-up old fellow who formerly served Sir Charles Chandos.",
+      "source_chunk_ids": [
+        55,
+        62,
+        63,
+        67,
+        68,
+        69,
+        70
+      ]
+    },
+    {
+      "name": "Mr. John Douglas",
+      "description": "The victim of the murder at Birlstone Manor House, an American or long-time resident of America bearing a branded mark on his forearm.",
+      "source_chunk_ids": [
+        55,
+        63,
+        64,
+        66,
+        68,
+        69,
+        70
+      ]
+    },
+    {
+      "name": "Mrs. Douglas",
+      "description": "The wife of Mr. John Douglas who reported hearing the gunshot shortly after her husband left her.",
+      "source_chunk_ids": [
+        63,
+        64
+      ]
+    },
+    {
+      "name": "Cecil Barker",
+      "description": "A friend or associate residing at Manor House, described as tall, sunburned, capable-looking, clean-shaved, with masterful eyes.",
+      "source_chunk_ids": [
+        55,
+        62,
+        63,
+        65,
+        66,
+        71
+      ]
+    },
+    {
+      "name": "Dr. Wood",
+      "description": "The medical doctor present at the murder scene who assisted White Mason with examining the body and evidence.",
+      "source_chunk_ids": [
+        55,
+        62
+      ]
+    },
+    {
+      "name": "Sir Charles Chandos",
+      "description": "Ames's former employer for ten years before Ames entered Mr. Douglas's service.",
+      "source_chunk_ids": [
+        55
+      ]
+    }
+  ],
+  "locations": [
+    {
+      "name": "Birlstone Manor House",
+      "description": "An ancient Jacobean house of dingy liver-coloured brick, surrounded by a broad water moat with a wooden drawbridge and old-fashioned yew gardens.",
+      "source_chunk_ids": [
+        55,
+        57,
+        58,
+        60,
+        61,
+        62,
+        63
+      ]
+    },
+    {
+      "name": "Birlstone",
+      "description": "A quaint English village featuring a street flanked by pollarded elms and ancient stone pillars topped by the Capus lion shape.",
+      "source_chunk_ids": [
+        57
+      ]
+    },
+    {
+      "name": "Sussex",
+      "description": "The English county where the village of Birlstone and the crime scene are located.",
+      "source_chunk_ids": [
+        54
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "subject": "Mr. John Douglas",
+      "relation": "employs",
+      "object": "Ames",
+      "explanation": "Ames has served as butler to Mr. Douglas for five years since Douglas took Birlstone Manor House.",
+      "source_chunk_ids": [
+        55
+      ]
+    },
+    {
+      "subject": "Ames",
+      "relation": "works_for",
+      "object": "Sir Charles Chandos",
+      "explanation": "Ames worked ten years as butler for Sir Charles Chandos prior to his employment with Mr. Douglas.",
+      "source_chunk_ids": [
+        55
+      ]
+    },
+    {
+      "subject": "Mrs. Douglas",
+      "relation": "married_to",
+      "object": "Mr. John Douglas",
+      "explanation": "Mrs. Douglas is the wife of the victim, Mr. John Douglas.",
+      "source_chunk_ids": [
+        63,
+        64
+      ]
+    },
+    {
+      "subject": "Dr. John H. Watson",
+      "relation": "companion_of",
+      "object": "Sherlock Holmes",
+      "explanation": "Dr. Watson accompanies Sherlock Holmes down to Birlstone to assist and record the case.",
+      "source_chunk_ids": [
+        57
+      ]
+    },
+    {
+      "subject": "White Mason",
+      "relation": "works_with",
+      "object": "Inspector MacDonald",
+      "explanation": "White Mason and Inspector MacDonald cooperate on the official investigation into Mr. Douglas's murder.",
+      "source_chunk_ids": [
+        54,
+        55,
+        57
+      ]
+    },
+    {
+      "subject": "Sergeant Wilson",
+      "relation": "works_for",
+      "object": "White Mason",
+      "explanation": "Sergeant Wilson managed the initial police guard at the scene until White Mason arrived to take over.",
+      "source_chunk_ids": [
+        54,
+        63
+      ]
+    }
+  ],
+  "events": [],
+  "facts": []
+}

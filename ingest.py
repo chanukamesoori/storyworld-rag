@@ -11,7 +11,7 @@ from sentence_transformers import SentenceTransformer
 # SETTINGS
 # ============================================================
 
-BOOK_PATH = Path("books/sherlock.pdf")
+BOOK_PATH = Path("books/small_story.pdf")
 
 DATA_DIR = Path("data")
 DATA_DIR.mkdir(exist_ok=True)

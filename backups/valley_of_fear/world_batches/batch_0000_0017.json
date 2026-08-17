@@ -1,0 +1,207 @@
+{
+  "characters": [
+    {
+      "name": "Sherlock Holmes",
+      "description": "A brilliant consulting detective in London known for his analytical skills, pure reason, and ability to solve complex ciphers.",
+      "source_chunk_ids": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ]
+    },
+    {
+      "name": "Dr. John H. Watson",
+      "description": "Sherlock Holmes's friend, companion, and chronicler, who assists Holmes in examining cases and deciphering messages.",
+      "source_chunk_ids": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        15,
+        16
+      ]
+    },
+    {
+      "name": "Professor Moriarty",
+      "description": "The celebrated author of 'The Dynamics of an Asteroid' and master criminal schemer who controls an extensive underworld network.",
+      "source_chunk_ids": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        9,
+        11
+      ]
+    },
+    {
+      "name": "Fred Porlock",
+      "description": "An informant associated with Moriarty's network who uses a pseudonym and occasionally provides advance warning of criminal plots to Holmes for money.",
+      "source_chunk_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        10,
+        12
+      ]
+    },
+    {
+      "name": "Billy",
+      "description": "The page at Sherlock Holmes's residence who delivers mail and ushers visitors into the room.",
+      "source_chunk_ids": [
+        6,
+        12,
+        15
+      ]
+    },
+    {
+      "name": "Inspector Alec MacDonald",
+      "description": "A tall, bony Scotland Yard detective with a dour nature and hard Aberdonian accent who frequently seeks assistance from Holmes.",
+      "source_chunk_ids": [
+        13,
+        14,
+        15,
+        16,
+        17
+      ]
+    },
+    {
+      "name": "Mr. Douglas",
+      "description": "A wealthy country gentleman residing at Birlstone Manor House who becomes the victim of a murder.",
+      "source_chunk_ids": [
+        4,
+        12,
+        14,
+        16,
+        17
+      ]
+    }
+  ],
+  "locations": [
+    {
+      "name": "Birlstone Manor House",
+      "description": "A country estate where Mr. Douglas resided and where he was horribly murdered.",
+      "source_chunk_ids": [
+        4,
+        12,
+        14,
+        16,
+        17
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "subject": "Fred Porlock",
+      "relation": "associated_with",
+      "object": "Professor Moriarty",
+      "explanation": "Porlock is a link in Professor Moriarty's criminal chain and acts on the fringe of his organization.",
+      "source_chunk_ids": [
+        2,
+        3,
+        4,
+        5,
+        11
+      ]
+    },
+    {
+      "subject": "Fred Porlock",
+      "relation": "sent_message_to",
+      "object": "Sherlock Holmes",
+      "explanation": "Porlock periodically sends coded advance warnings and messages to Holmes.",
+      "source_chunk_ids": [
+        1,
+        2,
+        3,
+        5,
+        6,
+        7,
+        8,
+        10,
+        12
+      ]
+    },
+    {
+      "subject": "Inspector Alec MacDonald",
+      "relation": "works_with",
+      "object": "Sherlock Holmes",
+      "explanation": "MacDonald consults Holmes on difficult investigations and respects his analytical genius.",
+      "source_chunk_ids": [
+        13,
+        14,
+        15,
+        16,
+        17
+      ]
+    },
+    {
+      "subject": "Dr. John H. Watson",
+      "relation": "companion_of",
+      "object": "Sherlock Holmes",
+      "explanation": "Watson lives with and assists Holmes in analyzing cases and deciphering coded messages.",
+      "source_chunk_ids": [
+        0,
+        3,
+        4,
+        12,
+        13,
+        16
+      ]
+    },
+    {
+      "subject": "Professor Moriarty",
+      "relation": "suspects",
+      "object": "Fred Porlock",
+      "explanation": "Moriarty made an unexpected visit to Porlock, causing Porlock to realize he was suspected of treachery.",
+      "source_chunk_ids": [
+        4,
+        5,
+        7
+      ]
+    },
+    {
+      "subject": "Mr. Douglas",
+      "relation": "lives_at",
+      "object": "Birlstone Manor House",
+      "explanation": "Mr. Douglas is described as a country gentleman residing at Birlstone Manor House.",
+      "source_chunk_ids": [
+        12,
+        14,
+        17
+      ]
+    }
+  ],
+  "events": [],
+  "facts": []
+}

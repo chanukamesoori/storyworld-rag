@@ -2,3 +2,5 @@ sentence-transformers
 pymupdf
 numpy
 google-genai
+fastapi
+uvicorn[standard]

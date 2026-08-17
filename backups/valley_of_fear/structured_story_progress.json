@@ -1,0 +1,288 @@
+{
+  "document_type": "story",
+  "processed_chunk_ids": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "characters": [
+    {
+      "name": "Sherlock Holmes",
+      "description": "A sharp-witted investigator who interrupts Watson, deeply analyzes a newly received envelope and paper, and views Professor Moriarty as a mastermind.",
+      "sources": [
+        {
+          "chunk_id": 0,
+          "chapter": "CHAPTER I.",
+          "page_start": 7,
+          "page_end": 7
+        }
+      ]
+    },
+    {
+      "name": "Watson",
+      "description": "The narrator and a doctor who gets annoyed by Holmes's sardonic tone and publicly labels Moriarty a criminal.",
+      "sources": [
+        {
+          "chunk_id": 0,
+          "chapter": "CHAPTER I.",
+          "page_start": 7,
+          "page_end": 7
+        },
+        {
+          "chunk_id": 1,
+          "chapter": "CHAPTER I.",
+          "page_start": 7,
+          "page_end": 7
+        },
+        {
+          "chunk_id": 2,
+          "chapter": "CHAPTER I.",
+          "page_start": 7,
+          "page_end": 7
+        },
+        {
+          "chunk_id": 3,
+          "chapter": "CHAPTER I.",
+          "page_start": 7,
+          "page_end": 7
+        }
+      ]
+    },
+    {
+      "name": "Professor Moriarty",
+      "description": "A celebrated professor and author of a mathematical treatise who secretly operates as the master schemer and controlling brain of the underworld.",
+      "sources": [
+        {
+          "chunk_id": 0,
+          "chapter": "CHAPTER I.",
+          "page_start": 7,
+          "page_end": 7
+        },
+        {
+          "chunk_id": 2,
+          "chapter": "CHAPTER I.",
+          "page_start": 7,
+          "page_end": 7
+        },
+        {
+          "chunk_id": 3,
+          "chapter": "CHAPTER I.",
+          "page_start": 7,
+          "page_end": 7
+        },
+        {
+          "chunk_id": 4,
+          "chapter": "CHAPTER I.",
+          "page_start": 7,
+          "page_end": 8
+        }
+      ]
+    },
+    {
+      "name": "Moriarty",
+      "description": "A professor, celebrated author of 'The Dynamics of an Asteroid', and mastermind of the underworld.",
+      "sources": [
+        {
+          "chunk_id": 1,
+          "chapter": "CHAPTER I.",
+          "page_start": 7,
+          "page_end": 7
+        }
+      ]
+    },
+    {
+      "name": "Porlock",
+      "description": "An individual whose handwriting is recognized by the speaker through a distinctive Greek 'e'.",
+      "sources": [
+        {
+          "chunk_id": 1,
+          "chapter": "CHAPTER I.",
+          "page_start": 7,
+          "page_end": 7
+        },
+        {
+          "chunk_id": 2,
+          "chapter": "CHAPTER I.",
+          "page_start": 7,
+          "page_end": 7
+        },
+        {
+          "chunk_id": 3,
+          "chapter": "CHAPTER I.",
+          "page_start": 7,
+          "page_end": 7
+        }
+      ]
+    },
+    {
+      "name": "Holmes",
+      "description": "A detective who receives advance information about crimes from Porlock and analyzes encoded messages.",
+      "sources": [
+        {
+          "chunk_id": 3,
+          "chapter": "CHAPTER I.",
+          "page_start": 7,
+          "page_end": 7
+        },
+        {
+          "chunk_id": 4,
+          "chapter": "CHAPTER I.",
+          "page_start": 7,
+          "page_end": 8
+        }
+      ]
+    }
+  ],
+  "locations": [
+    {
+      "name": "This great city",
+      "description": "A city with teeming millions where Porlock claimed he could not be traced.",
+      "sources": [
+        {
+          "chunk_id": 2,
+          "chapter": "CHAPTER I.",
+          "page_start": 7,
+          "page_end": 7
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "subject": "Watson",
+      "relation": "companion_of",
+      "object": "Sherlock Holmes",
+      "explanation": "Watson sits at the breakfast table with Holmes, engaged in conversation.",
+      "sources": [
+        {
+          "chunk_id": 0,
+          "chapter": "CHAPTER I.",
+          "page_start": 7,
+          "page_end": 7
+        }
+      ]
+    },
+    {
+      "subject": "Sherlock Holmes",
+      "relation": "enemy_of",
+      "object": "Professor Moriarty",
+      "explanation": "Holmes regards Moriarty as the greatest criminal schemer of all time and expects a future reckoning with him.",
+      "sources": [
+        {
+          "chunk_id": 0,
+          "chapter": "CHAPTER I.",
+          "page_start": 7,
+          "page_end": 7
+        }
+      ]
+    },
+    {
+      "subject": "Watson",
+      "relation": "suspects",
+      "object": "Moriarty",
+      "explanation": "Watson called Moriarty a criminal.",
+      "sources": [
+        {
+          "chunk_id": 1,
+          "chapter": "CHAPTER I.",
+          "page_start": 7,
+          "page_end": 7
+        }
+      ]
+    },
+    {
+      "subject": "Porlock",
+      "relation": "in_touch_with",
+      "object": "Professor Moriarty",
+      "explanation": "Porlock is described as being in touch with the formidable and sinister Professor Moriarty.",
+      "sources": [
+        {
+          "chunk_id": 2,
+          "chapter": "CHAPTER I.",
+          "page_start": 7,
+          "page_end": 7
+        },
+        {
+          "chunk_id": 3,
+          "chapter": "CHAPTER I.",
+          "page_start": 7,
+          "page_end": 7
+        }
+      ]
+    },
+    {
+      "subject": "Watson",
+      "relation": "companion_of",
+      "object": "the speaker",
+      "explanation": "Watson is listening to and discussing Porlock with the speaker.",
+      "sources": [
+        {
+          "chunk_id": 2,
+          "chapter": "CHAPTER I.",
+          "page_start": 7,
+          "page_end": 7
+        }
+      ]
+    },
+    {
+      "subject": "Porlock",
+      "relation": "provided_information_to",
+      "object": "Holmes",
+      "explanation": "Porlock has occasionally provided Holmes with advance information that helps prevent crimes.",
+      "sources": [
+        {
+          "chunk_id": 3,
+          "chapter": "CHAPTER I.",
+          "page_start": 7,
+          "page_end": 7
+        }
+      ]
+    },
+    {
+      "subject": "Holmes",
+      "relation": "sent_money_to",
+      "object": "Porlock",
+      "explanation": "Holmes sends an occasional ten-pound note to Porlock by devious methods to encourage him.",
+      "sources": [
+        {
+          "chunk_id": 3,
+          "chapter": "CHAPTER I.",
+          "page_start": 7,
+          "page_end": 7
+        }
+      ]
+    },
+    {
+      "subject": "Watson",
+      "relation": "companion_of",
+      "object": "Holmes",
+      "explanation": "Watson listens to Holmes's explanation and leans over him to examine a document.",
+      "sources": [
+        {
+          "chunk_id": 3,
+          "chapter": "CHAPTER I.",
+          "page_start": 7,
+          "page_end": 7
+        }
+      ]
+    },
+    {
+      "subject": "Professor Moriarty",
+      "relation": "associated_with",
+      "object": "his party",
+      "explanation": "Holmes notes that members of that party refer to Professor Moriarty as the predominant 'He'.",
+      "sources": [
+        {
+          "chunk_id": 4,
+          "chapter": "CHAPTER I.",
+          "page_start": 7,
+          "page_end": 8
+        }
+      ]
+    }
+  ],
+  "events": [],
+  "facts": []
+}

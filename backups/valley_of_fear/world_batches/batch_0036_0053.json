@@ -1,0 +1,258 @@
+{
+  "characters": [
+    {
+      "name": "John Douglas",
+      "description": "Owner of Birlstone Manor House, about fifty years old, with a rugged face, grizzled moustache, keen gray eyes, and a wiry figure. He formerly lived in America before settling in England.",
+      "source_chunk_ids": [
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50
+      ]
+    },
+    {
+      "name": "Mrs. Douglas",
+      "description": "Wife of John Douglas; a beautiful, tall, dark, and slender English lady about twenty years younger than her husband.",
+      "source_chunk_ids": [
+        36,
+        37,
+        40,
+        41,
+        43,
+        47
+      ]
+    },
+    {
+      "name": "Cecil James Barker",
+      "description": "Wealthy bachelor residing at Hales Lodge, Hampstead, and an intimate friend of John Douglas from America; tall, broad-chested, clean-shaved with thick black eyebrows.",
+      "source_chunk_ids": [
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        50
+      ]
+    },
+    {
+      "name": "Sergeant Wilson",
+      "description": "Police officer of the Sussex Constabulary in charge of the local Birlstone police station who first investigates the murder at Manor House.",
+      "source_chunk_ids": [
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52
+      ]
+    },
+    {
+      "name": "Dr. Wood",
+      "description": "Brisk and capable general practitioner from Birlstone village who examines John Douglas's body at the scene.",
+      "source_chunk_ids": [
+        39,
+        40,
+        45,
+        46,
+        49,
+        50
+      ]
+    },
+    {
+      "name": "Ames",
+      "description": "The prim, respectable, and capable butler at Birlstone Manor House.",
+      "source_chunk_ids": [
+        39,
+        40,
+        41,
+        42,
+        43,
+        47,
+        48,
+        49,
+        50
+      ]
+    },
+    {
+      "name": "Mrs. Allen",
+      "description": "The buxom and cheerful housekeeper at Birlstone Manor House who relieves Mrs. Douglas of household duties.",
+      "source_chunk_ids": [
+        42,
+        43
+      ]
+    },
+    {
+      "name": "White Mason",
+      "description": "Chief Sussex detective, a quiet, comfortable-looking man in a loose tweed suit with bandy legs and a ruddy face, investigating the Birlstone tragedy.",
+      "source_chunk_ids": [
+        50,
+        51,
+        52,
+        53
+      ]
+    },
+    {
+      "name": "Sherlock Holmes",
+      "description": "Consulting detective investigating the circumstances surrounding the murder at Birlstone.",
+      "source_chunk_ids": [
+        52,
+        53
+      ]
+    },
+    {
+      "name": "Dr. Watson",
+      "description": "Companion and associate of Sherlock Holmes.",
+      "source_chunk_ids": [
+        52,
+        53
+      ]
+    },
+    {
+      "name": "MacDonald",
+      "description": "Detective attending the case briefing alongside Sherlock Holmes.",
+      "source_chunk_ids": [
+        52,
+        53
+      ]
+    }
+  ],
+  "locations": [
+    {
+      "name": "Birlstone Manor House",
+      "description": "An ancient moated house in Sussex, converted into an island at night by raising its drawbridge, and scene of John Douglas's murder.",
+      "source_chunk_ids": [
+        36,
+        37,
+        38,
+        39,
+        43,
+        44,
+        47
+      ]
+    },
+    {
+      "name": "Birlstone",
+      "description": "A quiet countryside village in Sussex containing the Manor House, local police station, and Westville Arms inn.",
+      "source_chunk_ids": [
+        38,
+        39,
+        40,
+        43,
+        46,
+        52
+      ]
+    },
+    {
+      "name": "Hales Lodge, Hampstead",
+      "description": "The residence of Cecil James Barker.",
+      "source_chunk_ids": [
+        38
+      ]
+    },
+    {
+      "name": "Westville Arms",
+      "description": "An inn in Birlstone where Sherlock Holmes, Dr. Watson, and MacDonald reside during the investigation.",
+      "source_chunk_ids": [
+        52
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "subject": "John Douglas",
+      "relation": "married_to",
+      "object": "Mrs. Douglas",
+      "explanation": "John Douglas met Mrs. Douglas in London when he was a widower, and they married.",
+      "source_chunk_ids": [
+        36,
+        37
+      ]
+    },
+    {
+      "subject": "Cecil James Barker",
+      "relation": "friend_of",
+      "object": "John Douglas",
+      "explanation": "Cecil Barker first knew John Douglas in America, lived on intimate terms with him, and remained his close friend in England.",
+      "source_chunk_ids": [
+        38,
+        39,
+        41
+      ]
+    },
+    {
+      "subject": "Cecil James Barker",
+      "relation": "friend_of",
+      "object": "Mrs. Douglas",
+      "explanation": "Barker was friendly with Mrs. Douglas, driving around the countryside with her during her husband's absence.",
+      "source_chunk_ids": [
+        40,
+        41
+      ]
+    },
+    {
+      "subject": "Ames",
+      "relation": "employs",
+      "object": "John Douglas",
+      "explanation": "Ames serves as the butler for John Douglas at Birlstone Manor House.",
+      "source_chunk_ids": [
+        39,
+        40,
+        42
+      ]
+    },
+    {
+      "subject": "Mrs. Allen",
+      "relation": "works_with",
+      "object": "Mrs. Douglas",
+      "explanation": "Mrs. Allen acts as housekeeper and assists Mrs. Douglas with domestic cares.",
+      "source_chunk_ids": [
+        42,
+        43
+      ]
+    },
+    {
+      "subject": "White Mason",
+      "relation": "works_with",
+      "object": "Sergeant Wilson",
+      "explanation": "Sergeant Wilson calls White Mason, chief Sussex detective, to lead the local murder investigation.",
+      "source_chunk_ids": [
+        50,
+        52
+      ]
+    },
+    {
+      "subject": "Sherlock Holmes",
+      "relation": "companion_of",
+      "object": "Dr. Watson",
+      "explanation": "Dr. Watson accompanies Sherlock Holmes to Birlstone for the murder investigation.",
+      "source_chunk_ids": [
+        52,
+        53
+      ]
+    }
+  ],
+  "events": [],
+  "facts": []
+}

@@ -1,0 +1,10 @@
+{
+  "questions": 8,
+  "story_only_average_answer_score": 0.95,
+  "hybrid_average_answer_score": 1.0,
+  "story_only_average_retrieval_coverage": 0.9583,
+  "hybrid_average_retrieval_coverage": 1.0,
+  "hybrid_wins": 1,
+  "story_only_wins": 0,
+  "ties": 7
+}

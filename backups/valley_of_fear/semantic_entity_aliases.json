@@ -1,0 +1,59 @@
+{
+  "all_proposals": [
+    {
+      "canonical": "John Watson",
+      "aliases": [
+        "Narrator"
+      ],
+      "confidence": "high",
+      "reason": "The description for John Watson explicitly identifies him as the narrator of the passage who scrawled the enigmatic message on paper, matching the record for 'Narrator'."
+    },
+    {
+      "canonical": "Sherlock Holmes",
+      "aliases": [
+        "Watson's companion",
+        "The Speaker"
+      ],
+      "confidence": "high",
+      "reason": "Sherlock Holmes is John Watson's companion who deciphers the message, analyzes Porlock's distinct handwriting, and addresses Watson directly as 'my dear Watson', matching the descriptions and actions attributed to 'Watson's companion' and 'The Speaker'."
+    },
+    {
+      "canonical": "Professor Moriarty",
+      "aliases": [
+        "The Professor"
+      ],
+      "confidence": "high",
+      "reason": "Professor Moriarty is described as the professor about whom Holmes speaks and holds suspicion, matching 'The Professor' whom Inspector MacDonald investigated and over whom Holmes is said to have a 'bee in his bonnet'."
+    }
+  ],
+  "accepted_merges": [
+    {
+      "canonical": "John Watson",
+      "aliases": [
+        "Narrator",
+        "John Watson"
+      ],
+      "confidence": "high",
+      "reason": "The description for John Watson explicitly identifies him as the narrator of the passage who scrawled the enigmatic message on paper, matching the record for 'Narrator'."
+    },
+    {
+      "canonical": "Sherlock Holmes",
+      "aliases": [
+        "Watson's companion",
+        "The Speaker",
+        "Sherlock Holmes"
+      ],
+      "confidence": "high",
+      "reason": "Sherlock Holmes is John Watson's companion who deciphers the message, analyzes Porlock's distinct handwriting, and addresses Watson directly as 'my dear Watson', matching the descriptions and actions attributed to 'Watson's companion' and 'The Speaker'."
+    },
+    {
+      "canonical": "Professor Moriarty",
+      "aliases": [
+        "The Professor",
+        "Professor Moriarty"
+      ],
+      "confidence": "high",
+      "reason": "Professor Moriarty is described as the professor about whom Holmes speaks and holds suspicion, matching 'The Professor' whom Inspector MacDonald investigated and over whom Holmes is said to have a 'bee in his bonnet'."
+    }
+  ]
+}

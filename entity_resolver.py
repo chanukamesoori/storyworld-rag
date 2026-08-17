@@ -6,7 +6,7 @@ from collections import defaultdict
 
 
 # ============================================================
-# SETTINGS
+# FILES
 # ============================================================
 
 WORLD_FILE = Path(
@@ -23,34 +23,43 @@ ALIASES_FILE = Path(
 
 
 # ============================================================
-# COMMON TITLES
+# TITLES
 # ============================================================
 
-TITLES = {
-    "mr",
-    "mrs",
-    "miss",
-    "ms",
-    "dr",
-    "doctor",
-    "prof",
-    "professor",
-    "sir",
-    "lady",
-    "lord",
-    "inspector",
-    "detective",
-    "colonel",
-    "captain",
-    "major",
-    "sergeant",
-    "constable",
-    "reverend"
+TITLE_ALIASES = {
+    "mr": "mr",
+    "mister": "mr",
+
+    "mrs": "mrs",
+
+    "miss": "miss",
+    "ms": "ms",
+
+    "dr": "dr",
+    "doctor": "dr",
+
+    "prof": "professor",
+    "professor": "professor",
+
+    "sir": "sir",
+    "lady": "lady",
+    "lord": "lord",
+
+    "inspector": "inspector",
+    "detective": "detective",
+
+    "colonel": "colonel",
+    "captain": "captain",
+    "major": "major",
+    "sergeant": "sergeant",
+    "constable": "constable",
+
+    "reverend": "reverend"
 }
 
 
 # ============================================================
-# BASIC NORMALIZATION
+# NORMALIZATION
 # ============================================================
 
 def normalize_text(text):
@@ -65,17 +74,15 @@ def normalize_text(text):
 
     text = text.lower()
 
-    # Remove punctuation
-    text = re.sub(
-        r"[^\w\s-]",
-        " ",
-        text
-    )
-
-    # Treat hyphens as spaces for matching
     text = text.replace(
         "-",
         " "
+    )
+
+    text = re.sub(
+        r"[^\w\s]",
+        " ",
+        text
     )
 
     text = re.sub(
@@ -88,83 +95,238 @@ def normalize_text(text):
 
 
 # ============================================================
-# REMOVE TITLES
+# SPLIT TITLE FROM NAME
 # ============================================================
 
-def remove_titles(text):
+def split_title(name):
 
     normalized = normalize_text(
-        text
+        name
     )
 
     words = normalized.split()
 
-    cleaned = [
-        word
-        for word in words
-        if word not in TITLES
-    ]
+    if not words:
 
-    return " ".join(
-        cleaned
+        return None, []
+
+
+    first = words[0]
+
+
+    if first in TITLE_ALIASES:
+
+        title = TITLE_ALIASES[
+            first
+        ]
+
+        return (
+            title,
+            words[1:]
+        )
+
+
+    return (
+        None,
+        words
     )
 
 
 # ============================================================
-# NAME TOKENS
+# CORE NAME
 # ============================================================
 
-def name_tokens(name):
+def core_name(name):
 
-    return remove_titles(
+    _, tokens = split_title(
         name
-    ).split()
+    )
+
+    return " ".join(
+        tokens
+    )
 
 
 # ============================================================
-# DETERMINE WHETHER TWO CHARACTER NAMES MATCH
+# UNION FIND
 # ============================================================
 
-def basic_name_match(
+class UnionFind:
+
+    def __init__(
+        self,
+        size
+    ):
+
+        self.parent = list(
+            range(size)
+        )
+
+
+    def find(
+        self,
+        value
+    ):
+
+        while (
+            self.parent[value]
+            != value
+        ):
+
+            self.parent[value] = (
+                self.parent[
+                    self.parent[value]
+                ]
+            )
+
+            value = self.parent[
+                value
+            ]
+
+
+        return value
+
+
+    def union(
+        self,
+        first,
+        second
+    ):
+
+        root_first = self.find(
+            first
+        )
+
+        root_second = self.find(
+            second
+        )
+
+
+        if root_first != root_second:
+
+            self.parent[
+                root_second
+            ] = root_first
+
+
+# ============================================================
+# SAME CORE NAME CHECK
+# ============================================================
+
+def safely_same_core(
     name1,
-    name2
+    name2,
+    titled_variants_by_core
 ):
 
-    n1 = normalize_text(
+    title1, tokens1 = split_title(
         name1
     )
 
-    n2 = normalize_text(
+    title2, tokens2 = split_title(
         name2
     )
 
+
+    if not tokens1 or not tokens2:
+
+        return False
+
+
+    if tokens1 != tokens2:
+
+        return False
+
+
     # --------------------------------------------------------
-    # Exact match
+    # Exactly same full representation
     # --------------------------------------------------------
 
-    if n1 == n2:
+    if normalize_text(
+        name1
+    ) == normalize_text(
+        name2
+    ):
+
         return True
 
 
     # --------------------------------------------------------
-    # Match after removing titles
+    # Same title:
     #
-    # Mr. Holmes == Holmes
-    # Professor Moriarty == Moriarty
+    # Dr Roylott
+    # Doctor Roylott
     # --------------------------------------------------------
 
-    stripped1 = remove_titles(
-        name1
-    )
+    if (
+        title1
+        and title2
+        and title1 == title2
+    ):
 
-    stripped2 = remove_titles(
-        name2
-    )
+        return True
+
+
+    # --------------------------------------------------------
+    # DIFFERENT titles:
+    #
+    # Dr Roylott
+    # Miss Roylott
+    #
+    # NEVER merge deterministically.
+    # --------------------------------------------------------
 
     if (
-        stripped1
-        and stripped1 == stripped2
+        title1
+        and title2
+        and title1 != title2
     ):
+
+        return False
+
+
+    # --------------------------------------------------------
+    # One has title and one does not.
+    #
+    # Full names are normally safe:
+    #
+    # Sherlock Holmes
+    # Mr Sherlock Holmes
+    # --------------------------------------------------------
+
+    if len(
+        tokens1
+    ) >= 2:
+
+        return True
+
+
+    # --------------------------------------------------------
+    # Single surname is dangerous.
+    #
+    # Holmes + Mr Holmes can merge if Mr is the ONLY
+    # titled form for "Holmes".
+    #
+    # Roylott + Dr Roylott + Miss Roylott cannot.
+    # --------------------------------------------------------
+
+    core = " ".join(
+        tokens1
+    )
+
+
+    distinct_titles = (
+        titled_variants_by_core.get(
+            core,
+            set()
+        )
+    )
+
+
+    if len(
+        distinct_titles
+    ) <= 1:
+
         return True
 
 
@@ -180,310 +342,363 @@ def build_character_groups(
 ):
 
     names = [
+
         item["name"]
-        for item in characters
-        if item.get("name")
+
+        for item
+        in characters
+
+        if item.get(
+            "name"
+        )
     ]
 
-    # --------------------------------------------------------
-    # Start with basic exact/title matches
-    # --------------------------------------------------------
 
-    groups = []
-
-    assigned = set()
-
-
-    for i, name in enumerate(
+    size = len(
         names
-    ):
+    )
 
-        if i in assigned:
-            continue
 
-        group = [
+    uf = UnionFind(
+        size
+    )
+
+
+    # ========================================================
+    # RECORD TITLED VARIANTS
+    # ========================================================
+
+    titled_variants_by_core = (
+        defaultdict(set)
+    )
+
+
+    for name in names:
+
+        title, tokens = split_title(
             name
-        ]
-
-        assigned.add(
-            i
         )
 
+        if (
+            title
+            and tokens
+        ):
+
+            titled_variants_by_core[
+                " ".join(tokens)
+            ].add(
+                title
+            )
+
+
+    # ========================================================
+    # PASS 1
+    # Exact / safe same-core matches
+    # ========================================================
+
+    for i in range(
+        size
+    ):
 
         for j in range(
             i + 1,
-            len(names)
+            size
         ):
 
-            if j in assigned:
-                continue
-
-            other = names[j]
-
-            if basic_name_match(
-                name,
-                other
+            if safely_same_core(
+                names[i],
+                names[j],
+                titled_variants_by_core
             ):
 
-                group.append(
-                    other
-                )
-
-                assigned.add(
+                uf.union(
+                    i,
                     j
                 )
 
+
+    # ========================================================
+    # BUILD FULL-NAME CANDIDATES BY SURNAME
+    # ========================================================
+
+    full_candidates = (
+        defaultdict(list)
+    )
+
+
+    for index, name in enumerate(
+        names
+    ):
+
+        title, tokens = split_title(
+            name
+        )
+
+
+        if len(
+            tokens
+        ) >= 2:
+
+            surname = (
+                tokens[-1]
+            )
+
+
+            full_candidates[
+                surname
+            ].append({
+
+                "index":
+                    index,
+
+                "title":
+                    title,
+
+                "tokens":
+                    tokens,
+
+                "name":
+                    name
+            })
+
+
+    # ========================================================
+    # PASS 2
+    # Safe surname → full-name resolution
+    # ========================================================
+
+    for index, name in enumerate(
+        names
+    ):
+
+        short_title, short_tokens = (
+            split_title(
+                name
+            )
+        )
+
+
+        # Only surname-only forms
+        if len(
+            short_tokens
+        ) != 1:
+
+            continue
+
+
+        surname = short_tokens[
+            0
+        ]
+
+
+        candidates = (
+            full_candidates.get(
+                surname,
+                []
+            )
+        )
+
+
+        compatible = []
+
+
+        for candidate in candidates:
+
+            candidate_title = (
+                candidate[
+                    "title"
+                ]
+            )
+
+
+            # -----------------------------------------------
+            # Example:
+            #
+            # Dr Roylott
+            # Dr Grimesby Roylott
+            #
+            # YES
+            # -----------------------------------------------
+
+            if short_title:
+
+                if (
+                    candidate_title
+                    and
+                    candidate_title
+                    != short_title
+                ):
+
+                    continue
+
+
+            compatible.append(
+                candidate
+            )
+
+
+        # ----------------------------------------------------
+        # Only merge if ONE clear full-name candidate exists.
+        #
+        # Miss Stoner:
+        #
+        # Helen Stoner
+        # Julia Stoner
+        #
+        # => ambiguous, no merge
+        # ----------------------------------------------------
+
+        unique_roots = {
+
+            uf.find(
+                candidate[
+                    "index"
+                ]
+            )
+
+            for candidate
+            in compatible
+        }
+
+
+        if len(
+            unique_roots
+        ) != 1:
+
+            continue
+
+
+        target_index = (
+            compatible[
+                0
+            ][
+                "index"
+            ]
+        )
+
+
+        # ----------------------------------------------------
+        # Extra protection for bare surnames.
+        #
+        # If multiple different titled surname variants exist,
+        # do not guess which one a bare surname belongs to.
+        # ----------------------------------------------------
+
+        if short_title is None:
+
+            titles = (
+                titled_variants_by_core.get(
+                    surname,
+                    set()
+                )
+            )
+
+
+            if len(
+                titles
+            ) > 1:
+
+                continue
+
+
+        uf.union(
+            index,
+            target_index
+        )
+
+
+    # ========================================================
+    # COLLECT GROUPS
+    # ========================================================
+
+    grouped = (
+        defaultdict(list)
+    )
+
+
+    for index, name in enumerate(
+        names
+    ):
+
+        root = uf.find(
+            index
+        )
+
+        grouped[
+            root
+        ].append(
+            name
+        )
+
+
+    groups = []
+
+
+    for group in grouped.values():
+
+        group = list(
+            dict.fromkeys(
+                group
+            )
+        )
 
         groups.append(
             group
         )
 
 
-    # --------------------------------------------------------
-    # Build surname index from the CURRENT groups
-    #
-    # Sherlock Holmes
-    # Mr Holmes
-    #
-    # → "holmes"
-    # --------------------------------------------------------
-
-    full_name_candidates = (
-        defaultdict(list)
-    )
-
-
-    for group_index, group in enumerate(
-        groups
-    ):
-
-        all_tokens = []
-
-        for name in group:
-
-            tokens = name_tokens(
-                name
-            )
-
-            if len(tokens) >= 2:
-
-                all_tokens.append(
-                    tokens
-                )
-
-
-        for tokens in all_tokens:
-
-            surname = tokens[-1]
-
-            full_name_candidates[
-                surname
-            ].append(
-                group_index
-            )
-
-
-    # Remove duplicate group indexes
-    for surname in list(
-        full_name_candidates.keys()
-    ):
-
-        full_name_candidates[
-            surname
-        ] = list(
-            set(
-                full_name_candidates[
-                    surname
-                ]
-            )
-        )
-
-
-    # --------------------------------------------------------
-    # Merge unique one-word surname groups
-    #
-    # Holmes
-    #   +
-    # Sherlock Holmes
-    #
-    # ONLY when Holmes matches exactly ONE full-name group.
-    # --------------------------------------------------------
-
-    merges = {}
-
-
-    for group_index, group in enumerate(
-        groups
-    ):
-
-        if group_index in merges:
-            continue
-
-
-        one_word_names = []
-
-        for name in group:
-
-            tokens = name_tokens(
-                name
-            )
-
-            if len(tokens) == 1:
-
-                one_word_names.append(
-                    tokens[0]
-                )
-
-
-        for surname in one_word_names:
-
-            candidate_groups = (
-                full_name_candidates.get(
-                    surname,
-                    []
-                )
-            )
-
-            candidate_groups = [
-                candidate
-                for candidate in candidate_groups
-                if candidate != group_index
-            ]
-
-
-            # IMPORTANT:
-            # only merge when unambiguous
-            if len(candidate_groups) == 1:
-
-                target_group = (
-                    candidate_groups[0]
-                )
-
-                merges[
-                    group_index
-                ] = target_group
-
-                break
-
-
-    # --------------------------------------------------------
-    # Apply merges
-    # --------------------------------------------------------
-
-    final_groups = []
-
-    consumed = set()
-
-
-    for index, group in enumerate(
-        groups
-    ):
-
-        if index in consumed:
-            continue
-
-        # This group belongs to another group
-        if index in merges:
-            continue
-
-
-        combined = list(
-            group
-        )
-
-
-        for source_index, target_index in (
-            merges.items()
-        ):
-
-            if target_index == index:
-
-                combined.extend(
-                    groups[source_index]
-                )
-
-                consumed.add(
-                    source_index
-                )
-
-
-        # Remove duplicates while preserving order
-        combined = list(
-            dict.fromkeys(
-                combined
-            )
-        )
-
-        final_groups.append(
-            combined
-        )
-
-
-    # Any groups not included because of complex merge
-    # relationships are preserved.
-    included_names = {
-        name
-        for group in final_groups
-        for name in group
-    }
-
-
-    for group in groups:
-
-        if not any(
-            name in included_names
-            for name in group
-        ):
-
-            final_groups.append(
-                group
-            )
-
-
-    return final_groups
+    return groups
 
 
 # ============================================================
-# CHOOSE BEST CANONICAL CHARACTER NAME
+# CANONICAL NAME SCORE
 # ============================================================
 
 def canonical_name_score(
     name
 ):
 
-    tokens = name_tokens(
+    title, tokens = split_title(
         name
     )
 
-    raw_tokens = normalize_text(
-        name
-    ).split()
+
+    score = 0
 
 
-    # More actual name tokens = better
-    score = (
-        len(tokens) * 100
+    # Full names strongly preferred.
+    score += (
+        len(tokens)
+        * 100
     )
 
-    # Slight preference for longer/full names
+
+    # Prefer longer specific representations.
     score += len(
         name
     )
 
-    # If the first non-title token appears to be
-    # more than a surname, reward it.
-    if len(tokens) >= 2:
-        score += 100
 
-    # Titles can be useful but should not dominate
-    if (
-        raw_tokens
-        and raw_tokens[0] in TITLES
-    ):
-        score += 5
+    # Proper names with 2+ tokens are best.
+    if len(
+        tokens
+    ) >= 2:
+
+        score += 200
+
+
+    # Titles add a small amount.
+    if title:
+
+        score += 10
+
 
     return score
 
+
+# ============================================================
+# CHOOSE CANONICAL NAME
+# ============================================================
 
 def choose_canonical_name(
     names
@@ -496,7 +711,7 @@ def choose_canonical_name(
 
 
 # ============================================================
-# BUILD CHARACTER ALIAS MAP
+# BUILD CHARACTER ALIASES
 # ============================================================
 
 def build_character_alias_map(
@@ -506,6 +721,7 @@ def build_character_alias_map(
     groups = build_character_groups(
         characters
     )
+
 
     alias_map = {}
 
@@ -521,14 +737,20 @@ def build_character_alias_map(
         )
 
 
+        # IMPORTANT:
+        #
+        # ONLY exact aliases are registered.
+        #
+        # We do NOT register title-stripped aliases.
+        # That was the source of dangerous merges.
+        # ----------------------------------------------------
+
         for alias in group:
 
             alias_map[
-                normalize_text(alias)
-            ] = canonical
-
-            alias_map[
-                remove_titles(alias)
+                normalize_text(
+                    alias
+                )
             ] = canonical
 
 
@@ -542,17 +764,16 @@ def build_character_alias_map(
         })
 
 
-    return alias_map, report
+    return (
+        alias_map,
+        report
+    )
 
 
 # ============================================================
-# LOCATION ALIAS MAP
+# LOCATIONS
 #
-# Locations are intentionally handled conservatively.
-# We do NOT assume:
-#
-# Baker Street == 221B Baker Street
-#
+# Deliberately conservative: exact matches only.
 # ============================================================
 
 def build_location_alias_map(
@@ -561,7 +782,9 @@ def build_location_alias_map(
 
     alias_map = {}
 
-    groups = {}
+    groups = defaultdict(
+        list
+    )
 
 
     for location in locations:
@@ -571,22 +794,19 @@ def build_location_alias_map(
             ""
         )
 
-        normalized = normalize_text(
+
+        key = normalize_text(
             name
         )
 
-        if not normalized:
+
+        if not key:
+
             continue
 
 
-        if normalized not in groups:
-
-            groups[
-                normalized
-            ] = []
-
         groups[
-            normalized
+            key
         ].append(
             name
         )
@@ -595,21 +815,27 @@ def build_location_alias_map(
     report = []
 
 
-    for normalized, names in (
-        groups.items()
-    ):
+    for key, names in groups.items():
 
-        # choose longest representation
         canonical = max(
             names,
             key=len
         )
 
 
-        for alias in names:
+        aliases = list(
+            dict.fromkeys(
+                names
+            )
+        )
+
+
+        for alias in aliases:
 
             alias_map[
-                normalize_text(alias)
+                normalize_text(
+                    alias
+                )
             ] = canonical
 
 
@@ -619,19 +845,18 @@ def build_location_alias_map(
                 canonical,
 
             "aliases":
-                list(
-                    dict.fromkeys(
-                        names
-                    )
-                )
+                aliases
         })
 
 
-    return alias_map, report
+    return (
+        alias_map,
+        report
+    )
 
 
 # ============================================================
-# RESOLVE ENTITY NAME
+# RESOLVE ENTITY
 # ============================================================
 
 def resolve_entity(
@@ -641,38 +866,26 @@ def resolve_entity(
 ):
 
     if not value:
+
         return value
 
 
-    normalized = normalize_text(
-        value
-    )
-
-    stripped = remove_titles(
+    key = normalize_text(
         value
     )
 
 
-    # Characters first
-    if normalized in character_aliases:
+    if key in character_aliases:
 
         return character_aliases[
-            normalized
+            key
         ]
 
 
-    if stripped in character_aliases:
-
-        return character_aliases[
-            stripped
-        ]
-
-
-    # Then locations
-    if normalized in location_aliases:
+    if key in location_aliases:
 
         return location_aliases[
-            normalized
+            key
         ]
 
 
@@ -680,7 +893,7 @@ def resolve_entity(
 
 
 # ============================================================
-# MERGE SOURCE LISTS
+# MERGE SOURCES
 # ============================================================
 
 def merge_sources(
@@ -711,14 +924,18 @@ def resolve_characters(
 
     for character in characters:
 
-        original_name = (
-            character["name"]
-        )
+        original = character[
+            "name"
+        ]
 
-        canonical = resolve_entity(
-            original_name,
-            aliases,
-            {}
+
+        canonical = (
+            aliases.get(
+                normalize_text(
+                    original
+                ),
+                original
+            )
         )
 
 
@@ -746,6 +963,7 @@ def resolve_characters(
                     )
             }
 
+
         else:
 
             existing = (
@@ -754,8 +972,11 @@ def resolve_characters(
                 ]
             )
 
+
             merge_sources(
-                existing["sources"],
+                existing[
+                    "sources"
+                ],
                 character.get(
                     "sources",
                     []
@@ -763,7 +984,6 @@ def resolve_characters(
             )
 
 
-            # Prefer longer description
             new_description = (
                 character.get(
                     "description",
@@ -771,12 +991,17 @@ def resolve_characters(
                 )
             )
 
-            if len(
-                new_description
-            ) > len(
-                existing[
-                    "description"
-                ]
+
+            if (
+                len(
+                    new_description
+                )
+                >
+                len(
+                    existing[
+                        "description"
+                    ]
+                )
             ):
 
                 existing[
@@ -807,9 +1032,12 @@ def resolve_locations(
             "name"
         ]
 
+
         canonical = (
             aliases.get(
-                normalize_text(name),
+                normalize_text(
+                    name
+                ),
                 name
             )
         )
@@ -839,12 +1067,15 @@ def resolve_locations(
                     )
             }
 
+
         else:
 
             merge_sources(
                 merged[
                     canonical
-                ]["sources"],
+                ][
+                    "sources"
+                ],
 
                 location.get(
                     "sources",
@@ -874,16 +1105,22 @@ def resolve_relationships(
     for relationship in relationships:
 
         subject = resolve_entity(
-            relationship["subject"],
+            relationship[
+                "subject"
+            ],
             character_aliases,
             location_aliases
         )
 
+
         obj = resolve_entity(
-            relationship["object"],
+            relationship[
+                "object"
+            ],
             character_aliases,
             location_aliases
         )
+
 
         relation = relationship[
             "relation"
@@ -892,11 +1129,17 @@ def resolve_relationships(
 
         key = (
 
-            normalize_text(subject),
+            normalize_text(
+                subject
+            ),
 
-            normalize_text(relation),
+            normalize_text(
+                relation
+            ),
 
-            normalize_text(obj)
+            normalize_text(
+                obj
+            )
         )
 
 
@@ -930,12 +1173,15 @@ def resolve_relationships(
                     )
             }
 
+
         else:
 
             merge_sources(
                 merged[
                     key
-                ]["sources"],
+                ][
+                    "sources"
+                ],
 
                 relationship.get(
                     "sources",
@@ -965,14 +1211,18 @@ def resolve_facts(
     for fact in facts:
 
         subject = resolve_entity(
-            fact["subject"],
+            fact[
+                "subject"
+            ],
             character_aliases,
             location_aliases
         )
 
 
         obj = resolve_entity(
-            fact["object"],
+            fact[
+                "object"
+            ],
             character_aliases,
             location_aliases
         )
@@ -985,11 +1235,17 @@ def resolve_facts(
 
         key = (
 
-            normalize_text(subject),
+            normalize_text(
+                subject
+            ),
 
-            normalize_text(predicate),
+            normalize_text(
+                predicate
+            ),
 
-            normalize_text(obj)
+            normalize_text(
+                obj
+            )
         )
 
 
@@ -1023,12 +1279,15 @@ def resolve_facts(
                     )
             }
 
+
         else:
 
             merge_sources(
                 merged[
                     key
-                ]["sources"],
+                ][
+                    "sources"
+                ],
 
                 fact.get(
                     "sources",
@@ -1052,7 +1311,7 @@ def resolve_events(
     location_aliases
 ):
 
-    resolved_events = []
+    resolved = []
 
 
     for event in events:
@@ -1065,16 +1324,17 @@ def resolve_events(
             []
         ):
 
-            resolved = resolve_entity(
+            canonical = resolve_entity(
                 participant,
                 character_aliases,
                 location_aliases
             )
 
-            if resolved not in participants:
+
+            if canonical not in participants:
 
                 participants.append(
-                    resolved
+                    canonical
                 )
 
 
@@ -1088,7 +1348,7 @@ def resolve_events(
         )
 
 
-        resolved_events.append({
+        resolved.append({
 
             "summary":
                 event.get(
@@ -1116,11 +1376,11 @@ def resolve_events(
         })
 
 
-    return resolved_events
+    return resolved
 
 
 # ============================================================
-# PRINT ALIAS REPORT
+# PRINT REPORT
 # ============================================================
 
 def print_alias_report(
@@ -1132,7 +1392,8 @@ def print_alias_report(
     print("=" * 70)
 
     print(
-        f"{entity_type.upper()} ENTITY RESOLUTION"
+        f"{entity_type.upper()} "
+        f"ENTITY RESOLUTION"
     )
 
     print("=" * 70)
@@ -1147,7 +1408,11 @@ def print_alias_report(
             "aliases"
         ]
 
-        if len(aliases) <= 1:
+
+        if len(
+            aliases
+        ) <= 1:
+
             continue
 
 
@@ -1176,9 +1441,9 @@ def print_alias_report(
     if merged_count == 0:
 
         print()
+
         print(
-            "No duplicate aliases "
-            "were automatically merged."
+            "No safe automatic merges found."
         )
 
 
@@ -1192,7 +1457,8 @@ def main():
     print("=" * 70)
 
     print(
-        "STORYWORLD — ENTITY RESOLVER"
+        "STORYWORLD — CONSERVATIVE "
+        "ENTITY RESOLVER"
     )
 
     print("=" * 70)
@@ -1201,24 +1467,14 @@ def main():
     if not WORLD_FILE.exists():
 
         print()
-        print(
-            "ERROR:"
-        )
 
         print(
+            f"ERROR: "
             f"{WORLD_FILE} not found."
-        )
-
-        print(
-            "Run world_builder.py first."
         )
 
         return
 
-
-    # --------------------------------------------------------
-    # LOAD WORLD
-    # --------------------------------------------------------
 
     with open(
         WORLD_FILE,
@@ -1263,10 +1519,6 @@ def main():
     )
 
 
-    # --------------------------------------------------------
-    # CHARACTER ALIASES
-    # --------------------------------------------------------
-
     (
         character_aliases,
         character_report
@@ -1276,10 +1528,6 @@ def main():
         ]
     )
 
-
-    # --------------------------------------------------------
-    # LOCATION ALIASES
-    # --------------------------------------------------------
 
     (
         location_aliases,
@@ -1302,10 +1550,6 @@ def main():
         "Location"
     )
 
-
-    # --------------------------------------------------------
-    # BUILD RESOLVED WORLD
-    # --------------------------------------------------------
 
     resolved_world = {
 
@@ -1360,10 +1604,6 @@ def main():
     }
 
 
-    # --------------------------------------------------------
-    # SAVE RESOLVED WORLD
-    # --------------------------------------------------------
-
     with open(
         RESOLVED_WORLD_FILE,
         "w",
@@ -1378,20 +1618,6 @@ def main():
         )
 
 
-    # --------------------------------------------------------
-    # SAVE ALIAS INFORMATION
-    # --------------------------------------------------------
-
-    aliases_output = {
-
-        "characters":
-            character_report,
-
-        "locations":
-            location_report
-    }
-
-
     with open(
         ALIASES_FILE,
         "w",
@@ -1399,16 +1625,18 @@ def main():
     ) as file:
 
         json.dump(
-            aliases_output,
+            {
+                "characters":
+                    character_report,
+
+                "locations":
+                    location_report
+            },
             file,
             ensure_ascii=False,
             indent=2
         )
 
-
-    # --------------------------------------------------------
-    # RESULTS
-    # --------------------------------------------------------
 
     print()
     print("=" * 70)
@@ -1449,21 +1677,11 @@ def main():
     print()
 
     print(
-        f"Saved resolved world:"
+        "Saved resolved world:"
     )
 
     print(
         RESOLVED_WORLD_FILE
-    )
-
-    print()
-
-    print(
-        f"Saved entity aliases:"
-    )
-
-    print(
-        ALIASES_FILE
     )
 
 

@@ -1,0 +1,246 @@
+{
+  "characters": [
+    {
+      "name": "Sherlock Holmes",
+      "description": "A consulting detective residing in London who deciphered Porlock's warning and recognizes Professor Moriarty's master-criminal network.",
+      "source_chunk_ids": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31
+      ]
+    },
+    {
+      "name": "Inspector MacDonald",
+      "description": "An Aberdeen-raised C.I.D. detective from Scotland Yard who consults Holmes regarding the murder at Birlstone.",
+      "source_chunk_ids": [
+        18,
+        19,
+        20,
+        21,
+        23,
+        25,
+        27,
+        28,
+        29,
+        30,
+        31
+      ]
+    },
+    {
+      "name": "Professor Moriarty",
+      "description": "A highly talented, respectable-seeming professor who secretly operates as a master criminal commanding a vast criminal organization.",
+      "source_chunk_ids": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        31
+      ]
+    },
+    {
+      "name": "Porlock",
+      "description": "An informant writing under an assumed name who sent Holmes an encrypted warning regarding danger to Douglas.",
+      "source_chunk_ids": [
+        18,
+        21,
+        29
+      ]
+    },
+    {
+      "name": "Jean Baptiste Greuze",
+      "description": "A French artist who flourished between 1750 and 1800, whose valuable painting hangs in Professor Moriarty's study.",
+      "source_chunk_ids": [
+        21,
+        22,
+        23,
+        24
+      ]
+    },
+    {
+      "name": "Jonathan Wild",
+      "description": "An 18th-century master criminal who organized London's criminals and provided plans in exchange for a fifteen percent commission.",
+      "source_chunk_ids": [
+        24,
+        25
+      ]
+    },
+    {
+      "name": "Colonel Sebastian Moran",
+      "description": "Professor Moriarty's chief of staff, paid six thousand pounds a year.",
+      "source_chunk_ids": [
+        26,
+        27
+      ]
+    },
+    {
+      "name": "John Douglas",
+      "description": "A wealthy man who spent time in America and the California gold fields before residing at Birlstone Manor House, where he was murdered with a shotgun.",
+      "source_chunk_ids": [
+        25,
+        30,
+        31,
+        33,
+        34,
+        35
+      ]
+    },
+    {
+      "name": "White Mason",
+      "description": "The local police officer at Birlstone and a personal friend of Inspector MacDonald.",
+      "source_chunk_ids": [
+        30,
+        31
+      ]
+    },
+    {
+      "name": "Hugo de Capus",
+      "description": "A feudal lord who built the original fortalice at Birlstone during the First Crusade on land granted by the Red King.",
+      "source_chunk_ids": [
+        33
+      ]
+    },
+    {
+      "name": "Mrs. Douglas",
+      "description": "The wife of John Douglas, a tall, dark, slender English lady twenty years younger than her husband.",
+      "source_chunk_ids": [
+        33,
+        35
+      ]
+    }
+  ],
+  "locations": [
+    {
+      "name": "Birlstone",
+      "description": "An ancient Sussex village near the Weald forest that is gradually growing into a modern town.",
+      "source_chunk_ids": [
+        19,
+        20,
+        22,
+        23,
+        25,
+        26,
+        27,
+        31,
+        32,
+        33
+      ]
+    },
+    {
+      "name": "Birlstone Manor House",
+      "description": "An ancient Jacobean brick country house with diamond-paned windows and a forty-foot inner moat fed by a stream.",
+      "source_chunk_ids": [
+        32,
+        33,
+        34
+      ]
+    },
+    {
+      "name": "London",
+      "description": "The metropolis where Holmes, MacDonald, and Professor Moriarty reside.",
+      "source_chunk_ids": [
+        19,
+        20,
+        25,
+        31,
+        35
+      ]
+    },
+    {
+      "name": "Camberwell",
+      "description": "A district in London where Porlock's letters were posted and where money was directed to the post office.",
+      "source_chunk_ids": [
+        18,
+        21
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "subject": "Sherlock Holmes",
+      "relation": "works_with",
+      "object": "Inspector MacDonald",
+      "explanation": "Inspector MacDonald consults Sherlock Holmes on major criminal matters, including the Birlstone murder.",
+      "source_chunk_ids": [
+        18,
+        19,
+        20,
+        28,
+        29,
+        30,
+        31
+      ]
+    },
+    {
+      "subject": "Inspector MacDonald",
+      "relation": "friend_of",
+      "object": "White Mason",
+      "explanation": "White Mason is described as a personal friend of Inspector MacDonald.",
+      "source_chunk_ids": [
+        30
+      ]
+    },
+    {
+      "subject": "Colonel Sebastian Moran",
+      "relation": "chief_of_staff_of",
+      "object": "Professor Moriarty",
+      "explanation": "Colonel Sebastian Moran serves as chief of staff for Professor Moriarty's criminal organization.",
+      "source_chunk_ids": [
+        26,
+        27
+      ]
+    },
+    {
+      "subject": "Porlock",
+      "relation": "sent_message_to",
+      "object": "Sherlock Holmes",
+      "explanation": "Porlock sent Holmes an encrypted warning message regarding danger to John Douglas.",
+      "source_chunk_ids": [
+        18,
+        19,
+        21,
+        29
+      ]
+    },
+    {
+      "subject": "Mrs. Douglas",
+      "relation": "married_to",
+      "object": "John Douglas",
+      "explanation": "Mrs. Douglas is married to John Douglas of Birlstone Manor House.",
+      "source_chunk_ids": [
+        33,
+        35
+      ]
+    },
+    {
+      "subject": "John Douglas",
+      "relation": "lives_at",
+      "object": "Birlstone Manor House",
+      "explanation": "John Douglas has lived at the Manor House of Birlstone for five years.",
+      "source_chunk_ids": [
+        33,
+        34
+      ]
+    }
+  ],
+  "events": [],
+  "facts": []
+}
