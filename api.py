@@ -1,3 +1,5 @@
+import json
+from pathlib import Path
 import os
 from threading import Lock
 from typing import Any
@@ -471,6 +473,88 @@ def get_characters():
 
     return characters
 
+
+
+# ============================================================
+# RELATIONSHIPS
+# ============================================================
+
+@app.get("/api/relationships")
+def get_relationships():
+
+    world_file = Path(
+        "data/world_semantic_resolved.json"
+    )
+
+    if not world_file.exists():
+        raise HTTPException(
+            status_code=404,
+            detail="Resolved World Memory not found."
+        )
+
+    with open(
+        world_file,
+        "r",
+        encoding="utf-8"
+    ) as file:
+
+        world = json.load(file)
+
+    relationships = []
+
+    seen = set()
+
+    for item in world.get(
+        "relationships",
+        []
+    ):
+
+        subject = item.get(
+            "subject",
+            ""
+        ).strip()
+
+        relation = item.get(
+            "relation",
+            ""
+        ).strip()
+
+        obj = item.get(
+            "object",
+            ""
+        ).strip()
+
+        explanation = item.get(
+            "explanation",
+            ""
+        ).strip()
+
+        if not subject or not obj:
+            continue
+
+        key = (
+            subject.lower(),
+            relation.lower(),
+            obj.lower()
+        )
+
+        if key in seen:
+            continue
+
+        seen.add(key)
+
+        relationships.append({
+            "subject": subject,
+            "relation": relation,
+            "object": obj,
+            "explanation": explanation,
+            "sources": item.get(
+                "sources",
+                []
+            )
+        })
+
+    return relationships
 
 # ============================================================
 # CHAT

@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { FormEvent, useEffect, useRef, useState } from "react";
 
 type StoryInfo = {
@@ -225,6 +226,16 @@ export default function Home() {
               icon="◎"
               label="Characters"
             />
+
+            <Link
+              href="/relationships"
+              className="flex w-full items-center gap-3 rounded-xl px-4 py-3 text-left text-sm text-zinc-400 transition hover:bg-white/[0.05] hover:text-white"
+            >
+              <span>⌘</span>
+              <span className="font-medium">
+                Relationship Map
+              </span>
+            </Link>
           </nav>
 
           <div className="mt-8 border-t border-white/10 pt-5">
